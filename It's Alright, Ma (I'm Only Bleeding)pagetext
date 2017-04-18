@@ -1,0 +1,2538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:_ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>Bob Dylan - It's Alright, Ma (I'm Only Bleeding) Lyrics | SongMeanings</title>
+	
+	<meta property="og:title" content="Bob Dylan - It's Alright, Ma (I'm Only Bleeding) Lyrics | SongMeanings" />
+	<meta property="og:type" content="song"/>
+	<meta property="og:url" content="//songmeanings.com/songs/view/108689/"/>
+	<meta property="og:site_name" content="SongMeanings"/>
+
+	
+<meta property="og:image" content="//songmeanings.com/images/img10.jpg"/>
+		
+	<link rel="canonical" href="//songmeanings.com/songs/view/108689/"/>
+
+	<link rel="alternate" media="only screen and (max-width: 640px)"
+      href="//songmeanings.com/m/songs/view/108689/" >
+	
+	
+<link media="all" rel="stylesheet" href="/css/sm.css?v=4.94" type="text/css" />
+<link media="all" rel="stylesheet" href="/css/fancybox.css?v=4.94" />
+<link media="all" rel="stylesheet" href="/css/all.css?v=4.94" />
+
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/ie.css" type="text/css"/>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/jquery.main.js"></script>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/js/ie.js"></script>
+<![endif]-->
+
+<!-- qtip popups -->
+<script type="text/javascript" src="/js/qtip2/basic/jquery.qtip.min.js"></script>
+<link media="all" rel="stylesheet" href="/js/qtip2/basic/jquery.qtip.min.css" type="text/css" />
+
+<!-- facebook -->
+<script>
+var facebook_app_id   = 219341278125724;
+var facebook_channelUrl = '//songmeanings.com/channel.html';
+</script>
+
+<!-- google -->
+<meta name="google-signin-clientid" content="458654304363.apps.googleusercontent.com" />
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email" />
+<meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity" />
+<meta name="google-signin-cookiepolicy" content="none" />
+<meta name="google-signin-approvalprompt" content="auto" />
+
+<!-- site wide js -->
+<script type="text/javascript" src="/js/site.js?v=4.97"></script>
+
+
+<script type="text/javascript" src="/js/jquery.putcursoratend.js"></script>	
+	<script type="text/javascript" src="/js/songs.js?1400"></script>
+	
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Search SongMeanings" />
+
+<link rel="image_src" href="//songmeanings.com/images/img10.jpg" />
+
+<meta property="fb:app_id" content="199712020079338" />
+
+
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+// Note: it's important to keep these in separate script blocks
+COMSCORE.beacon({
+	c1: 2,
+	c2: "6772046",
+	c3: "",
+	c4: "http://songmeanings.com/songs/view/108689/", // Replace this with the page URL that the site is on here, and also enter it into the <noscript> img below
+	c5: "",
+	c6: "",
+	c15: ""
+});
+</script>
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6772046&c3=&c4=songmeanings.com/songs/view/108689/&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- simple modal -->
+	<link type='text/css' href='/css/simplemodal/basic.css' rel='stylesheet' media='screen' />
+	<!--[if lt IE 7]>
+	<link type='text/css' href='/css/simplemodal/basic_ie.css' rel='stylesheet' media='screen' />
+	<![endif]-->
+	<script src="/js/jquery.simplemodal.js" type="text/javascript"></script>
+	<script src="/js/simplemodal_basic.js" type="text/javascript"></script>
+<!-- end simple modal -->
+
+
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-54843416-48";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-54843416-48']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'songmeanings.com']);
+_gaq.push(['f._setDomainName', 'songmeanings.com']);
+_gaq.push(['e._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['e._setCustomVar',2,'t','126',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod2',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['f._setCustomVar',2,'domain','songmeanings.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+_gaq.push(['_setAccount', 'UA-1061781-1']);
+_gaq.push(['_setDomainName', 'songmeanings.com']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "243239073";</script><base href="http://songmeanings.com/songs/view/108689/"><script type='text/javascript'>
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+
+<!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 7844;
+var ezdomain = 'songmeanings.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod2","ab_test_val":"","adgroup_rank_id":16,"browser":"Unknown","browser_version":0,"country":"FR","device_height":528,"device_width":1280,"domain_id":7844,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"ip":"188.130.106.94","landing_page_url":"http://songmeanings.com/songs/view/108689/","os":"Unknown","page_ad_positions":"","page_view_id":"4b548e0e-6f8d-4183-4c70-7f8bf741365e","pv_event_count":0,"referrer_id":0,"region":"eu-west-1","serverid":"52.212.239.252:9241","t_epoch":1491818453,"template_id":126,"time_on_site_visit":0,"url":"http://songmeanings.com/songs/view/108689/","user_agent":"Python-urllib/3.6","user_id":243239073,"visit_id":1307752523,"visit_uuid":"18cce1f7-9521-4c82-6ab8-46168529b3e8"};var _ezExtraQueries = "&ez_orig=1";</script><script data-cfasync='false' type="text/javascript" src="//cdn.songmeanings.com/ezoic/impt.js?cb=154-9&v=10" async></script></head>
+<body>
+	<div id="fb-root"></div>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+
+
+
+	<div id="wrapper">
+		<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+		<div id="skip"><a href="#content">Skip to Content</a></div>
+		<div id="container">
+			<div class="container-holder">
+				 <!-- header -->
+				<div id="header" class="header_add">
+	<div class="row">
+		<div class="login-holder">
+			<div class="login-box">
+				<a class="lightbox login-new" id="login-form-modal" href="#popup-loginform">Log in</a>
+			</div>
+			
+			<span class="signup"><a href="/create/">Create Account</a></span>
+		</div>
+		
+		<strong class="logo vcard"><a class="fn org url" href="//songmeanings.com/" title="SongMeanings">SongMeanings</a></strong>
+						
+		<form action="/query/" class="search">
+			<fieldset>
+				<legend>search-form</legend>
+				<span class="text">
+					<input id="frmquery" type="text" title="Search for lyrics and artists here" value="Search for lyrics and artists here" name="query" />
+				</span>
+				<input type="submit" class="submit" value="Search" />
+				<input type="hidden" name="type" value="all"/>
+			</fieldset>
+		</form>
+
+<script>
+	$("#frmquery").focus(function() { 
+		if(this.value == 'Search for lyrics and artists here') {
+			this.value = '';
+		}
+	});
+</script>
+	</div>
+	
+<div class="row">
+		<ul class="subnav alignright">
+
+			<li><a href="/mixtape/">Mixtapes</a></li>
+			<li><a href="/forum/" rel="nofollow">Forums</a></li>
+
+			
+		</ul>
+		<ul class="subnav">
+			<li><a href="/popular/lyrics/" title="Lyrics">Lyrics</a>
+			<li>
+				<a href="/artist/directory/" title="Artists">Artists</a>
+				<span class="addi">
+					<a href="/artist/suggest/" title="Add Artist">add</a>
+				</span>
+			</li>
+			<li><a href="/journals/" title="Journals" rel="nofollow">Journals</a></li>
+			<li><a href="http://sng.mn/cftpc/" title="Download our iOS App!">iOS App</a></li>
+
+		</ul>
+	</div></div>
+				<!-- main -->
+				<div id="main">
+					<!-- mode-holder -->
+					<div class="main-holder">
+	
+<div style="text-align: center; margin: 0px auto 5px auto; width: 99%; min-height: 90px;">
+	<div style="position:absolute;top:25px;right:60px;width:48px;height:80px;overflow:hidden;">
+		<fb:like href="//songmeanings.com/songs/view/108689/" action="like" share="false" layout="box_count" width="450" show_faces="false"></fb:like>
+	</div>
+
+	<div style="width: 728px; min-height: 90px; margin: 0 auto;">
+		<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=728x90" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 
+	</div>
+
+	<div style="position:absolute; top:25px; left:50px; width:80px; height:80px; overflow:hidden;">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="//songmeanings.com/songs/view/108689/" data-via="songmeanings" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
+
+
+
+
+
+<div style="min-height: 30px;">
+
+	<div style="float: left; text-align: left; padding-top: 8px;">
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<a href="/artist/directory/b/" itemprop="url" title="Artist Directory for B"><span itemprop="title">Artists - B</span></a>				</div>
+			</li>
+			<li>
+				<a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan" >Bob Dylan</a>			</li>
+						<li id="bread_albums">
+				<a href="/albums/view/tracks/27785/" title="At Budokan">At Budokan</a>			</li>
+						<li>
+				It's Alright, Ma (I'm Only Bleeding) Lyrics			</li>
+		</ul>
+
+		<!--
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/artist/directory/s/" itemprop="url" title="Artist Directory for S">
+						<span itemprop="title">Artists - S</span>
+					</a>	
+				</div>		
+			</li> 
+
+			<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li>
+					<a href="/artist/view/songs/137439064555/" itemprop="url" title="Speedy Ortiz">
+						<span itemprop="title">Speedy Ortiz</span>
+					</a>			
+				</li>
+			</div>
+			
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/songs/view/3530822107859465452/" itemprop="url" title="No Below">
+						<span itemprop="title"> No Below </span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		-->
+
+		<div class="shadow" id="morealbums" style="display: none; z-index:5000; position: absolute; left: 40px; top: 170px; background: #fff; width: 550px; padding: 12px; border: 1px solid #DEDEDE;">
+	
+	<div style="overflow:hidden; width: 500px;">
+	<a style="" class="" href="//songmeanings.com/songs/view/108689/" title="It's Alright, Ma (I'm Only Bleeding)" >It's Alright, Ma (I'm Only Bleeding)</a> is found on the album <a href="/albums/view/tracks/27785/" title="At Budokan">At Budokan</a>.	</div>
+	
+	
+	<br/>
+	
+	<strong style="color: #E87743;">Found on more albums:</strong>
+	<div style="padding-top: 10px; padding-left: 20px;">
+		The 30th Anniversary Concert Celebration<br/>Don't Look Back<br/>Before the Flood<br/>The Genuine Basement Tapes, Vol. 1<br/>Hard to Handle [Video]<br/>Bringing It All Back Home<br/>Bob Dylan [Limited Edition Hybrid SACD Set]<br/>The Bootleg Series, Vol. 6: Bob Dylan Live 1964 - Concert at Philharmonic Hall<br/>The Q 5 Star Reviews, Vol. 1<br/>Bringing It All Back Home [Japan]<br/>Subterranean Homesick Blues<br/>Playlist: The Very Best of Bob Dylan<br/>The Original Mono Recordings<br/>		
+		
+		
+	</div>
+	<div style="z-index: 5001; position: absolute; top: 12px; right: 12px;">
+		<a href="#" id="closemorealbums">close</a>
+	</div>
+</div>	</div>
+</div>
+
+
+	<div class="main-frame">
+		<!-- content -->
+		<div id="content">
+			
+			
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#statusmsgbox").live('click', function(e) {
+			e.preventDefault();
+			$('#statusmsgbox').fadeOut();
+			return false;
+		});
+		
+		
+
+	});
+</script>		
+			<!-- block -->
+			<div style="float: right;">
+				<div class="block-feed"><div class="heading">
+	<div class="text-holder">
+		<h1>
+			<div class="h2_songtitle">
+			<a style="" class="" href="//songmeanings.com/songs/view/108689/" title="Bob Dylan – It's Alright, Ma (I'm Only Bleeding)" >Bob Dylan – It's Alright, Ma (I'm Only Bleeding)</a>			</div>
+		</h1>
+
+		
+
+							
+							<ul class="song-info">
+								<li>
+									<a class="comments" href="#comments" id="header-comments-counter">67 Comments</a>
+								</li>
+								
+								<li><a class="tags" href="/tags/lyric/108689/" title="View all lyric tags">1 Tags</a></li>
+								
+								
+								
+							</ul>
+
+							<div style="margin: 12px 0 0 0; display: block;">
+"It's Alright, Ma (I'm Only Bleeding)" as written by  and  Bob Dylan....</div>
+
+<div style="margin: 10px 0 0 0; display: block;">
+	<ul class="song-info">
+		<li><a href="/songs/wiki/108689/" rel="nofollow">Read More...</a></li>
+		<li><a href="/songs/edit/108689/?type=wiki" title="Edit Wiki" rel="nofollow">Edit Wiki</a></li>
+	</ul>
+</div>						</div>
+					</div>					<div class="holder lyric-box">
+						Darkness at the break of noon<br />
+Shadows even the silver spoon<br />
+The handmade blade, the child's balloon<br />
+Eclipses both the sun and moon<br />
+To understand you know too soon<br />
+There is no sense in trying<br />
+<br />
+Pointed threats, they bluff with scorn<br />
+Suicide remarks are torn<br />
+From the fool's gold mouthpiece<br />
+The hollow horn plays wasted words<br />
+Proves to warn that he not busy being born<br />
+Is busy dying.<br />
+<br />
+Temptation's page flies out the door<br />
+You follow, find yourself at war<br />
+Watch waterfalls of pity roar<br />
+You feel to moan but unlike before<br />
+You discover that you'd just be<br />
+One more person crying<br />
+<br />
+So don't fear if you hear<br />
+A foreign sound to your ear<br />
+It's alright, Ma, I'm only sighing<br />
+<br />
+As some warn victory, some downfall<br />
+Private reasons great or small<br />
+Can be seen in the eyes of those that call<br />
+To make all that should be killed to crawl<br />
+While others say don't hate nothing at all<br />
+Except hatred.<br />
+<br />
+Disillusioned words like bullets bark<br />
+As human gods aim for their mark<br />
+Made everything from toy guns that spark<br />
+To flesh-colored Christs that glow in the dark<br />
+It's easy to see without looking too far<br />
+That not much is really sacred.<br />
+<br />
+While preachers preach of evil fates<br />
+Teachers teach that knowledge waits<br />
+Can lead to hundred-dollar plates<br />
+Goodness hides behind its gates<br />
+But even the president of the United States<br />
+Sometimes must have to stand naked<br />
+<br />
+An' though the rules of the road have been lodged<br />
+It's only people's games that you got to dodge<br />
+And it's alright, Ma, I can make it<br />
+<br />
+Advertising signs that con you<br />
+Into thinking you're the one<br />
+That can do what's never been done<br />
+That can win what's never been won<br />
+Meantime life outside goes on<br />
+All around you.<br />
+<br />
+You lose yourself, you reappear<br />
+You suddenly find you got nothing to fear<br />
+Alone you stand with nobody near<br />
+When a trembling distant voice, unclear<br />
+Startles your sleeping ears to hear<br />
+That somebody thinks they really found you<br />
+<br />
+A question in your nerves is lit<br />
+Yet you know there is no answer fit to satisfy<br />
+Insure you not to quit<br />
+To keep it in your mind and not fergit<br />
+That it is not he or she or them or it<br />
+That you belong to<br />
+<br />
+Although the masters make the rules<br />
+For the wise men and the fools<br />
+I got nothing, Ma, to live up to<br />
+<br />
+For them that must obey authority<br />
+That they do not respect in any degree<br />
+Who despise their jobs, their destinies<br />
+Speak jealously of them that are free<br />
+Do what they do just to be nothing more than something they invest in<br />
+<br />
+While some on principles baptized<br />
+To strict party platform ties<br />
+Social clubs in drag disguise<br />
+Outsiders they can freely criticize<br />
+Tell nothing except who to idolize<br />
+And then say God bless him.<br />
+<br />
+While one who sings with his tongue on fire<br />
+Gargles in the rat race choir<br />
+Bent out of shape from society's pliers<br />
+Cares not to come up any higher<br />
+But rather get you down in the hole that he's in<br />
+<br />
+But I mean no harm nor put fault<br />
+On anyone that lives in a vault<br />
+But it's alright, Ma, if I can't please him<br />
+<br />
+Old lady judges watch people in pairs<br />
+Limited in sex, they dare<br />
+To push fake morals, insult and stare<br />
+While money doesn't talk, it swears<br />
+Obscenity, who really cares<br />
+Propaganda, all is phony<br />
+<br />
+While them that defend what they cannot see<br />
+With a killer's pride, security<br />
+It blows the minds most bitterly<br />
+For them that think death's honesty<br />
+Won't fall upon them naturally<br />
+Life sometimes must get lonely<br />
+<br />
+My eyes collide head-on with stuffed graveyards<br />
+False gods, I scuff<br />
+At pettiness which plays so rough<br />
+Walk upside-down inside handcuffs<br />
+Kick my legs to crash it off<br />
+Say okay, I have had enough<br />
+What else can you show me<br />
+<br />
+And if my thought-dreams could be seen<br />
+They'd probably put my head in a guillotine<br />
+But it's alright, Ma, it's life, and life only<br/><br/><div style="min-height: 25px; margin:0; padding: 12px 0 0 0; border-top: 1px dotted #ddd;">
+	<a href="/songs/edit/108689/" id="lyrics-edit" class="editbutton" title="Edit Lyrics">Edit Lyrics</a>
+	<a href="/songs/edit/108689/?type=wiki" id="lyrics-wiki-edit" class="editbutton" title="Edit Song Wiki">Edit Wiki</a>
+	<a href="/songs/edit/108689/?type=video" id="lyrics-video-add" class="editbutton" title="Add Music Video">Add Video</a>
+
+	</div><br/>					</div>
+
+					<div class="holder sign-box">
+	<p>
+		Lyrics submitted by 
+		<a href="/profiles/view/24346/"  id="userprofile-24346" rel="me nofollow" title="roger wilco" >roger wilco</a>, edited by <a href="/profiles/view/16989015/"  id="userprofile-16989015" rel="me nofollow" title="Mellow_Harsher" >Mellow_Harsher</a>	</p>
+	
+			<p>"It's Alright, Ma (I'm Only Bleeding)" as written by Bob Dylan</p>
+		<p>Lyrics © BOB DYLAN MUSIC CO</p>
+		<p>Lyrics powered by <a href="http://www.lyricfind.com/" target="_NEW" rel="nofollow">LyricFind</a></p>
+		</div>						<div class="holder" style="text-align: center;">
+							<script type="text/javascript">
+	var band_name = "Bob Dylan";
+	var song_name = "It's Alright, Ma (I'm Only Bleeding)";
+</script>
+<!-- BEGIN JS TAG - SM ROS Extra < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=3306658&size=300x250&promo_sizes=400x250&promo_alignment=center" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG -->						</div>
+										</div>				
+			</div>
+			
+							<div class="tabs-feed">
+					<div style="text-align: left;">
+						<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=160x600" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 					</div>
+				</div>
+						
+			<!-- block -->
+			<div class="block" id="comments-section">
+	<a name="comments" id="comments"></a>
+	<div class="heading_meanings">
+		It's Alright, Ma (I'm Only Bleeding) song meanings
+	</div>
+	
+	<div class="heading">
+		<a href="#addcomment" class="btn-comment"><span>Add your thoughts</span></a>
+		<h2 id="comments-counter">67 Comments</h2>
+	</div>
+
+	<div class="holder-sorting">
+		<!-- sort form -->
+		<form action="#" class="sort" id="comments-sort">
+	<fieldset>
+		<legend>sort form</legend>
+		<select title="All Comments" class="sort-select" name="sort" id="sort-commenttypes">
+			<option selected="yes" value="all">All Comment Types (67)</option><option value="4">General Comment (65) </option><option value="6">My Interpretation (2) </option>		</select>
+		
+		<span id="flycomcount" style="display: none;">
+			67		</span>
+		
+		<input type="submit" value="submit" class="hidden" />
+		<strong class="title">View by:</strong>
+		<ul>
+			<li><a class="active" href="#comments" id="sort-highest">Highest Rated</a></li>
+			<li><a href="#comments" id="sort-recent">Most Recent</a></li>
+			<li><a href="#comments" id="sort-oldest">Oldest First</a></li>
+		</ul>
+	</fieldset>
+</form>		<!-- end sort form -->
+	</div>
+
+	<div class="holder-comments">
+		<!-- comments-list -->
+		<ul class="comments-list" id="comments-list">
+				
+	<li id="fullcomment-73015321262">
+		<a name="comment-73015321262"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015321262">
+	<div class="numb-holder">
+		<span id="com-rating-73015321262">
+			<strong class="numb" id='numb-rating-73015321262'>+8</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015321262" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015321262" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015321262">
+
+				<strong class="title">General Comment</strong>Here's my feeble attempt at deciphering some of the songs meaning. Before I do that, though, I should probably state that I'm not a Dylan fanatic, nor am I a connoisseur of all things Dylan – in other words, I have a life. Case and point: I actually don't have any of his albums, although I do have a couple of his greatest hits CDs. To expand on the amount of songs I have of his, I downloaded a few illegally from the net a few years ago (sorry Bob). Furthermore, I haven't read his memoir, but I did watch the excellent Scorsese documentary on his early life. Thus I know a little bit, and I mean just a tiny little bit, on his works and early life background. I do know, on the other hand, quite a lot about the times in which he grew up from the history books. (I’m 25, in case you’re wondering).<br />
+<br />
+“It’s Alright Ma” is the best written song that I’ve ever heard. The first time I listened to it I was completely floored. The song has so much working for it. Its imagery, rhyming scheme, and emotional depth are all unbeatably top-notch in my estimation. That being said, it’s actually not even my favourite Dylan song – my favourite being his acoustic version of “Shelter from the Storm” (I don’t know why that’s my favourite, I can’t rationalize it, it just is).<br />
+<br />
+From the very first listen through, the song always came across to me as being very conservative, in a strictly traditional sense. Perhaps my personal biases have something to do with why I interpreted the song that way. To get those biases out of the way I’ll state them right here: I’m a traditional conservative – but absolutely not mainstream Republican or Conservative Party of Canada liberal “conservative” – and a strict empiricist on all matters physical. Also, let’s just say I’m not a devotee to the doctrines of perpetual plentitude. You probably didn’t need or want to know any of that, but oh well.<br />
+<br />
+Now to the song:<br />
+<br />
+“Darkness at the break of noon<br />
+Shadows even the silver spoon<br />
+The handmade blade, the child's balloon<br />
+Eclipses both the sun and moon<br />
+To understand you know too soon<br />
+There is no sense in trying.”<br />
+<br />
+The first four lines in this verse sound apocalyptic in tone, like of a nuclear holocaust, which is a common theme in early Dylan songs if I can remember correctly. Or maybe just apocalyptic in a general sense, like he thought something was systematically wrong with the world then (and perhaps the same things are still wrong today). The fifth verse is about the burden of being too wise to the workings of the world, especially when your as young as he when he wrote this – that being early 20’s, if I’m not mistaken. If I’m correct in this assessment, I’ve recently had a similar experience. You feel ancient and there are very few people you can really relate to, particularly amongst your peers. It can be lonely, and to be an introvert, which I presume Dylan was/is to some degree, makes it that much worse. The sixth line is his recognition of the remorseless working of things, that whatever is wrong can’t be stopped. No doctrinaire idealism will turn the ship around.<br />
+<br />
+“Pointed threats, they bluff with scorn<br />
+Suicide remarks are torn<br />
+From the fool's gold mouthpiece<br />
+The hollow horn plays wasted words<br />
+Proves to warn<br />
+That he not busy being born<br />
+Is busy dying.”<br />
+<br />
+This verse I’m not sure of. The last two verses might mean something like Socrates famous adage that “the life which is unexamined is not worth living”. That is, people who don’t have a zest for life and knowledge are just as well dead. They’re empty vessels. But I’m probably wrong on this, like I am on everything else I’m writing, so I won’t take anymore stabs at it.<br />
+<br />
+“Temptation's page flies out the door<br />
+You follow, find yourself at war<br />
+Watch waterfalls of pity roar<br />
+You feel to moan but unlike before<br />
+You discover<br />
+That you'd just be<br />
+One more person crying.”<br />
+<br />
+My best guess on this verse is that it deals with some sort of libertinism (“temptation’s page”). People who live such a lifestyle are often insecure, jealous and so on. In other words, human nature takes over. Thus if you were to live such a lifestyle you’d constantly “find your self at war” with your acquaintances, and would have to witness many “waterfalls of pity roar”. If you did live this way, in the end “you’d just be… one more person crying”.<br />
+<br />
+“So don't fear if you hear<br />
+A foreign sound to your ear<br />
+It's alright, Ma, I'm only sighing.”<br />
+<br />
+The “it’s alright, ma,” part of the song I think is a device to appeal to a higher power. A mother is generally seen as a nurturing figure, and Dylan may be very well distraught with what he’s putting onto paper. Could appealing to “ma” be for psychological comfort?<br />
+<br />
+“As some warn victory, some downfall<br />
+Private reasons great or small<br />
+Can be seen in the eyes of those that call<br />
+To make all that should be killed to crawl<br />
+While others say don't hate nothing at all<br />
+Except hatred.”<br />
+<br />
+In my humble opinion, the first four lines of this verse deal with intellectuals offering up optimistic or pessimistic visions of the future, and that what side they fall on depends on personal partisan hang-ups. Moreover, perhaps the third and forth line taken together is in reference to intellectuals often contemptuous views towards the masses. That is, those that should be “killed” for not following any given intellectuals political agenda to the letter, should be made to “crawl,” or more specifically be forced into becoming subservient. The last two lines might be a swipe at the naivete of the “make peace, not war” 60’s crowd. <br />
+<br />
+“Disillusioned words like bullets bark<br />
+As human gods aim for their mark<br />
+Made everything from toy guns that spark<br />
+To flesh-colored Christs that glow in the dark<br />
+It's easy to see without looking too far<br />
+That not much<br />
+Is really sacred.”<br />
+<br />
+Perhaps the second line deals with the idea that God is dead in western societies. To further elaborate, modern humans, through their reification of secular ideologies, are playing God by trying to bring about a utopia on Earth now, as opposed to waiting till the hereafter for such pleasures as was the case in earlier times. The verse as a whole I think means that modernity has no heart or soul. It’s just empty consumerism based on “enlightened” selfishness.<br />
+<br />
+<br />
+“While preachers preach of evil fates<br />
+Teachers teach that knowledge waits<br />
+Can lead to hundred-dollar plates<br />
+Goodness hides behind its gates<br />
+But even the president of the United States<br />
+Sometimes must have<br />
+To stand naked.”<br />
+<br />
+Here’s my take on this verse: Preachers preach of Hell as a means of societal control. Teachers teach their students that knowledge of, and strict adherence to politically acceptable philosophical sophistries will lead to financial rewards and social power. Furthermore, the elites are often full of empty rhetoric. Thus, maybe the fourth line means “Goodness hides behind [the establishments] gates”? The last line is a reminder that everybody, including the most powerful, i.e., the President of the United States, is fallible.<br />
+<br />
+“An' though the rules of the road have been lodged<br />
+It's only people's games that you got to dodge<br />
+And it's alright, Ma, I can make it.”<br />
+<br />
+I think the first line is about the fact that if you’ve read enough history, and/or have been a keen enough observer of human nature, you kind of learn what to expect. The second line might be a warning to watch out for people’s partisan political agendas.<br />
+<br />
+“Advertising signs that con you<br />
+Into thinking you're the one<br />
+That can do what's never been done<br />
+That can win what's never been won<br />
+Meantime life outside goes on<br />
+All around you.”<br />
+<br />
+Perhaps this verse is about advertisers manipulating “consumers” by preying on peoples secret desires and insecurities to move product, while, in fact, “…life outside goes on… all around you”. In other words, consuming crap isn’t what life’s all about, regardless of how hard advertisers try to make it so.<br />
+<br />
+I’m getting tired so I’m going to stop here (not like anybody is going to read this anyway)				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17188454/"  id="userprofile-17188454" rel="me nofollow" title="MichaelAdams81" class="author">MichaelAdams81</a><em class="date">on June 14, 2007</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73015321262#comments" id="specific_com-73015321262" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015321262" title="7 Replies">7 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015321262" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015321262">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015321262" id="frmreplycomment">@MichaelAdams81 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015321262" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015321262" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016249122">
+		<a name="comment-73016249122"></a>
+		
+<div id="rating-holder-73016249122">
+	<div class="numb-holder">
+		<span id="com-rating-73016249122">
+			<strong class="numb" id='numb-rating-73016249122'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016249122" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016249122" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Hey Mate, I read you- don't be so self deprecating- You gave it a really good shot.<br />
+You put in some time and effort.<br />
+Dylan is cryptic, not sure even His Bobness would care to forensically analyse his<br />
+own lyrics for precise unambiguous meaning.<br />
+Suspect a little stream of consciousness at play here, as with much rich verbally economical poetry.<br />
+You say you are only 25 years of age? How old was Bob when he wrote this?<br />
+I recently heard him say that he is unable to write stuff of this power these days.<br />
+Youth Power - know what you've got- before its gone.<br />
+Cheers M.A. Keep writing!			<div class="sign">
+
+				<span id="flagspan-73016249122">
+											<a href="#" id="flag-73016249122" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17609262/"  id="userprofile-17609262" rel="me nofollow" title="DavidFletcher" class="author">DavidFletcher</a><em class="date">on January 29, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016271891">
+		<a name="comment-73016271891"></a>
+		
+<div id="rating-holder-73016271891">
+	<div class="numb-holder">
+		<span id="com-rating-73016271891">
+			<strong class="numb" id='numb-rating-73016271891'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016271891" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016271891" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Oh I followed you to the very end ! don't wanna say "good job" (that's always been said in similar cases,when you want to cheer someone anyway). It IS really good. I enjoyed all the references to philosophical - along with social and historical- matters. the honesty about "not being a Dylan fan" and admitting the greatness of this song impressed me. no wonder 'cause you write a lot .<br />
+though i was waiting for the Interpretation  of  "That it is not he or she or them or it..." but it doesn't matter. <br />
+I love Dylan rhymes, though I'm not English or American.			<div class="sign">
+
+				<span id="flagspan-73016271891">
+											<a href="#" id="flag-73016271891" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17527624/"  id="userprofile-17527624" rel="me nofollow" title="rezdvd" class="author">rezdvd</a><em class="date">on August 04, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016283844">
+		<a name="comment-73016283844"></a>
+		
+<div id="rating-holder-73016283844">
+	<div class="numb-holder">
+		<span id="com-rating-73016283844">
+			<strong class="numb" id='numb-rating-73016283844'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016283844" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016283844" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17188454/?mention=483f1857f57910f53cfbbe2ceec373e3"  id="userprofile-17188454" rel="me nofollow" title="@MichaelAdams81" >@MichaelAdams81</a><br />
+ I agree with a lot of your analyses, though clearly those aren't the only meanings behind Bobby's lyrics (if any...I feel there's plenty of stream of consciousness going on.)  I do have to disagree with you on the chorus:<br />
+<br />
+“An' though the rules of the road have been lodged<br />
+It's only people's games that you got to dodge<br />
+And it's alright, Ma, I can make it.”<br />
+<br />
+If you look at the verses that precede this particular chorus, they all speak of authority figures and the narcissistic nature of humans that cause us to look down on others less intelligent or less capable:<br />
+<br />
+"As some warn victory some downfall...To make all that should be killed to crawl"<br />
+"Human gods ...made everything from toy guns that spark to flesh-colored Christs"<br />
+"Preachers preach of evil fates and teachers teach that knowledge waits"<br />
+<br />
+And I think we can agree that in all of these verses, Bobby certainly sheds a negative and very manipulative light on these authority figures.  As if these authority figures, whose intelligent opinions drip with arrogance, were trying to manipulate (or perhaps teach)  their own social and moral values to the fools and the young and the general masses.  And remember, historically speaking, this song was written at a time when the young generation was establishing they're own set of values, creating friction between the older and the younger generations.  In light of all of this, however inaccurate or accurate my analyses may be, it seems that Bobby is trying to say that we have to be wary of what others may have to teach us because some values we have to find ourselves and their circumstances may be far more different than your circumstances, giving way to a separate, much more individual set of values.			<div class="sign">
+
+				<span id="flagspan-73016283844">
+											<a href="#" id="flag-73016283844" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17643735/"  id="userprofile-17643735" rel="me nofollow" title="WhatAGoodfella" class="author">WhatAGoodfella</a><em class="date">on November 27, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310506">
+		<a name="comment-73016310506"></a>
+		
+<div id="rating-holder-73016310506">
+	<div class="numb-holder">
+		<span id="com-rating-73016310506">
+			<strong class="numb" id='numb-rating-73016310506'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310506" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310506" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17188454/?mention=90ec9765e35608a87dc6b57cb6646e39"  id="userprofile-17188454" rel="me nofollow" title="@MichaelAdams81" >@MichaelAdams81</a> If you think this song is about conservatism and traditional values, you are delusional. This is the man who wrote Masters of War, Hard Rain, Subterranean Homesick Blues, Tombstone Blues, , Highway 61, Ballad of a Thin Man, and DEsolation Row DECADES before he went Christian for a while.<br />
+<br />
+Dylan's world view was derived from the folk protest movement (Woody Guthrie, his biggest early influence was a socialist), the beats, the surrealists, and the hipsters.<br />
+<br />
+Did you ever see "Don't Look Back"? If by "Conservative values" you mean integrity, truth  honesty, care for others and revulsion at excessive Capitalism, Imperialism, greed, and consumer culture then perhaps you might have a point. Perhaps "Conservative" means something different North of the Border.<br />
+<br />
+Disillusioned words like bullets bark<br />
+As human gods aim for their marks<br />
+Made everything from toy guns that sparks<br />
+To flesh-colored Christs that glow in the dark<br />
+It's easy to see without looking too far<br />
+That not much<br />
+Is really sacred.<br />
+<br />
+While preachers preach of evil fates<br />
+Teachers teach that knowledge waits<br />
+Can lead to hundred-dollar plates<br />
+Goodness hides behind its gates<br />
+But even the President of the United States<br />
+Sometimes must have<br />
+To stand naked.<br />
+<br />
+In America these lines are a scathing assault on that which is most near and dear to Americans-B-U-S-i-N-E-S-S and B-O-T-T-O-M  L-I-N-E.<br />
+<br />
+Old lady judges, watch people in pairs<br />
+Limited in sex, they dare<br />
+To push fake morals, insult and stare<br />
+While money doesn't talk, it swears<br />
+Obscenity, who really cares<br />
+Propaganda, all is phony.<br />
+<br />
+These lines were NOT written by a conservative. Watch Dylan's Time Magazine Interview.<br />
+<br />
+You lose a point.<br />
+			<div class="sign">
+
+				<span id="flagspan-73016310506">
+											<a href="#" id="flag-73016310506" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 06, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310520">
+		<a name="comment-73016310520"></a>
+		
+<div id="rating-holder-73016310520">
+	<div class="numb-holder">
+		<span id="com-rating-73016310520">
+			<strong class="numb" id='numb-rating-73016310520'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310520" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310520" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17188454/?mention=ea67be8a122a1218258423cd55d25de8"  id="userprofile-17188454" rel="me nofollow" title="@MichaelAdams81" >@MichaelAdams81</a> Well I wasn't going to do this but I think I will add my two cents. I will deal only with the first two set of three as all follow from the first three. The initial  three verses are symbolic, them the song becomes more pointed and literal.<br />
+"Darkness at the break of noon..."<br />
+Something is wrong. The natural order is inverted. Darkness is at night, not at the height of the day. The noon does not "break", dawn does. The darkness has invaded the light.<br />
+"Shadows even the silver spoon"<br />
+The darkness is so great that even those supposedly with everything (born with a silver spoon) are over run, even if they don't realize it.<br />
+"The handmade blade, the child's balloon"<br />
+The handmade blade is one made in prison, a symbol of darkness and evil, it juxtaposes  and inverts innocence (the child's balloon.) <br />
+"Eclipses both the sun and moon", even these cannot withstand the shadow, the entire natural order is engulfed<br />
+"You understand you know too soon"- a grim realization is dawning in the soul<br />
+"There is no sense in trying".  An existential nihilism may be at hand.<br />
+<br />
+"Pointed threats they bluff with scorn"- The darkness and those who embrace it need not even do its thing, it merely has to bluff to get its way<br />
+"Suicide remarks are torn from the fools gold mouthpiece, the hollow horn"<br />
+The fool in literature and other times was the one who kept the king in check, his instrument is hollow, empty<br />
+"Plays wasted words, proves to warn"<br />
+The rants of those attempting to show the depth of the shadow are wasted<br />
+"That he not busy being born is busy dying"<br />
+If one is not creative, if one is not bringing authenticity and light to life, then one might as well be dead.<br />
+<br />
+"Temptations page flies out the door"<br />
+The desires of life that are presented as what one should want are ripped from one's book of life"<br />
+"You follow find yourself at war"<br />
+As you rush after them the corruption of the land is upon you and suddenly order  and sense of self is lost<br />
+"watch waterfalls of pity roar"<br />
+All around the landscape is filled with horror-the truth contains waterfalls of pity<br />
+"You feel the moan but unlike before"<br />
+Now one must feel the deep pain of the darkness, the shadow *but unlike before*<br />
+"You discover that you'd be just be one more person crying."<br />
+<br />
+This last is extremely important because it sets up the entire focus of the song. And what is that? That " specialness" is an illusion. This theme reoccurs. "Advertising signs they con-what' "You into thinking YOU"RE THE ONE". Even those who claim they are for peace hate. Learning is reduced to money. even Jesus is not authentic but a vehicle for profit. <br />
+<br />
+So what is Dylan aiming at? This idea of "specialness. Dylan lived and lives in a particular time and place and society. It is America and its dominant  idea of itself is called "American Exceptionalism". "We are the greatest nation on Earth. We are unique. We are the good guys. We are the city on the hill. We are endowed with destiny. GOD IS ON OUR SIDE."<br />
+<br />
+This is Dylan's heart of darkness. He came of age and wrote most of his seminal material in the confrontation with the horror of the echo of the greatest evil of slavery in the history of the world. With America on the verge of one of the greatest criminal acts of international war and terrorism of the 20th century-the war in Vietnam.<br />
+<br />
+All the details that follow are subordinate to this main theme, the revealing of the truth, that this sense of entitlement is corrupt beyond measure, is built upon lies and incalculable greed and cruelty, where the truth of its depravity of the soul is laid bare, and where nothing is held sacred except profit, domination, and the bottom line, In Highway 61 (song), this corruption of the soul is so vast that the "roving gambler who was very bored" and  "wanted to start a third world war" runs into a promoter who says "Yes I think it can be very easily done". The Cuban Missile Crisis was two years removed when Its All Right Ma was written and the idea that those enthralled and in the grip of the shadow would not end it all in pursuit of their own ends (as the Joint Chiefs nearly did) was not so far off in reality.<br />
+<br />
+We can go to the second three but already we now see the details of this shadow which will fill the rest of the song.<br />
+<br />
+"Some warn victory, some downfall<br />
+Private reasons great or small<br />
+Can be seen in the eyes of those that call<br />
+To make all that should be killed to crawl<br />
+While others say don’t hate nothing at all<br />
+Except hatred"<br />
+<br />
+The political and military leaders are obsessed with victory or downfall (Anti communism) , the reasons for their insanity can be great or small,  that total control is the desire (killed to crawl) and even those who cry for peace buy into this division and give in to hate and polarity "Which side are you on" asks Desolation Row".<br />
+<br />
+The next verse needs no interpretation. It is all quite clear and direct.<br />
+<br />
+"Disillusioned words like bullets bark<br />
+As human gods aim for their mark<br />
+Make everything from toy guns that spark<br />
+To flesh-colored Christs that glow in the dark<br />
+It’s easy to see without looking too far<br />
+That not much is really sacred"<br />
+<br />
+Is there even a need to interpret the obvious?<br />
+<br />
+"While preachers preach of evil fates<br />
+Teachers teach that knowledge waits<br />
+Can lead to hundred-dollar plates<br />
+Goodness hides behind its gates<br />
+But even the president of the United States<br />
+Sometimes must have to stand naked<br />
+<br />
+An’ though the rules of the road have been lodged<br />
+It’s only people’s games that you got to dodge<br />
+And it’s alright, Ma, I can make it":<br />
+<br />
+Again the obvious except now the singer reveals one ray of hope, that he can make it through the land mines of this incredibly corrupt landscape. This theme will build as he contrasts the depth of shadow with the possibility that one can still live authentically in this God forsaken place.<br />
+<br />
+In "Its All Right Ma" Dylan is still fighting and counter punching. He is in the middle of an all out assault on this shadow that has perverted everything that began with Freewheelin' and will only end with the fatigue of "Desolation Row" and the retreat into the existential nihilism and despair of "Visions of Johanna" and "Stuck Inside of Mobile with the Memphis Blues Again" that pervades Blonde on Blonde.. Dylan's hopes for societal change will morph into sanctuary of personal love "Sad Eyed Lady of the Lowlands" which will be dashed and chronicled in "Blood on the Tracks".<br />
+<br />
+To understand an artist such as this, to truly take him seriously, the song(s) cannot be viewed in a vacuum but must be understood in the context of his tapestry of life and work, the times he lives, and his consistency of thought and feeling.<br />
+<br />
+Otherwise one is just mentally  floundering. This guy knew exactly what  he wanted to say and exactly who and what he was aiming at. Forget all his protestations to the opposite.<br />
+			<div class="sign">
+
+				<span id="flagspan-73016310520">
+											<a href="#" id="flag-73016310520" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 06, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310539">
+		<a name="comment-73016310539"></a>
+		
+<div id="rating-holder-73016310539">
+	<div class="numb-holder">
+		<span id="com-rating-73016310539">
+			<strong class="numb" id='numb-rating-73016310539'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310539" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310539" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17188454/?mention=092175d7f6e1bf54de078768b19f2b46"  id="userprofile-17188454" rel="me nofollow" title="@MichaelAdams81" >@MichaelAdams81</a> P.S. We must distinguish between Canadian and American Conservatism. (If such a thing exists). To repeat, the song sets up the darkness that has engulfed everything, those born with a silver spoon, innocent children,  criminals and  has perverted the natural order (Eclipses both the Sun and moon). Whether Dylan consciously knew it or not he is paralleling and countering one of the most famous phrases of the New Testament from Jesus "The rain falls on the just and unjust alike." To Jesus rain is God's love for it provides nourishment to all. For Dylan, the opposite has occurred. Therefore one feels it like a punch in the gut (the moan), and a sick realization that any uniqueness one has felt is empty, and dread and fear begin to spread.<br />
+<br />
+If this were an American  conservative critique, then government would be the focus. But a great aim of Dylan's wrath is business (the agents of the super human crew), the beloved of the right wing. Here "Human God's-corporations and business elites- corrupt everything for the bottom line (Flesh colored Christ's that glow in the dark), Con one with advertising signs, pervert learning to the service of money ($100 plates), and the victims (caught in the rat race choir) fall into bitterness. The right is further eviscerated in pointing out those that "In limited sex they dare, push fake morals, insults and swears." These are the evangelical right wing preachers who preach of "evil fates", the Jimmy Swaggarts who rail against non traditional sexual norms but get caught with prostitutes in motels. The war makers and those who hew to the party line of the crowd (Strict party platform ties) are also slashed at but the  bulk of the song's blistering rage is given to those elites, mostly in business who are the "Masters who make the rules". as today, the politicians are their servants.<br />
+<br />
+This is NOT a song that comes from an American conservative place.<br />
+<br />
+Despite all this the singer has hope and a certain faith in himself. He can "dodge people's games", he can "make it",  he exhorts others to find their own center and authenticity "It is not he or she or it that you belong to", and despite everything that is thrown at him says "what else  can you show me". He is defiant and has not been beaten. The song ends with a zen line, "Its life and life only". Things are what they are.<br />
+<br />
+This ferocity will carry through most of Highway 61, lashing out in wilder surrealistic images, but at the end he begins to surrender. He has given it everything over a remarkable span of 5 (soon to be 6) albums, an intensity that would be a lifetime for most. In weariness he settles into the sanctuary of Desolation Row and by Blonde on Blonde the fight has gone out of him.<br />
+<br />
+This period will be one of the great achievements of modern music-literary-cultural history, will define Dylan, and will enshrine him on the Mt Rushmore of contemporary artists. He will never achieve these heights consistently and over such a span again, except for the great "Blood on the Tracks". With a motorcycle accident, real or faked, he withdraws completely, only to reemerge as a country crooner who can occasionally summon greatness (All Along the Watch Tower) and mounts a similar ferocity in the Rolling Thunder tour. But without the political focus. The creative instinct and genius is still there in that tour, but nothing will ever touch this body of work in which Its All Right Ma stands at the center.<br />
+<br />
+It is tribute to Dylan's greatness that he erupts with periods of excellent work, even after touching the mind of God in his youth. There is no one like him. All lyricists and many rock artists followed in his wake. There would be no Springsteen if not for Dylan. Nor Jackson Browne or even mid-later Beatles. And all the countless others who now had the opportunity to bring lyrical sensibility to Rock and Roll.			<div class="sign">
+
+				<span id="flagspan-73016310539">
+											<a href="#" id="flag-73016310539" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 07, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016316275">
+		<a name="comment-73016316275"></a>
+		
+<div id="rating-holder-73016316275">
+	<div class="numb-holder">
+		<span id="com-rating-73016316275">
+			<strong class="numb" id='numb-rating-73016316275'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016316275" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016316275" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17188454/?mention=2419408e72474a6b8332b14f70009b9a"  id="userprofile-17188454" rel="me nofollow" title="@MichaelAdams81" >@MichaelAdams81</a> I think you got it all right. It was a pleasure to read it.			<div class="sign">
+
+				<span id="flagspan-73016316275">
+											<a href="#" id="flag-73016316275" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17677537/"  id="userprofile-17677537" rel="me nofollow" title="sdz896542" class="author">sdz896542</a><em class="date">on February 03, 2016</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014771787">
+		<a name="comment-73014771787"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014771787">
+	<div class="numb-holder">
+		<span id="com-rating-73014771787">
+			<strong class="numb" id='numb-rating-73014771787'>+7</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014771787" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014771787" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014771787">
+
+				<strong class="title">General Comment</strong>I can't believe how amazing Dylan is. I think this song can be referred to as the first hip-hop song ever. Listen to him. That's the way hip-hop should be like. If you're only gonna rhyme, then you should be making poetry to blow our minds, not braggin about your cars.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17021956/"  id="userprofile-17021956" rel="me nofollow" title="cavern" class="author">cavern</a><em class="date">on February 03, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73014771787#comments" id="specific_com-73014771787" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014771787" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014771787" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014771787">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014771787" id="frmreplycomment">@cavern </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014771787" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014771787" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016310511">
+		<a name="comment-73016310511"></a>
+		
+<div id="rating-holder-73016310511">
+	<div class="numb-holder">
+		<span id="com-rating-73016310511">
+			<strong class="numb" id='numb-rating-73016310511'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310511" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310511" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17021956/?mention=c81cec8e1f967e82db9ae1af3a3119f8"  id="userprofile-17021956" rel="me nofollow" title="@cavern" >@cavern</a> You get it. I said it was the first mass rap song ever written. Take away the music. It still works. Good for you. Thinking out of the box.			<div class="sign">
+
+				<span id="flagspan-73016310511">
+											<a href="#" id="flag-73016310511" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 06, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014841403">
+		<a name="comment-73014841403"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014841403">
+	<div class="numb-holder">
+		<span id="com-rating-73014841403">
+			<strong class="numb" id='numb-rating-73014841403'>+5</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014841403" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014841403" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014841403">
+
+				<strong class="title">General Comment</strong>I don't know how someone can put this many spectacular lines in one song and still have enough for the rest of the album. Only Dylan. This song has a lot more lyrics than the norm of songs and all of them are brilliant. And I love how it goes from grim facts about the world to him much gentler chorus.......but that chorus may be sarcasm. This song is bound to send chills down the spine of anybody with half a brain. I love Bringing It All Back Home so much...				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17031686/"  id="userprofile-17031686" rel="me nofollow" title="Rag-Land" class="author">Rag-Land</a><em class="date">on May 26, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73014841403#comments" id="specific_com-73014841403" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014841403" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014841403" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014841403">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014841403" id="frmreplycomment">@Rag-Land </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014841403" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014841403" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016141220">
+		<a name="comment-73016141220"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016141220">
+	<div class="numb-holder">
+		<span id="com-rating-73016141220">
+			<strong class="numb" id='numb-rating-73016141220'>+5</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016141220" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016141220" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016141220">
+
+				<strong class="title">General Comment</strong>These are probably the greatest lyrics ever written. If bob dylan had only written this one song he would still be considered the greatest lyricist ever. the best way i can describe this song is by a quote from Nietzche- <br />
+“The individual has always had to struggle to keep from being overwhelmed by the tribe. If you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.”				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17509365/"  id="userprofile-17509365" rel="me nofollow" title="societiespliers" class="author">societiespliers</a><em class="date">on May 02, 2012</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73016141220#comments" id="specific_com-73016141220" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016141220" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73016141220" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016141220">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016141220" id="frmreplycomment">@societiespliers </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016141220" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016141220" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016310512">
+		<a name="comment-73016310512"></a>
+		
+<div id="rating-holder-73016310512">
+	<div class="numb-holder">
+		<span id="com-rating-73016310512">
+			<strong class="numb" id='numb-rating-73016310512'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310512" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310512" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17509365/?mention=53cb845c6eecaec1e801bce0ad9eefbd"  id="userprofile-17509365" rel="me nofollow" title="@societiespliers" >@societiespliers</a> Nice post.			<div class="sign">
+
+				<span id="flagspan-73016310512">
+											<a href="#" id="flag-73016310512" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 06, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014805749">
+		<a name="comment-73014805749"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014805749">
+	<div class="numb-holder">
+		<span id="com-rating-73014805749">
+			<strong class="numb" id='numb-rating-73014805749'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014805749" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014805749" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014805749">
+
+				<strong class="title">General Comment</strong>the first time I heard this song, I literally gasped. The lyrics are so amazing, there should be a lot more comments. <br />
+<br />
+To push fake morals, insult and stare <br />
+While money doesn't talk, it swears <br />
+Obscenity, who really cares <br />
+Propaganda, all is phony.<br />
+<br />
+GENIUS.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/16997621/"  id="userprofile-16997621" rel="me nofollow" title="subterranean_summer" class="author">subterranean_summer</a><em class="date">on March 25, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73014805749#comments" id="specific_com-73014805749" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014805749" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014805749" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014805749">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014805749" id="frmreplycomment">@subterranean_summer </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014805749" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014805749" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015026858">
+		<a name="comment-73015026858"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015026858">
+	<div class="numb-holder">
+		<span id="com-rating-73015026858">
+			<strong class="numb" id='numb-rating-73015026858'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015026858" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015026858" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015026858">
+
+				<strong class="title">General Comment</strong>And if my thought-dreams could be seen<br />
+They'd probably put my head in a guillotine<br />
+But it's alright, Ma, it's life, and life only.<br />
+<br />
+Just wow.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17009433/"  id="userprofile-17009433" rel="me nofollow" title="butterboy" class="author">butterboy</a><em class="date">on April 27, 2006</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73015026858#comments" id="specific_com-73015026858" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015026858" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015026858" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015026858">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015026858" id="frmreplycomment">@butterboy </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015026858" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015026858" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015418569">
+		<a name="comment-73015418569"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015418569">
+	<div class="numb-holder">
+		<span id="com-rating-73015418569">
+			<strong class="numb" id='numb-rating-73015418569'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015418569" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015418569" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015418569">
+
+				<strong class="title">General Comment</strong>These things are traps for distracting you from your true life's purpose...<br />
+<br />
+Money:<br />
+"For them that must obey authority<br />
+That they do not respect in any degree<br />
+Who despise their jobs, their destinies<br />
+Speak jealously of them that are free<br />
+Do what they do just to be<br />
+Nothing more than something<br />
+They invest in."<br />
+<br />
+You pay for college to work a job that you hate. You hate your boss and you hate anyone who isn't hating their life as much as you are. For instance, those who are "free" in the sense that they are not bound by society's rat race. <br />
+<br />
+<br />
+Consumerism:<br />
+"Advertising signs that con you<br />
+Into thinking you're the one<br />
+That can do what's never been done<br />
+That can win what's never been won<br />
+Meantime life outside goes on<br />
+All around you."<br />
+<br />
+Obviously. This car will make you happy. This deodorant will bring you love. With this box of crackers, you'll live forever. <br />
+<br />
+Church and Politics:<br />
+While preachers preach of evil fates<br />
+and<br />
+While some on principles baptized<br />
+<br />
+Again, these things are distractions. Anyone who just sits and fights for their church (not God, the church) or fights for their "social club" (aka, political party) is distracted. Not realizing they're furthering someone else, not their self. <br />
+<br />
+<br />
+<br />
+Being a judgmental about sexual issues (premarital, homosexual): <br />
+Old lady judges watch people in pairs<br />
+Limited in sex, they dare<br />
+To push fake morals, insult and stare<br />
+<br />
+People who spend their lives just worrying about judging other people instead of living their own lives. <br />
+<br />
+And also:<br />
+While money doesn't talk, it swears<br />
+Obscenity, who really cares<br />
+Propaganda, all is phony.<br />
+<br />
+The point is to not get hung up on any of these things. You could spend your whole life fighting obscenity...but who cares? You could spend your whole life fighting propaganda, but if you understand EVERYTHING is just as phoney, then it doesn't matter. <br />
+<br />
+Being partisan/pro-war/anti-war/peace loving:<br />
+"As some warn victory, some downfall<br />
+Private reasons great or small<br />
+Can be seen in the eyes of those that call<br />
+To make all that should be killed to crawl<br />
+While others say don't hate nothing at all<br />
+Except hatred"<br />
+<br />
+<br />
+<br />
+There are tons more in the song, but the point is that these are all distractions. These are things not to be worried about. These are what you need not to fall into if you plan to actually be yourself, to understand the nature of true freedom. Once you become a slave to any of these things, you are a slave...period. Meanwhile, all the rest of the world are slaves to these things, and you have to figure out a way to be you and live your life amongst these things....just to survive...<br />
+<br />
+"An' though the rules of the road have been lodged<br />
+It's only people's games that you got to dodge<br />
+And it's alright, Ma, I can make it."<br />
+<br />
+The big line comes near the end with:<br />
+<br />
+"My eyes collide head-on with stuffed graveyards<br />
+False gods, I scuff<br />
+At pettiness which plays so rough<br />
+Walk upside-down inside handcuffs<br />
+Kick my legs to crash it off<br />
+Say okay, I have had enough<br />
+What else can you show me?"<br />
+<br />
+He's basically saying that the world has attempted to hold him down with these things, and he's rejected them. He is doing exactly what he wants. He's kicked off the handcuffs. <br />
+<br />
+This song is all about being mentally free from everything that attempts to enslave you. <br />
+<br />
+He refers to taking off handcuffs, he says how most people are "living in a vault" (not free) he says how people speak jealously of those that are free, etc etc etc. <br />
+<br />
+The most important thing is to understand that you don't have to play these games and you don't have to be any one or anything's slave...<br />
+<br />
+"I got nothing, Ma, to live up to."<br />
+<br />
+Just be yourself, realize where the traps are, even ones with good intentions. This is life, and Dylan lets us believe that something better is coming afterward, but we have to make it through all of this, first.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17217058/"  id="userprofile-17217058" rel="me nofollow" title="Doldrums" class="author">Doldrums</a><em class="date">on October 29, 2007</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73015418569#comments" id="specific_com-73015418569" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015418569" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015418569" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015418569">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015418569" id="frmreplycomment">@Doldrums </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015418569" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015418569" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016265117">
+		<a name="comment-73016265117"></a>
+		
+<div id="rating-holder-73016265117">
+	<div class="numb-holder">
+		<span id="com-rating-73016265117">
+			<strong class="numb" id='numb-rating-73016265117'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016265117" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016265117" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I like your take on the song - and I can't find it in me to disagree strongly with anything you have written. I see it more as a song about a moralist, who is trying to stay sane. If you spend your whole life reacting to what is stupid, brutal and limiting, you can end up being overwhelmed. You will be right on the issues, but you will struggle to feel sane and balanced. So when you add together all the absurdities and injustices which the narrator (justifiably) rails against, you end up with a portrait of a moralist going mad. For me that is what makes it so frightening and moving.			<div class="sign">
+
+				<span id="flagspan-73016265117">
+											<a href="#" id="flag-73016265117" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17625897/"  id="userprofile-17625897" rel="me nofollow" title="alanabit" class="author">alanabit</a><em class="date">on May 23, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014883430">
+		<a name="comment-73014883430"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014883430">
+	<div class="numb-holder">
+		<span id="com-rating-73014883430">
+			<strong class="numb" id='numb-rating-73014883430'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014883430" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014883430" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014883430">
+
+				<strong class="title">General Comment</strong>I think it shows somone finding their true self. At the start dylan talks about all the negativity in the world, then it changes at the line "You lose yourself, you reappear", to what he wants to be himself and something that he is not, which society wants him to do, as he gives  examples of how people are corrupted.<br />
+<br />
+That's just my interpritation of this great song.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17057338/"  id="userprofile-17057338" rel="me nofollow" title="Salty" class="author">Salty</a><em class="date">on August 21, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73014883430#comments" id="specific_com-73014883430" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014883430" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014883430" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014883430">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014883430" id="frmreplycomment">@Salty </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014883430" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014883430" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015015640">
+		<a name="comment-73015015640"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015015640">
+	<div class="numb-holder">
+		<span id="com-rating-73015015640">
+			<strong class="numb" id='numb-rating-73015015640'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015015640" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015015640" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015015640">
+
+				<strong class="title">General Comment</strong>Definitely one of his best. Still makes the hairs on the back of my neck stand up.<br />
+This is about a young man finding his own unique path among the clamour and pointlessness of the modern world.<br />
+"advertising signs that con you into thinking you're the one... while outside life goes on all around y ou"<br />
+Meanwhile the wage slaves, "bent out of shape by society's pliers", "do what they do to be nothing more than something they invest in."<br />
+Reminds me of that Robert Frost poem - 'Two roads diverged in a wood...'<br />
+<br />
+And the killer line - "I got nothin', ma, to live up to" -says that expectations are bullshit. This is a song to live your life by.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17092795/"  id="userprofile-17092795" rel="me nofollow" title="heavycola" class="author">heavycola</a><em class="date">on April 11, 2006</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73015015640#comments" id="specific_com-73015015640" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015015640" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015015640" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015015640">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015015640" id="frmreplycomment">@heavycola </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015015640" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015015640" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016310513">
+		<a name="comment-73016310513"></a>
+		
+<div id="rating-holder-73016310513">
+	<div class="numb-holder">
+		<span id="com-rating-73016310513">
+			<strong class="numb" id='numb-rating-73016310513'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310513" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310513" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17092795/?mention=c78358fc69a6a930bc31dd00c18fb765"  id="userprofile-17092795" rel="me nofollow" title="@heavycola" >@heavycola</a> Dylan was better than Frost. Frost was too frigging obvious. And had no real edge.			<div class="sign">
+
+				<span id="flagspan-73016310513">
+											<a href="#" id="flag-73016310513" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 06, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015069110">
+		<a name="comment-73015069110"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015069110">
+	<div class="numb-holder">
+		<span id="com-rating-73015069110">
+			<strong class="numb" id='numb-rating-73015069110'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015069110" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015069110" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015069110">
+
+				<strong class="title">General Comment</strong>This song just absolutely blew my mind when I first heard it.  And it still absolutely blows my mind every time I hear it still.<br />
+<br />
+The way the lyrics just spew out of Dylan is amazing - It's like he's been possessed by something.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17107812/"  id="userprofile-17107812" rel="me nofollow" title="m-dogg" class="author">m-dogg</a><em class="date">on June 21, 2006</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108689/?&specific_com=73015069110#comments" id="specific_com-73015069110" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015069110" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015069110" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015069110">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015069110" id="frmreplycomment">@m-dogg </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108689" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015069110" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015069110" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+			</ul>
+		<!-- end comments-list -->
+	</div>
+	
+
+	
+	<!-- comments pagination -->
+	<div class="holder sign-box" style="text-align: center;" id="pagination">
+		&nbsp;
+	</div>
+	<!-- end comments pargination -->
+	
+</div>
+
+
+
+<a name="addcomment"></a>
+	<div class="block">
+		<div class="heading">
+			<h2>Add your thoughts</h2>
+		</div>
+		<div class="holder">
+			<p><a class="lightbox" href="#popup-loginform">Log in now</a> to tell us what you think this song means. </p>
+			<p>Don’t have an account? <a href="/create/">Create an account</a> with SongMeanings to post comments, submit lyrics, and more. It’s super easy, we promise!</p>
+		</div>
+	</div>
+			</div>
+
+		<!-- sidebar -->
+		<div id="sidebar">
+			
+			<!-- block-heading -->
+
+
+<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=300x250" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> <br/><div class="block" style="padding-top: 10px; margin-top: 0px; border-top: 1px solid #DEDEDE;">
+
+	<div id="rate-widget-108689" class="rating-widget" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		<div id="rating-header">
+			Rate These Lyrics
+		</div>
+
+		<meta itemprop="ratingValue" content="5" />
+	    <meta itemprop="worstRating" content="1"/>
+	    <meta itemprop="bestRating" content="5" />
+	    <meta itemprop="reviewCount" content="3" />
+
+		<span>
+			<a id="star-1" href="#" class="star-1 rate-star"></a>
+			<a id="star-2" href="#" class="star-2 rate-star"></a>
+			<a id="star-3" href="#" class="star-3 rate-star"></a>
+			<a id="star-4" href="#" class="star-4 rate-star"></a>
+			<a id="star-5" href="#" class="star-5 rate-star"></a>
+		</span>
+
+		<div class="total_votes" data-totalvotes="3 Votes">
+			3 Votes		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var url = window.location.href;
+		if (/\/$/.test(url) == false) {
+	   		url = url + "/";
+		}
+
+		var total_votes = '3';
+		var average 	= '5';
+		setRating('.rating-widget');
+
+		var loggedin 	= 'false';
+
+		$('.rate-star').hover(
+            // Handles the mouseover
+            function() {
+                $(this).prevAll().andSelf().addClass('rate-star-hover');
+                $(this).nextAll().removeClass('rate-star-vote'); 
+
+                var rating_fyi = $(this).attr('id');
+                switch(rating_fyi) {
+                	case 'star-1':
+                		rating_fyi = "poor";
+                	break;
+
+                	case 'star-2':
+                		rating_fyi = "not so good";
+                	break;
+
+                	case 'star-3':
+                		rating_fyi = "average";
+                	break;
+
+                	case 'star-4':
+                		rating_fyi = "good";
+                	break;
+
+                	case 'star-5':
+                		rating_fyi = "excellent";
+                	break;
+                }
+                $('.total_votes').html(rating_fyi);
+            },
+            // Handles the mouseout
+            function() {
+                $(this).prevAll().andSelf().removeClass('rate-star-hover');
+                //setRating($(this).parent());
+                $('.total_votes').html($('.total_votes').data('totalvotes'));
+            }
+        );
+
+        $('.rate-star').bind('click', function(e) {
+            var star = this;
+            var lid = $(this).closest("div").attr("id").substring(12);
+            
+            var clicked_data = {
+            	command    	: "songRatingSet",
+            	lyric_id	: lid,
+                clicked_on 	: $(star).attr('class'),
+                clicked_id 	: $(star).attr('id')
+            };
+
+            $('.rate-star').removeClass('rate-star-full');
+
+            $.ajax({
+				type: "POST", 
+				url: url, 
+				data: clicked_data,
+				dataType: "json",
+				success: function(result){
+					//$('.rating-widget').data('fsr', result);
+					total_votes			= result['total_votes'];
+					if(typeof(result['user_value']) != "undefined" && result['user_value'] !== null) {
+						average 			= result['user_value'];
+					} else {
+						average 			= result['average'];
+					}
+						
+					setRating('.rating-widget');
+				},
+				complete: function(result, success) {
+					console.log(result, success);
+				}
+			});
+
+	        return false;
+        }); 
+
+        function setRating(widget) {
+        	$(widget).find('.star-' + average).prevAll().andSelf().addClass('rate-star-full');  
+    		$(widget).find('.star-' + average).nextAll().removeClass('rate-star-full');  
+
+    		if(total_votes === "1") {
+    			total_votes = "1 Vote";
+    		} else {
+    			total_votes = total_votes + " Votes";
+    		}
+
+    		$('.total_votes').data('totalvotes', total_votes);
+        	$('.total_votes').html(total_votes);
+        	return false;
+        }
+        
+    
+	});
+</script>
+<div class="block-heading-blue">
+	<h3>Add to Mixtape</h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0 18px 0 18px;">
+	<br/>
+	<a href="/create/">Log in now</a> to add this track to your mixtape!
+	<br/><br/>
+	</div>
+
+<!-- block-heading -->
+<a name="tagsbox"></a>
+<div class="block-heading">
+	<h3>Most popular lyric tags</h3>
+</div>
+<!-- block -->
+<div class="block">
+	<ul class="tags-list" id="tags-list"><li><a href="/tags/view/ballad+of+easy+rider/" title="ballad of easy rider lyric tag"><strong>ballad of easy rider</strong><span>1</span></a></li></ul>		<a href="/create/" class="more">Log in to add a tag</a>
+			
+	
+	
+</div><div class="block-heading">
+	<h3>More <a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan Lyrics" >Bob Dylan Lyrics</a></h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0px 18px;">
+	<ul class="songs-list songs-list2">
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5730/" title="Like a Rolling Stone Lyrics" >Like a Rolling Stone Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5731/" title="Mr. Tambourine Man Lyrics" >Mr. Tambourine Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5727/" title="All Along the Watchtower Lyrics" >All Along the Watchtower Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/47748/" title="Ballad of a Thin Man Lyrics" >Ballad of a Thin Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/57315/" title="Tangled Up in Blue Lyrics" >Tangled Up in Blue Lyrics</a></strong>
+		</li>
+			</ul>
+</div><div style="text-align: center;">
+			<a href="http://sng.mn/cftpc/"><img src="//songmeanings.com/images/ios_badge.png" style="outline: none; text-decoration: none; width: auto; clear: both; border: none;"></a>
+		<br/><br/>
+		
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div><br/><!-- adbrite sucks -->
+<div style="text-align: center;">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3747639166192015";
+/* sm_skyscraper_160x600 */
+google_ad_slot = "7283450858";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+		</div>
+	</div>
+
+</div>
+					<!-- end mode-holder -->
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		
+
+<div id="footer">
+
+	<div class="footer-holder">
+
+		<div class="footer-frame">	
+			
+			<!-- panel -->
+			<div class="panel">
+				<div class="holder">
+					<h4>SongMeanings is a place for discussion and discovery.</h4>
+					<!-- topics -->
+					<ul class="topics">
+						<li>
+							<a href="#">
+								<strong>1,097,225</strong>
+								<span>Lyrics</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>110,886</strong>
+								<span>Artists</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>1,737,493</strong>
+								<span>Comments</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- column -->
+				<div class="column col1 white-inset">
+					<strong class="title">SongMeanings</strong>
+					<div class="column-holder">
+						<ul>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/forum/" rel="nofollow">Forum</a></li>
+							<li><a href="/about/team/">Who We Are</a></li>
+							<li><a href="/blog/">Read Our Blog</a></li>
+						</ul>
+						<ul>
+							<li><a href="/about/" rel="nofollow">Contact</a></li>
+							<li><a href="/about/advertising/" rel="nofollow">Advertising</a></li>
+							<li><a accesskey="8" href="/terms/" rel="nofollow">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- column col2 -->
+				<div class="column col2 white-inset">
+					<strong class="title">What’s popular</strong>
+					<ul>
+						<li><a href="/popular/lyrics/">Top Lyrics</a></li>
+						<li><a href="/mixtape/popular/">Mixtapes</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- bar -->
+			<div class="bar">
+				<div class="bar-holder">
+					<div class="white-inset" style="float: right;">
+						<div style="text-align: center;">
+	
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div>					</div>
+
+					<p>Non-lyrical content copyright 1999-2017 SongMeanings</p>
+					
+					<div style="text-align: center; color: #fff;">
+										</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup-holder">
+	<div id="popup-loginform" class="lightbox">
+		<div class="login-box-new">
+				<div class="holder-new">
+					<a href="#" class="facebook" id="modalbtn-facebook">Login with Facebook</a>
+					<div class="tooltip" id="facebook-tooltip">
+						<p>Error: Can’t log in using Facebook</p>
+					</div>
+				</div>
+				<div class="holder-new">
+					<a href="#" class="google" id="modalbtn-google">Login with Google</a>
+					<div class="tooltip" id="google-tooltip">
+						<p>Error: Can’t log in using Google</p>
+					</div>
+				</div>
+				<div class="heading-new"><span>Or</span></div>
+				<form action="#" class="login-form-new" id="login-form-new">
+					<fieldset>
+						<div class="input-holder" id="input-username">
+							<input type="text" placeholder="Username" name="name" id="name" autocomplete="off"  />
+					
+
+							<div class="tooltip" id="username-tooltip">
+								<p>User does not exist</p>
+							</div>
+						</div>
+						<div class="input-holder password" id="input-password">
+							<input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off"/>
+							<div class="tooltip" id="password-tooltip">
+								<p>Incorrect Password</p>
+							</div>
+						</div>
+						<div class="box-new" id="box-login">
+							<input type="checkbox" id="remember" />
+							<label for="remember">Remember Me</label>
+							<input type="submit" value="Log In" />
+						</div>
+						<div class="processing" id="box-processing" style="display:none;">
+							Logging you in...
+						</div>
+					</fieldset>
+				</form>
+				<div class="block-new">
+					<a href="/forgot/">Forgot username/password?</a>
+					<a href="/create/" class="join">Join Now!</a>
+				</div>
+		</div>
+	</div>
+</div>		<div id="back"><a href="#wrapper">Back to top</a></div>
+
+
+	</div>
+	
+	<div id="lightbox-panel">
+	<span id="lightbox-body">alert</span>
+	
+	
+	<div id="lightbox-close">
+		<a href="#" id="lightbox-exit">close</a>
+	</div>
+	
+</div>
+
+<div id="lightbox"></div>
+
+	
+	<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-e1GZ3PNfdDCkE"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-e1GZ3PNfdDCkE.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+
+
+	<div id="moverdiv">explain</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.songmeanings_com,DomainId.7844"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.songmeanings_com,DomainId.7844"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script type='text/javascript' src='//cdn.songmeanings.com/detroitchicago/edmonton.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+<script type='text/javascript' src='//cdn.songmeanings.com/porpoiseant/jellyfish.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+</body>
+
+</html>
+

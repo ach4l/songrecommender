@@ -1,0 +1,1107 @@
+<html><head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:_ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[];
+</script><style>.ezoic-ad{display:inline-block;}
+.ezoic-floating-bottom { display: none!important; }</style><link rel='canonical' href='http://songmeanings.com/songs/view/5729/' />
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-54843416-48";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-54843416-48']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'songmeanings.com']);
+_gaq.push(['f._setDomainName', 'songmeanings.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site_noads',3]);
+_gaq.push(['e._setCustomVar',2,'t','147',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod1',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site_noads',3]);
+_gaq.push(['f._setCustomVar',2,'domain','songmeanings.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+_gaq.push(['_setAccount', 'UA-1061781-1']);
+_gaq.push(['_setDomainName', 'songmeanings.com']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "49393486";</script><base href="http://songmeanings.com/songs/view/5729/"><script type='text/javascript'>
+var ezoTemplate = 'pub_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+
+<!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 7844;
+var ezdomain = 'songmeanings.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/ezoic/epbfull5.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=3000,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[];epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'defymedia');epbjs.aliasBidder('appnexus', 'districtm');epbjs.aliasBidder('appnexus', 'brealtime');epbjs.aliasBidder('appnexus', 'conversant');epbjs.SS={"brealtime":10039,"conversant":10033,"defymedia":10024,"districtm":10035,"openx":10015,"pulsepoint":10019,"sonobi":10048,"sovrn":10017},epbjs.bidderSettings={defymedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},brealtime: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},conversant: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},sovrn: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},openx: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.200000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {}else{window.ezHideLocations=[];}googletag.pubads().addEventListener('slotRenderEnded', function(event) { if (typeof ezbanger == 'function') { ezbanger(event);}});googletag.pubads().addEventListener('impressionViewable', function(event) { if (typeof ezvb == 'function') { ezvb(event);}});googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { if (typeof ezvbc == 'function') { ezvbc(event);}});googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {}else{}</script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript">
+        window.cookieconsent_options = {
+            "message":"We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.",
+            "dismiss":"Got it!",
+            "learnMore":"See details",
+            "link":'/privacy.html',
+            "theme":"/ezoic/styles/dark-bottom.css",
+			"domain":"songmeanings.com"
+        };
+    </script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript" src="/ezoic/cookieconsent.min.js"></script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_location_ids":"","adx_ad_count":0,"bidder_version":0,"country":"FR","days_since_last_visit":-1,"domain_id":7844,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"is_return_visitor":false,"last_page_load":"","max_ads":9,"page_ad_positions":"","page_view_count":0,"page_view_id":"ad487c6e-609e-4016-4888-7086005228e6","pv_event_count":0,"response_time_orig":262,"serverid":"52.50.192.212:9247","sub_page_ad_positions":"","t_epoch":1491818361,"template_id":147,"time_on_site_visit":0,"url":"http://songmeanings.com/songs/view/5729/","user_id":49393486,"word_count":1146};var _ezim_d = {};var _ezat = {"domain_id":7844,"form_factor_id":1,"pageview_date":"2017-04-10","pageview_id":"ad487c6e-609e-4016-4888-7086005228e6","template_id":147,"url":"http://songmeanings.com/songs/view/5729/","visit_uuid":"f3bc91c8-000d-4f88-72a8-b98ab8eccc4f"};</script><script data-cfasync='false' type="text/javascript" src="//cdn.songmeanings.com/ezo/impt.js?cb=154-9&v=7" async></script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript" src="/ezo/banger.js?cb=154-9&bv=2&v=4&PageSpeed=off"></script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' src='//g.ezoic.net/ezosuigeneris.js' style='display:none' async></script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' src='//g.ezoic.net/ezosuigenerisc.js?nogen=1' style='display:none' async></script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "ezux_lpl_7844=" + Date.now() + "; " + expires;
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script></head><body><li id="fullcomment-73014839468">
+		<a name="comment-73014839468"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014839468">
+	<div class="numb-holder">
+		<span id="com-rating-73014839468">
+			<strong class="numb" id="numb-rating-73014839468">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014839468" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014839468" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014839468">
+
+				<strong class="title">General Comment</strong>This song is about depression.  The badge is a sign of honor, something he is respected for and should be proud of, but he no longer cares. To him, respect and honor have no meaning.  The guns represent the bad that he does, the things he is not proud of.  He can not even bring himself to do these things anymore.  He is on the threshold of redemption; he is knocking on heaven's door, but he is not let in.  Instead he is left out in the cold.  He wants to get out of the cold dark place he is in, but it is too late. He sees the long black cloud coming down, and he knows he will drown.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17042157/" id="userprofile-17042157" rel="me nofollow" title="kloudon" class="author">kloudon</a><em class="date">on May 21, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014839468#comments" id="specific_com-73014839468" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014839468" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014839468" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014839468">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014839468" id="frmreplycomment">@kloudon </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014839468" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014839468" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014813112">
+		<a name="comment-73014813112"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014813112">
+	<div class="numb-holder">
+		<span id="com-rating-73014813112">
+			<strong class="numb" id="numb-rating-73014813112">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014813112" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014813112" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014813112">
+
+				<strong class="title">General Comment</strong>Ive got that film, tis quite good but hearts of fire was his best film				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17032243/" id="userprofile-17032243" rel="me nofollow" title="Detective" class="author">Detective</a><em class="date">on April 03, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014813112#comments" id="specific_com-73014813112" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014813112" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014813112" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014813112">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014813112" id="frmreplycomment">@Detective </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014813112" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014813112" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014804115">
+		<a name="comment-73014804115"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014804115">
+	<div class="numb-holder">
+		<span id="com-rating-73014804115">
+			<strong class="numb" id="numb-rating-73014804115">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014804115" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014804115" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014804115">
+
+				<strong class="title">General Comment</strong>Dylan wrote the song for the movie Pat Garret and Billy the Kid. They needed a song for when Dylan shoots the sheriff, so he went off and wrote it. <br>
+The song could easily work for an anti-war song though.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17030599/" id="userprofile-17030599" rel="me nofollow" title="Dr. Huxley" class="author">Dr. Huxley</a><em class="date">on March 22, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014804115#comments" id="specific_com-73014804115" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014804115" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014804115" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014804115">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014804115" id="frmreplycomment">@Dr. Huxley </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014804115" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014804115" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014798740">
+		<a name="comment-73014798740"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014798740">
+	<div class="numb-holder">
+		<span id="com-rating-73014798740">
+			<strong class="numb" id="numb-rating-73014798740">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014798740" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014798740" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014798740">
+
+				<strong class="title">General Comment</strong>I have no clue what this song is about, but I keep trying to figure it out. I love this song so freakin' much! It gives me the chills every time!				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/16991578/" id="userprofile-16991578" rel="me nofollow" title="Ratboy" class="author">Ratboy</a><em class="date">on March 14, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014798740#comments" id="specific_com-73014798740" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014798740" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014798740" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014798740">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014798740" id="frmreplycomment">@Ratboy </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014798740" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014798740" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014779627">
+		<a name="comment-73014779627"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014779627">
+	<div class="numb-holder">
+		<span id="com-rating-73014779627">
+			<strong class="numb" id="numb-rating-73014779627">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014779627" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014779627" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014779627">
+
+				<strong class="title">General Comment</strong>I disagree with Dunehermit, I'm not sure what hes referring to but its implied that he's not giving up whatever whatever it is through choice "I CANT shoot them anymore," I think implies somethings stoped working and so he's given up and is now resined to the bleak outcome.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17024287/" id="userprofile-17024287" rel="me nofollow" title="blackdog159" class="author">blackdog159</a><em class="date">on February 14, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014779627#comments" id="specific_com-73014779627" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014779627" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014779627" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014779627">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014779627" id="frmreplycomment">@blackdog159 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014779627" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014779627" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014768328">
+		<a name="comment-73014768328"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014768328">
+	<div class="numb-holder">
+		<span id="com-rating-73014768328">
+			<strong class="numb" id="numb-rating-73014768328">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014768328" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014768328" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014768328">
+
+				<strong class="title">General Comment</strong>This song was written for the western movie "Pat Garrett &amp; Billy The Kid" as stated by previous posters.<br>
+However this song has transcended that and has much deeper meaning. Many bands have covered it (even Cold Chisel do a great one) and used it as eulogies for deceased comrades/band members etc.<br>
+It would be a suitable song for Dylan's funeral (and mine too).				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17020701/" id="userprofile-17020701" rel="me nofollow" title="chrisb1" class="author">chrisb1</a><em class="date">on January 30, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014768328#comments" id="specific_com-73014768328" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014768328" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014768328" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014768328">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014768328" id="frmreplycomment">@chrisb1 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014768328" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014768328" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014760711">
+		<a name="comment-73014760711"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014760711">
+	<div class="numb-holder">
+		<span id="com-rating-73014760711">
+			<strong class="numb" id="numb-rating-73014760711">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014760711" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014760711" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014760711">
+
+				<strong class="title">General Comment</strong>i definately think this songs about a cop who has been shot down and is dying while just trying to do right thing. another reason i think this is is the way it was used in movie lethal weapon 2 when looked like one of them was dying they started playing it and if you listen to the song and see something like that it does look like its about that				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/168740/" id="userprofile-168740" rel="me nofollow" title="football54" class="author">football54</a><em class="date">on January 22, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014760711#comments" id="specific_com-73014760711" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014760711" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014760711" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014760711">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014760711" id="frmreplycomment">@football54 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014760711" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014760711" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015687342">
+		<a name="comment-73015687342"></a>
+		
+<div id="rating-holder-73015687342">
+	<div class="numb-holder">
+		<span id="com-rating-73015687342">
+			<strong class="numb" id="numb-rating-73015687342">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015687342" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015687342" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I actually think this song is about the Holocaust because:<br>
+<br>
+Mama, take this badge off of me<br>
+I can't use it anymore.<br>
+It's gettin' dark, too dark for me to see<br>
+I feel like I'm knockin' on heaven's door.<br>
+<br>
+<br>
+<br>
+I think the badge Bob Dylan speaks of is the star of David, Which Jews were made to wear during the Holocaust. When he says he dosent need the badge anymore is because he is about to walk in to a gas chamber or maybe in to a cremation chamber. Bob Dylan's real name is Robert Allen Zimmerman he was born jewish changed his name because he never felt like Judaism was for him, but later became Christian.<br>
+<br>
+Mama, put my guns in the ground<br>
+I can't shoot them anymore.<br>
+That long black cloud is comin' down<br>
+I feel like I'm knockin' on heaven's door.<br>
+<br>
+<br>
+In this verse I think hes talking about how when the Jews were put in to the ghettos then deported to the concentration camps many jews buried there belongings because they were only aloud to bring food and clothes. Many Nazi ordered them to give up there gold jewelry and other valuables.			<div class="sign">
+
+				<span id="flagspan-73015687342">
+											<a href="#" id="flag-73015687342" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17302042/" id="userprofile-17302042" rel="me nofollow" title="elitedude64" class="author">elitedude64</a><em class="date">on February 05, 2009</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014733043">
+		<a name="comment-73014733043"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014733043">
+	<div class="numb-holder">
+		<span id="com-rating-73014733043">
+			<strong class="numb" id="numb-rating-73014733043">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014733043" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014733043" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014733043">
+
+				<strong class="title">General Comment</strong>why not relate the song to yourself? that is probabably what dylan did when he originaly wrote it, and i dont feel that you are forced to relate it to anything physical.. instead to a feeling or something of yourselves.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17012860/" id="userprofile-17012860" rel="me nofollow" title="divinia" class="author">divinia</a><em class="date">on December 22, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014733043#comments" id="specific_com-73014733043" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014733043" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014733043" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014733043">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014733043" id="frmreplycomment">@divinia </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014733043" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014733043" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014720559">
+		<a name="comment-73014720559"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014720559">
+	<div class="numb-holder">
+		<span id="com-rating-73014720559">
+			<strong class="numb" id="numb-rating-73014720559">+12</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014720559" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014720559" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014720559">
+
+				<strong class="title">General Comment</strong>geez. no one pays attention to the real history of a song anymore. This movie is NOT an anti-war song, or anything like that. This was a song written FOR A MOVIE, thus, to tie in with the script.<br>
+In the movie, entitled Pat Garrett and Billy the Kid (i thinkthats the right title), the song is about Pat Garrett, and outlaw who is made into a sheriff and ordered to hunt down his old friend billy the kid. "Mama, take this badge off of me, I can't use it anymore." It's the sheriff's badge, he has no desire to be one when it becomes clear that he must help kill the lifestyle he truly loves. Those are the facts, but in a specific sense I take the knockin' on heaven's door to be about how close Garret is to being an outlaw again, his heaven. In the non-movie related sense of the song, I think it's about a man deciding to be killed rather than fight back, and he's going to die, but he thinks his decision puts him at heaven's door.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17009819/" id="userprofile-17009819" rel="me nofollow" title="dikoduck" class="author">dikoduck</a><em class="date">on December 05, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014720559#comments" id="specific_com-73014720559" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014720559" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014720559" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014720559">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014720559" id="frmreplycomment">@dikoduck </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014720559" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014720559" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014711717">
+		<a name="comment-73014711717"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014711717">
+	<div class="numb-holder">
+		<span id="com-rating-73014711717">
+			<strong class="numb" id="numb-rating-73014711717">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014711717" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014711717" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014711717">
+
+				<strong class="title">General Comment</strong>I think this song is about how dealing with personal mortality teaches a man important life lessons.  It appears, in the song, that the kingdom of heaven is closed to those who have pursued justice (which is just a formalized/legalized revenge), instead of peace and mercy - which is what Jesus taught us to value.  I think he is recognizing here for the first time the human need for redemption.  He is progressing from the Jewish view, which asks for justice in the form of an eye for an eye, to the Christian value of Forgiveness.  But he's not quite there.  Instead, he's knocking on Heaven's door.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17006417/" id="userprofile-17006417" rel="me nofollow" title="montresor" class="author">montresor</a><em class="date">on November 23, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5729/?&amp;specific_com=73014711717#comments" id="specific_com-73014711717" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014711717" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014711717" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014711717">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014711717" id="frmreplycomment">@montresor </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5729" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014711717" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014711717" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+	<script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' src='//cdn.songmeanings.com/detroitchicago/edmonton.webp?a=a&cb=154-9&shcb=10' style='display:none;' async></script>
+<script type='text/javascript' src='//cdn.songmeanings.com/porpoiseant/jellyfish.webp?a=a&cb=154-9&shcb=10' style='display:none;' async></script>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.songmeanings_com,DomainId.7844"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.songmeanings_com,DomainId.7844"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag--></body></html><!--[ezpicker:done]-->

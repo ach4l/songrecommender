@@ -1,0 +1,2918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en" xmlns:fb="http://ogp.me/ns/fb#"><head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:_ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/songmeanings_com-box-3","NextIndex":0,"Deals":[]},{"SlotName":"/1254144/songmeanings_com-banner-1","NextIndex":0,"Deals":[]},{"SlotName":"/1254144/songmeanings_com-medrectangle-1","NextIndex":0,"Deals":[]},{"SlotName":"/1254144/songmeanings_com-banner-2","NextIndex":0,"Deals":[]},{"SlotName":"/1254144/songmeanings_com-medrectangle-3","NextIndex":0,"Deals":[]},{"SlotName":"/1254144/songmeanings_com-box-4","NextIndex":0,"Deals":[]}];
+</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>Bob Dylan - Mr. Tambourine Man Lyrics | SongMeanings</title>
+	
+	<meta property="og:title" content="Bob Dylan - Mr. Tambourine Man Lyrics | SongMeanings">
+	<meta property="og:type" content="song">
+	<meta property="og:url" content="//songmeanings.com/songs/view/5731/">
+	<meta property="og:site_name" content="SongMeanings">
+
+	
+<meta property="og:image" content="//songmeanings.com/images/img10.jpg">
+		
+	<link rel="canonical" href="//songmeanings.com/songs/view/5731/">
+
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="//songmeanings.com/m/songs/view/5731/">
+	
+	
+<link media="all" rel="stylesheet" href="/css/sm.css?v=4.94" type="text/css">
+<link media="all" rel="stylesheet" href="/css/fancybox.css?v=4.94">
+<link media="all" rel="stylesheet" href="/css/all.css?v=4.94">
+
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/ie.css" type="text/css"/>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/jquery.main.js"></script>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css">
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/js/ie.js"></script>
+<![endif]-->
+
+<!-- qtip popups -->
+<script type="text/javascript" src="/js/qtip2/basic/jquery.qtip.min.js"></script>
+<link media="all" rel="stylesheet" href="/js/qtip2/basic/jquery.qtip.min.css" type="text/css">
+
+<!-- facebook -->
+<script>
+var facebook_app_id   = 219341278125724;
+var facebook_channelUrl = '//songmeanings.com/channel.html';
+</script>
+
+<!-- google -->
+<meta name="google-signin-clientid" content="458654304363.apps.googleusercontent.com">
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email">
+<meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity">
+<meta name="google-signin-cookiepolicy" content="none">
+<meta name="google-signin-approvalprompt" content="auto">
+
+<!-- site wide js -->
+<script type="text/javascript" src="/js/site.js?v=4.97"></script>
+
+
+<script type="text/javascript" src="/js/jquery.putcursoratend.js"></script>	
+	<script type="text/javascript" src="/js/songs.js?1400"></script>
+	
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Search SongMeanings">
+
+<link rel="image_src" href="//songmeanings.com/images/img10.jpg">
+
+<meta property="fb:app_id" content="199712020079338">
+
+
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+// Note: it's important to keep these in separate script blocks
+COMSCORE.beacon({
+	c1: 2,
+	c2: "6772046",
+	c3: "",
+	c4: "http://songmeanings.com/songs/view/5731/", // Replace this with the page URL that the site is on here, and also enter it into the <noscript> img below
+	c5: "",
+	c6: "",
+	c15: ""
+});
+</script>
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6772046&c3=&c4=songmeanings.com/songs/view/5731/&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- simple modal -->
+	<link type="text/css" href="/css/simplemodal/basic.css" rel="stylesheet" media="screen">
+	<!--[if lt IE 7]>
+	<link type='text/css' href='/css/simplemodal/basic_ie.css' rel='stylesheet' media='screen' />
+	<![endif]-->
+	<script src="/js/jquery.simplemodal.js" type="text/javascript"></script>
+	<script src="/js/simplemodal_basic.js" type="text/javascript"></script>
+<!-- end simple modal -->
+
+
+<style>
+	.ezmob-footer {
+	    position: fixed; left: 0px; bottom: 0px; height: 50px; width: 100%; background: white; z-index: 1000;
+	}
+    body {
+        padding-bottom: 50px;
+    }
+</style>
+<style>.ezoic-ad.banner-1 { display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px; }
+.ezoic-ad.medrectangle-1 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important; }
+.ezoic-ad.banner-2 { display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px; }
+.ezoic-ad.box-4 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important; }
+.ezoic-ad.box-3 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;text-align:center !important; }
+.ezoic-ad.medrectangle-3 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:620px;min-width:300px;text-align:center !important; }
+.ezoic-ad{display:inline-block;}
+.ezoic-floating-bottom { display: none!important; }</style>
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-54843416-48";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-54843416-48']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'songmeanings.com']);
+_gaq.push(['f._setDomainName', 'songmeanings.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod2',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','songmeanings.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+_gaq.push(['_setAccount', 'UA-1061781-1']);
+_gaq.push(['_setDomainName', 'songmeanings.com']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1116738635";</script><base href="http://songmeanings.com/songs/view/5731/"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+
+<!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 7844;
+var ezdomain = 'songmeanings.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/ezoic/epbfull5.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=1500,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-songmeanings_com-box-3-0', sizes: [[336,280],[300,250]], bids: [{bidder: 'defymedia', params: { placementId: '9925127' }},{bidder: 'districtm', params: { placementId: '10036603' }},{bidder: 'brealtime', params: { placementId: '10115987' }},{bidder: 'conversant', params: { site_id: '109013' }},{bidder: 'sovrn', params: { tagid: '349980'}},{bidder: 'openx',params: { jstag_url: '//ox-d.ezoic.servedbyopenx.com/w/1.0/jstag?nc=1254144-EzoicRON', unit: '538151781', delDomain: 'ox-d.ezoic.servedbyopenx.com' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-songmeanings_com-banner-1-0', sizes: [[300,250]], bids: [{bidder: 'defymedia', params: { placementId: '9925127' }},{bidder: 'districtm', params: { placementId: '10036603' }},{bidder: 'brealtime', params: { placementId: '10115987' }},{bidder: 'conversant', params: { site_id: '109013' }},{bidder: 'sovrn', params: { tagid: '349980'}},{bidder: 'openx',params: { jstag_url: '//ox-d.ezoic.servedbyopenx.com/w/1.0/jstag?nc=1254144-EzoicRON', unit: '538151781', delDomain: 'ox-d.ezoic.servedbyopenx.com' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-songmeanings_com-medrectangle-1-0', sizes: [[300,250]], bids: [{bidder: 'defymedia', params: { placementId: '9925127' }},{bidder: 'districtm', params: { placementId: '10036603' }},{bidder: 'brealtime', params: { placementId: '10115987' }},{bidder: 'conversant', params: { site_id: '109013' }},{bidder: 'sovrn', params: { tagid: '349980'}},{bidder: 'openx',params: { jstag_url: '//ox-d.ezoic.servedbyopenx.com/w/1.0/jstag?nc=1254144-EzoicRON', unit: '538151781', delDomain: 'ox-d.ezoic.servedbyopenx.com' }},{bidder: 'pulsepoint', params: { cf: '300X250', cp: 560269, ct: 472597 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-songmeanings_com-banner-2-0', sizes: [[250,250]], bids: [{bidder: 'sovrn', params: { tagid: '349988'}},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-songmeanings_com-medrectangle-3-0', sizes: [[300,600],[160,600]], bids: [{bidder: 'defymedia', params: { placementId: '9925128' }},{bidder: 'districtm', params: { placementId: '10036603' }},{bidder: 'brealtime', params: { placementId: '10115987' }},{bidder: 'conversant', params: { site_id: '109013' }},{bidder: 'sovrn', params: { tagid: '349981'}},{bidder: 'openx',params: { jstag_url: '//ox-d.ezoic.servedbyopenx.com/w/1.0/jstag?nc=1254144-EzoicRON', unit: '538151780', delDomain: 'ox-d.ezoic.servedbyopenx.com' }},{bidder: 'pulsepoint', params: { cf: '160X600', cp: 560269, ct: 472595 }},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] },{code: 'div-gpt-ad-songmeanings_com-box-4-0', sizes: [[250,250]], bids: [{bidder: 'sovrn', params: { tagid: '349988'}},{bidder: 'sonobi', params: { placement_id: '507eb80cf92592557f50' }}] }];epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'defymedia');epbjs.aliasBidder('appnexus', 'districtm');epbjs.aliasBidder('appnexus', 'brealtime');epbjs.aliasBidder('appnexus', 'conversant');epbjs.SS={"brealtime":10039,"conversant":10033,"defymedia":10024,"districtm":10035,"openx":10015,"pulsepoint":10019,"sonobi":10048,"sovrn":10017},epbjs.bidderSettings={defymedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},districtm: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},brealtime: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},conversant: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},sovrn: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.850000; var adj2 = adj1 * 1.200000; return adj2; }},openx: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.750000; var adj2 = adj1 * 1.200000; return adj2; }},pulsepoint: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.200000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){var s=e.cpm;return 5>s?(Math.floor(100*s)/100).toFixed(2):(Math.floor(10*s)/10).toFixed(2)}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder]?epbjs.SS[e.bidder]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.200000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.setTargetingForGPTAsync()}})});
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/songmeanings_com-box-3',[336,280],'div-gpt-ad-songmeanings_com-box-3-0').addService(googletag.pubads()).setTargeting('iid13','1292821').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1119').setTargeting('sap','1119').setTargeting('a','|5|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','2').setTargeting('tap','songmeanings_com-box-3-1292821').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','1600').setTargeting('br2','800').setTargeting('ezoic','1');ezslot_0.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','20929A').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/songmeanings_com-banner-1',[300,250],'div-gpt-ad-songmeanings_com-banner-1-0').addService(googletag.pubads()).setTargeting('iid17','1691314').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|251|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','5').setTargeting('al','1030').setTargeting('compid','0').setTargeting('tap','songmeanings_com-banner-1-1691314').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','4800').setTargeting('ezoic','1');ezslot_1.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','0C9C11').set('adsense_text_color','000000').set('adsense_url_color','0C9C11');ezrpos[1]="1";ezslot_2 = googletag.defineSlot('/1254144/songmeanings_com-medrectangle-1',[300,250],'div-gpt-ad-songmeanings_com-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid7','665339').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1138').setTargeting('sap','1138').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','songmeanings_com-medrectangle-1-665339').setTargeting('bv','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','4800').setTargeting('ezoic','1');ezslot_2.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[2]="2";ezslot_3 = googletag.defineSlot('/1254144/songmeanings_com-banner-2',[250,250],'div-gpt-ad-songmeanings_com-banner-2-0').addService(googletag.pubads()).setTargeting('iid12','1120222').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1122').setTargeting('sap','1122').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','18').setTargeting('al','1031').setTargeting('compid','0').setTargeting('tap','songmeanings_com-banner-2-1120222').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','4800').setTargeting('ezoic','1');ezslot_3.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[3]="3";ezslot_4 = googletag.defineSlot('/1254144/songmeanings_com-medrectangle-3',[300,600],'div-gpt-ad-songmeanings_com-medrectangle-3-0').addService(googletag.pubads()).setTargeting('iid6','501909').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|254|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','8').setTargeting('al','1021').setTargeting('compid','2').setTargeting('tap','songmeanings_com-medrectangle-3-501909').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','4800').setTargeting('ezoic','1');ezslot_4.set('adsense_ad_types','text_image').set('adsense_background_color','001DAD').set('adsense_border_color','001DAD').set('adsense_channel_ids','6500031580').set('adsense_link_color','FFFFFF').set('adsense_text_color','FFFFFF').set('adsense_url_color','EEFF00');ezrpos[4]="4";ezslot_5 = googletag.defineSlot('/1254144/songmeanings_com-box-4',[250,250],'div-gpt-ad-songmeanings_com-box-4-0').addService(googletag.pubads()).setTargeting('iid2','152846').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1105').setTargeting('sap','1105').setTargeting('a','|251|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','n').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','6').setTargeting('al','1003').setTargeting('compid','2').setTargeting('tap','songmeanings_com-box-4-152846').setTargeting('bv','2').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','3800').setTargeting('ezoic','1');ezslot_5.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','0C9C11').set('adsense_text_color','000000').set('adsense_url_color','0C9C11');ezrpos[5]="5";}else{window.ezHideLocations=[];window.ezHideLocations.push('div-gpt-ad-songmeanings_com-box-3-0');window.ezHideLocations.push('div-gpt-ad-songmeanings_com-banner-1-0');ezslot_2 = googletag.defineSlot('/1254144/songmeanings_com-medrectangle-1',[300,250],'div-gpt-ad-songmeanings_com-medrectangle-1-0').addService(googletag.pubads()).setTargeting('iid7','665339').setTargeting('t','134').setTargeting('d','7844').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1138').setTargeting('sap','1138').setTargeting('a','|124|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('rid','99998').setTargeting('pt','4').setTargeting('al','1004').setTargeting('compid','0').setTargeting('tap','songmeanings_com-medrectangle-1-665339').setTargeting('bv','2').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','4800').setTargeting('br2','4800').setTargeting('ezoic','1');ezslot_2.set('adsense_ad_types','text_image').set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','6500031580').set('adsense_link_color','FF0000').set('adsense_text_color','000000').set('adsense_url_color','FF0000');ezrpos[2]="2";window.ezHideLocations.push('div-gpt-ad-songmeanings_com-banner-2-0');window.ezHideLocations.push('div-gpt-ad-songmeanings_com-medrectangle-3-0');window.ezHideLocations.push('div-gpt-ad-songmeanings_com-box-4-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { if (typeof ezbanger == 'function') { ezbanger(event);}});googletag.pubads().addEventListener('impressionViewable', function(event) { if (typeof ezvb == 'function') { ezvb(event);}});googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { if (typeof ezvbc == 'function') { ezvbc(event);}});googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");ezslots.push("ezslot_2");ezslots.push("ezslot_3");ezslots.push("ezslot_4");ezslots.push("ezslot_5");}else{ezslots.push("ezslot_2");}</script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript">
+        window.cookieconsent_options = {
+            "message":"We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.",
+            "dismiss":"Got it!",
+            "learnMore":"See details",
+            "link":'/privacy.html',
+            "theme":"/ezoic/styles/dark-bottom.css",
+			"domain":"songmeanings.com"
+        };
+    </script>
+<script pagespeed_no_defer="" data-cfasync="false" type="text/javascript" src="/ezoic/cookieconsent.min.js"></script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_location_ids":"2,30,4,31,21,3","adx_ad_count":3,"bidder_version":0,"country":"FR","days_since_last_visit":-1,"domain_id":7844,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"has_bad_words":0,"is_return_visitor":false,"last_page_load":"","max_ads":10,"page_ad_positions":"1102,1105,1108,1119,1122,1138","page_view_count":0,"page_view_id":"73b3cfda-4ca8-410e-56f6-1e8fb7e6884a","pv_event_count":0,"response_time_orig":506,"serverid":"52.50.192.212:9247","sub_page_ad_positions":"1102,1105,1108,1119,1122,1138","t_epoch":1491818302,"template_id":134,"time_on_site_visit":0,"url":"http://songmeanings.com/songs/view/5731/","user_id":1116738635,"word_count":3790};var _ezim_d = {"songmeanings_com-banner-1":{"adx_ad_count":3,"full_id":"songmeanings_com-banner-1/2017-04-10/1691314","height":"250","position_id":1108,"sub_position_id":1108,"width":"300"},"songmeanings_com-banner-2":{"adx_ad_count":3,"full_id":"songmeanings_com-banner-2/2017-04-10/1120222","height":"250","position_id":1122,"sub_position_id":1122,"width":"250"},"songmeanings_com-box-3":{"adx_ad_count":3,"full_id":"songmeanings_com-box-3/2017-04-10/1292821","height":"280","position_id":1119,"sub_position_id":1119,"width":"336"},"songmeanings_com-box-4":{"adx_ad_count":3,"full_id":"songmeanings_com-box-4/2017-04-10/152846","height":"250","position_id":1105,"sub_position_id":1105,"width":"250"},"songmeanings_com-medrectangle-1":{"adx_ad_count":3,"full_id":"songmeanings_com-medrectangle-1/2017-04-10/665339","height":"250","position_id":1138,"sub_position_id":1138,"width":"300"},"songmeanings_com-medrectangle-3":{"adx_ad_count":3,"full_id":"songmeanings_com-medrectangle-3/2017-04-10/501909","height":"600","position_id":1102,"sub_position_id":1102,"width":"300"}};var _ezat = {"domain_id":7844,"form_factor_id":1,"pageview_date":"2017-04-10","pageview_id":"73b3cfda-4ca8-410e-56f6-1e8fb7e6884a","template_id":134,"url":"http://songmeanings.com/songs/view/5731/","visit_uuid":"6c6a80b0-0b08-46bd-6d07-6e6a7118c0e9"};</script><script data-cfasync='false' type="text/javascript" src="//cdn.songmeanings.com/ezo/impt.js?cb=154-9&v=7" async></script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript" src="/ezo/banger.js?cb=154-9&bv=2&v=4&PageSpeed=off"></script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' src='//g.ezoic.net/ezosuigeneris.js' style='display:none' async></script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' src='//g.ezoic.net/ezosuigenerisc.js?nogen=1' style='display:none' async></script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = "ezux_lpl_7844=" + Date.now() + "; " + expires;
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script></head>
+<body>
+	<div id="fb-root"></div>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+
+
+
+	<div id="wrapper">
+		<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+		<div id="skip"><a href="#content">Skip to Content</a></div>
+		<div id="container">
+			<div class="container-holder">
+				 <!-- header -->
+				<div id="header" class="header_add">
+	<div class="row">
+		<div class="login-holder">
+			<div class="login-box">
+				<a class="lightbox login-new" id="login-form-modal" href="#popup-loginform">Log in</a>
+			</div>
+			
+			<span class="signup"><a href="/create/">Create Account</a></span>
+		</div>
+		
+		<strong class="logo vcard"><a class="fn org url" href="//songmeanings.com/" title="SongMeanings">SongMeanings</a></strong>
+						
+		<form action="/query/" class="search">
+			<fieldset>
+				<legend>search-form</legend>
+				<span class="text">
+					<input id="frmquery" type="text" title="Search for lyrics and artists here" value="Search for lyrics and artists here" name="query">
+				</span>
+				<input type="submit" class="submit" value="Search">
+				<input type="hidden" name="type" value="all">
+			</fieldset>
+		</form>
+
+<script>
+	$("#frmquery").focus(function() { 
+		if(this.value == 'Search for lyrics and artists here') {
+			this.value = '';
+		}
+	});
+</script>
+	</div>
+	
+<div class="row">
+		<ul class="subnav alignright">
+
+			<li><a href="/mixtape/">Mixtapes</a></li>
+			<li><a href="/forum/" rel="nofollow">Forums</a></li>
+
+			
+		</ul>
+		<ul class="subnav">
+			<li><a href="/popular/lyrics/" title="Lyrics">Lyrics</a>
+			</li><li>
+				<a href="/artist/directory/" title="Artists">Artists</a>
+				<span class="addi">
+					<a href="/artist/suggest/" title="Add Artist">add</a>
+				</span>
+			</li>
+			<li><a href="/journals/" title="Journals" rel="nofollow">Journals</a></li>
+			<li><a href="http://sng.mn/cftpc/" title="Download our iOS App!">iOS App</a></li>
+
+		</ul>
+	</div></div>
+				<!-- main -->
+				<div id="main">
+					<!-- mode-holder -->
+					<div class="main-holder">
+	
+<div style="text-align: center; margin: 0px auto 5px auto; width: 99%; min-height: 90px;">
+	<div style="position:absolute;top:25px;right:60px;width:48px;height:80px;overflow:hidden;">
+		<fb:like href="//songmeanings.com/songs/view/5731/" action="like" share="false" layout="box_count" width="450" show_faces="false"></fb:like>
+	</div>
+
+	<div style="width: 728px; min-height: 90px; margin: 0 auto;">
+		<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+
+<!-- END TAG --> 
+	</div>
+
+	<div style="position:absolute; top:25px; left:50px; width:80px; height:80px; overflow:hidden;">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="//songmeanings.com/songs/view/5731/" data-via="songmeanings" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
+
+
+
+
+
+<div style="min-height: 30px;">
+
+	<div style="float: left; text-align: left; padding-top: 8px;">
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+				<a href="/artist/directory/b/" itemprop="url" title="Artist Directory for B"><span itemprop="title">Artists - B</span></a>				</div>
+			</li>
+			<li>
+				<a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan">Bob Dylan</a>			</li>
+						<li id="bread_albums">
+				<a href="/albums/view/tracks/27785/" title="At Budokan">At Budokan</a>			</li>
+						<li>
+				Mr. Tambourine Man Lyrics			</li>
+		</ul>
+
+		<!--
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/artist/directory/s/" itemprop="url" title="Artist Directory for S">
+						<span itemprop="title">Artists - S</span>
+					</a>	
+				</div>		
+			</li> 
+
+			<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li>
+					<a href="/artist/view/songs/137439064555/" itemprop="url" title="Speedy Ortiz">
+						<span itemprop="title">Speedy Ortiz</span>
+					</a>			
+				</li>
+			</div>
+			
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/songs/view/3530822107859465452/" itemprop="url" title="No Below">
+						<span itemprop="title"> No Below </span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		-->
+
+		<div class="shadow" id="morealbums" style="display: none; z-index:5000; position: absolute; left: 40px; top: 170px; background: #fff; width: 550px; padding: 12px; border: 1px solid #DEDEDE;">
+	
+	<div style="overflow:hidden; width: 500px;">
+	<a style="" class="" href="//songmeanings.com/songs/view/5731/" title="Mr. Tambourine Man">Mr. Tambourine Man</a> is found on the album <a href="/albums/view/tracks/27785/" title="At Budokan">At Budokan</a>.	</div>
+	
+	
+	<br>
+	
+	<strong style="color: #E87743;">Found on more albums:</strong>
+	<div style="padding-top: 10px; padding-left: 20px;">
+		Masterpieces<br>Biograph<br>Bob Dylan's Greatest Hits<br>Where Were You When the Fun Stopped?<br>The Concert for Bangladesh<br>The Essential Bob Dylan<br>Bob Dylan: His Legacy of Songs<br>Western Electric<br>From Newport to the Ancient Empty Street in LA<br>From Newport to the Ancient Empty Street in LA<br>Wolftrap<br>The Best of Bob Dylan [Sony Direct]<br>Essential Bob Dylan [Australian Bonus Tracks]<br>The Bootleg Series, Vol. 5: Bob Dylan Live 1975 - The Rolling Thunder Revue<br>Bob Dylan's Greatest Hits [Sundazed]<br>The Very Best of Bob Dylan<br>Bringing It All Back Home<br>Bob Dylan [Limited Edition Hybrid SACD Set]<br>The Bootleg Series, Vol. 6: Bob Dylan Live 1964 - Concert at Philharmonic Hall<br>The Essential Bob Dylan [Limited Tour Edition]<br>Greatest Hits, Vol. 1-3<br>The Concert for Bangladesh [Bonus Track]<br>The Best of Bob Dylan [Sony/BMG 2005]<br>Now Ain't the Time for Your Tears<br>Greatest Hits [UK]<br>The Q 5 Star Reviews, Vol. 1<br>Bringing It All Back Home [Japan]<br>Dylan [2007 Single Disc]<br>Dylan [2007]<br>Dylan [2007 3-CD Deluxe Edition]<br>Dylan [2007 2 Disc]<br>As Good as It Gets: The Ultimate Emmett Grogan Acetates<br>Discover Bob Dylan<br>Subterranean Homesick Blues<br>Gonzo: Music from the Film<br>Playlist: The Very Best of Bob Dylan<br>The Essential Bob Dylan [3.0]<br>The Collection: Another Side of Bob Dylan/Bringing It All Back Home/Highway 61 Revisited<br>Rolling Thunder Review [Japan CD]<br>Grandes Exitos 2<br>The Original Mono Recordings<br>The Best of the Original Mono Recordings<br>The Bootleg Series, Vol. 9: The Witmark Demos: 1962-1964<br>Bringing It All Back Home/Highway 61 Revisited/Blonde on Blonde<br>		
+		
+		
+	</div>
+	<span id='ezoic-pub-ad-placeholder-105' class="ezoic-adpicker-ad" data-ezadpicker="105" data-ez-position-type="mid_content"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important;' class='ezoic-ad box-4 adtester-container adtester-container-105'><span id='div-gpt-ad-songmeanings_com-box-4-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'songmeanings_com-box-4','ezslot_5']));</script></span></span><div style="z-index: 5001; position: absolute; top: 12px; right: 12px;">
+		<a href="#" id="closemorealbums">close</a>
+	</div>
+</div>	</div>
+</div>
+
+
+	<div class="main-frame">
+		<!-- content -->
+		<div id="content">
+			
+			
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#statusmsgbox").live('click', function(e) {
+			e.preventDefault();
+			$('#statusmsgbox').fadeOut();
+			return false;
+		});
+		
+		
+
+	});
+</script>		
+			<!-- block -->
+			<div style="float: right;">
+				<div class="block-feed"><div class="heading">
+	<div class="text-holder">
+		<h1>
+			<div class="h2_songtitle">
+			<a style="" class="" href="//songmeanings.com/songs/view/5731/" title="Bob Dylan – Mr. Tambourine Man">Bob Dylan – Mr. Tambourine Man</a>			</div>
+		</h1>
+
+		
+
+							
+							<ul class="song-info">
+								<li>
+									<a class="comments" href="#comments" id="header-comments-counter">203 Comments</a>
+								</li>
+								
+								<li><a class="tags" href="/tags/lyric/5731/" title="View all lyric tags">1 Tags</a></li>
+								
+								
+								
+							</ul>
+
+							<div style="margin: 12px 0 0 0; display: block;">
+"Mr. Tambourine Man" as written by  and  Bob Dylan....</div>
+
+<div style="margin: 10px 0 0 0; display: block;">
+	<ul class="song-info">
+		<li><a href="/songs/wiki/5731/" rel="nofollow">Read More...</a></li>
+		<li><a href="/songs/edit/5731/?type=wiki" title="Edit Wiki" rel="nofollow">Edit Wiki</a></li>
+	</ul>
+</div>						</div>
+					<span id='ezoic-pub-ad-placeholder-119' class="ezoic-adpicker-ad" data-ezadpicker="119" data-ez-position-type="under_page_title"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:300px;min-width:336px;text-align:center !important;' class='ezoic-ad box-3 adtester-container adtester-container-119'><span id='div-gpt-ad-songmeanings_com-box-3-0' ezaw='336' ezah='280' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[336,280],'songmeanings_com-box-3','ezslot_0']));</script></span></span></div>					<div class="holder lyric-box">
+						Hey, Mr. Tambourine Man, play a song for me<br>
+I'm not sleepy and there ain't no place I'm going to<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+In the jingle jangle morning I'll come following you<br>
+<br>
+Though I know that evenings empire has returned into sand<br>
+Vanished from my hand<br>
+Left me blindly here to stand but still not sleeping<br>
+My weariness amazes me, I'm branded on my feet<br>
+I have no one to meet<br>
+And the ancient empty street's too dead for dreaming<br>
+<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+I'm not sleepy and there ain't no place I'm going to<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+In the jingle jangle morning I'll come following you<br>
+<br>
+Take me on a trip upon your magic swirling ship<br>
+My senses have been stripped<br>
+My hands can't feel to grip<br>
+My toes too numb to step<br>
+Wait only for my boot heels to be wandering<br>
+I'm ready to go anywhere, I'm ready for to fade<br>
+Into my own parade<br>
+Cast your dancing spell my way, I promise to go under it<br>
+<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+I'm not sleepy and there ain't no place I'm going to<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+In the jingle jangle morning I'll come following you<br>
+<br>
+Though you might hear laughing, spinning, swinging madly through the sun<br>
+It's not aimed at anyone<br>
+It's just escaping on the run<br>
+And but for the sky there are no fences facing<br>
+And if you hear vague traces of skipping reels of rhyme<br>
+To your tambourine in time<br>
+It's just a ragged clown behind<br>
+I wouldn't pay it any mind<br>
+It's just a shadow you're seeing that he's chasing<br>
+<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+I'm not sleepy and there ain't no place I'm going to<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+In the jingle jangle morning I'll come following you<br>
+<br>
+Take me disappearing through the smoke rings of my mind<br>
+Down the foggy ruins of time<br>
+Far past the frozen leaves<br>
+The haunted frightened trees<br>
+Out to the windy bench<br>
+Far from the twisted reach of crazy sorrow<br>
+Yes, to dance beneath the diamond sky<br>
+With one hand waving free<br>
+Silhouetted by the sea<br>
+Circled by the circus sands<br>
+With all memory and fate<br>
+Driven deep beneath the waves<br>
+Let me forget about today until tomorrow<br>
+<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+I'm not sleepy and there ain't no place I'm going to<br>
+Hey, Mr. Tambourine Man, play a song for me<br>
+In the jingle jangle morning I'll come following you<br><br><div style="min-height: 25px; margin:0; padding: 12px 0 0 0; border-top: 1px dotted #ddd;">
+	<a href="/songs/edit/5731/" id="lyrics-edit" class="editbutton" title="Edit Lyrics">Edit Lyrics</a>
+	<a href="/songs/edit/5731/?type=wiki" id="lyrics-wiki-edit" class="editbutton" title="Edit Song Wiki">Edit Wiki</a>
+	<a href="/songs/edit/5731/?type=video" id="lyrics-video-add" class="editbutton" title="Add Music Video">Add Video</a>
+
+	</div><br>					<span id='ezoic-pub-ad-placeholder-102' class="ezoic-adpicker-ad" data-ezadpicker="102" data-ez-position-type="under_first_paragraph"></span><style type="text/css" >
+#sda_779 {
+width : 300px;
+clear : both;
+display : block;
+text-align : left;
+margin-top : 10px;
+margin-bottom : 10px;
+position : relative;
+font-family : Arial, Helvetica, sans-serif;
+text-align : left;
+line-height : 1em;
+}
+#sda_779  .sda_container {
+width : 300px;
+display : inline-block;
+vertical-align : top;
+margin-right : 1%;
+}
+#sda_779 .sda_title_wrapper .sda_title {
+font-size : 16px;
+margin : 0;
+border : none;
+text-align : left;
+vertical-align : middle;
+overflow-wrap : break-word;
+width : auto;
+font-weight : bold;
+padding : 0;
+font-size : 13px;
+line-height : 1.35em;
+color : #000;
+}
+#sda_779 .sda_container:hover .sda_title_wrapper .sda_title {
+text-decoration : underline;
+}
+#sda_779 .sda_container a {
+display : block;
+text-decoration : none;
+}
+#sda_779 .sda_referrer {
+font-size : 0.714em;
+font-weight : normal;
+font-style : italic;
+color : #888;
+overflow-wrap : break-word;
+line-height : 150%;
+}
+#sda_779 .sda_image_link img {
+width:300px;
+height:250px;
+}
+</style>
+<div id="sda_779" style="display:none"></div>
+<script>
+	function _jsonp_779(obj) {
+		        var obj_sda = obj.articles;
+		        var sda_html = "";
+		        for(i=0; i < obj_sda.length; i++) {
+		            sda_html = sda_html +
+		            "<div class='sda_container'>" +
+		            "<a class='sda_image_link' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            "<im" + "g src='" + obj_sda[i].image + "' class='sda_image'>" +
+		            "</a>" +
+		            "<div class='sda_title_wrapper'>" +
+		            "<a class='sda_title' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            obj_sda[i].title +
+		            "</a>" +
+		            "<div class='sda_referrer'>" + obj_sda[i].sponsored_by + "</div>" +
+		            "</div>" +
+		            "</div>";
+		        }
+				document.getElementById("sda_779").style.display = "block";
+		        document.getElementById("sda_779").innerHTML = sda_html;
+		    }
+			function _load_779() {
+				var xhrq_779 = new XMLHttpRequest();
+			    xhrq_779.open("GET", "/ez_aba_load/?aba_id=779&aba_wid=9AD76FA2-E7B8-44DB-8B8C-65472D5E7B09&aba_did=c29uZ21lYW5pbmdzLmV6b2ljLmNvbQ==", true);
+			    xhrq_779.onload = function (e) {
+				  if (xhrq_779.readyState === 4) {
+				    if (xhrq_779.status === 200) {
+				       eval(xhrq_779.responseText);
+				    }
+				  }
+				};
+			    xhrq_779.send(null);
+			}
+
+			if (typeof ez_cra_check === 'undefined') {
+
+				if (typeof loadbvjhghf === 'undefined') {
+					var xhr_779 = new XMLHttpRequest();
+				    xhr_779.open("GET", "/ezoic/prebid-ad-728x90.js", true);
+					xhr_779.onload = function (e) {
+						if(xhr_779.responseText == ""){
+		                    var loadbvjhghf = true;
+		                    _load_779();
+		                } else {
+		                    eval(xhr_779.responseText);
+		                }
+					};
+					xhr_779.onerror = function (e) {
+					  var loadbvjhghf = true;
+					  _load_779();
+					};
+					xhr_779.send(null);
+				}
+				else {
+					_load_779();
+				}
+			}
+		</script><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:620px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-3 adtester-container adtester-container-102'><span id='div-gpt-ad-songmeanings_com-medrectangle-3-0' ezaw='300' ezah='600' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,600],'songmeanings_com-medrectangle-3','ezslot_4']));</script></span></span></div>
+
+					<span id='ezoic-pub-ad-placeholder-104' class="ezoic-adpicker-ad" data-ezadpicker="104" data-ez-position-type="under_first_paragraph"></span><div class="holder sign-box">
+	<p>
+		Lyrics submitted by 
+		<a href="/profiles/view/67/" id="userprofile-67" rel="me nofollow" title="oofus">oofus</a>	</p>
+	
+			<p>"Mr. Tambourine Man" as written by Bob Dylan</p>
+		<p>Lyrics © BOB DYLAN MUSIC CO</p>
+		<p>Lyrics powered by <a href="http://www.lyricfind.com/" target="_NEW" rel="nofollow">LyricFind</a></p>
+		</div>						<div class="holder" style="text-align: center;">
+							<script type="text/javascript">
+	var band_name = "Bob Dylan";
+	var song_name = "Mr. Tambourine Man";
+</script>
+<!-- BEGIN JS TAG - SM ROS Extra < - DO NOT MODIFY -->
+
+<!-- END TAG -->						</div>
+										</div>				
+			</div>
+			
+							<div class="tabs-feed">
+					<div style="text-align: left;">
+						<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+
+<!-- END TAG --> 					</div>
+				</div>
+						
+			<!-- block -->
+			<div class="block" id="comments-section">
+	<a name="comments" id="comments"></a>
+	<div class="heading_meanings">
+		Mr. Tambourine Man song meanings
+	</div>
+	
+	<div class="heading">
+		<a href="#addcomment" class="btn-comment"><span>Add your thoughts</span></a>
+		<h2 id="comments-counter">203 Comments</h2>
+	</div>
+
+	<div class="holder-sorting">
+		<!-- sort form -->
+		<form action="#" class="sort" id="comments-sort">
+	<fieldset>
+		<legend>sort form</legend>
+		<select title="All Comments" class="sort-select" name="sort" id="sort-commenttypes">
+			<option selected="yes" value="all">All Comment Types (203)</option><option value="4">General Comment (178) </option><option value="6">My Interpretation (18) </option><option value="7">Song Meaning (5) </option><option value="8">My Opinion (2) </option>		</select>
+		
+		<span id="flycomcount" style="display: none;">
+			203		</span>
+		
+		<input type="submit" value="submit" class="hidden">
+		<strong class="title">View by:</strong>
+		<ul>
+			<li><a class="active" href="#comments" id="sort-highest">Highest Rated</a></li>
+			<li><a href="#comments" id="sort-recent">Most Recent</a></li>
+			<li><a href="#comments" id="sort-oldest">Oldest First</a></li>
+		</ul>
+	</fieldset>
+</form>		<!-- end sort form -->
+	</div>
+
+	<div class="holder-comments">
+		<!-- comments-list -->
+		<ul class="comments-list" id="comments-list">
+				
+	<li id="fullcomment-68649">
+		<a name="comment-68649"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-68649">
+	<div class="numb-holder">
+		<span id="com-rating-68649">
+			<strong class="numb" id="numb-rating-68649">+12</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-68649" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-68649" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-68649">
+
+				<strong class="title">General Comment</strong>I always get incredibly sad when I hear this song. It seems to be about the existential lonliness of earthly happiness. A guy with a tambourine can't really play a song.      				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/32008/" id="userprofile-32008" rel="me nofollow" title="tomatoboyy" class="author">tomatoboyy</a><em class="date">on June 10, 2002</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=68649#comments" id="specific_com-68649" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-68649" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-68649" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-68649">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-68649" id="frmreplycomment">@tomatoboyy </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="68649" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-68649" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016039505">
+		<a name="comment-73016039505"></a>
+		
+<div id="rating-holder-73016039505">
+	<div class="numb-holder">
+		<span id="com-rating-73016039505">
+			<strong class="numb" id="numb-rating-73016039505">+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016039505" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016039505" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			That's beautiful			<div class="sign">
+
+				<span id="flagspan-73016039505">
+											<a href="#" id="flag-73016039505" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17459114/" id="userprofile-17459114" rel="me nofollow" title="danglingconversation" class="author">danglingconversation</a><em class="date">on April 15, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016153262">
+		<a name="comment-73016153262"></a>
+		
+<div id="rating-holder-73016153262">
+	<div class="numb-holder">
+		<span id="com-rating-73016153262">
+			<strong class="numb" id="numb-rating-73016153262">+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016153262" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016153262" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			"A guy with a tambourine can't really play a song."<br>
+Well said!			<div class="sign">
+
+				<span id="flagspan-73016153262">
+											<a href="#" id="flag-73016153262" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17514516/" id="userprofile-17514516" rel="me nofollow" title="patobebado" class="author">patobebado</a><em class="date">on June 24, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-119554">
+		<a name="comment-119554"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-119554">
+	<div class="numb-holder">
+		<span id="com-rating-119554">
+			<strong class="numb" id="numb-rating-119554">+11</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-119554" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-119554" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-119554">
+
+				<strong class="title">General Comment</strong>Dudes you have it totally wrong. While you can only marvel at Mr. Dylan beautiful lyrics, the true meaning of the song has been lost on you. For those of you who thinks this song is about drugs, pray tell, where are the drug references? what drug is "Mr. Tambourine Man" associated with. Just because the speaker in the lyrics is in another realm does not mean he got there due to drugs. "Mr Tambourine Man" is a musician. He is a source of inspiration. Much like Keat's "Ode to a Nightingale", this song is about getting inspiration (ie being able to achieve enlightenment) . Whereas the clown follows the shadow, the speaker follows the Tambourine Man because he is the real deal. He is where inspiration comes from. And since Dylan chose a man playing the tambourine as the title/"inspirator", it is safe to assume that he is making a statement about his art. Musician, with their music, inspire the people who truly understands the lyrics (case in point: this very debate) . While the clowns of this world merely copy the style, the form, and the tone of the lyrics, the inspired people understand and see their world in a new light (ie the passages about nature and their surroundings) . This new understanding can thereby make the audience into better people. 				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/171438/" id="userprofile-171438" rel="me nofollow" title="hpylori" class="author">hpylori</a><em class="date">on August 02, 2002</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=119554#comments" id="specific_com-119554" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-119554" title="13 Replies">13 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-119554" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-119554">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-119554" id="frmreplycomment">@hpylori </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="119554" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-119554" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015706979">
+		<a name="comment-73015706979"></a>
+		
+<div id="rating-holder-73015706979">
+	<div class="numb-holder">
+		<span id="com-rating-73015706979">
+			<strong class="numb" id="numb-rating-73015706979">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015706979" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015706979" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Music is there to be analyzed differently by each individual. I think it's a bit narcissistic and naive of you to be placing yourself on some pedistule as "the great interpreter of songs." 			<div class="sign">
+
+				<span id="flagspan-73015706979">
+											<a href="#" id="flag-73015706979" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17235591/" id="userprofile-17235591" rel="me nofollow" title="Shrox" class="author">Shrox</a><em class="date">on March 14, 2009</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73015711609">
+		<a name="comment-73015711609"></a>
+		
+<div id="rating-holder-73015711609">
+	<div class="numb-holder">
+		<span id="com-rating-73015711609">
+			<strong class="numb" id="numb-rating-73015711609">+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015711609" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015711609" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			individuality is often these days an excuse for stupidity and failure to recognize undeniable ignorance where it is encountered(self), I shouldn't have to but i will without my own words explain again in the original post's words:  "While the clowns of this world merely copy the style, the form, and the tone of the lyrics, the inspired people understand and see their world in a new light (ie the passages about nature and their surroundings) . This new understanding can thereby make the audience into better people." so when in fact you're overlooking the real meaning as it should be, my friend, you're just another ragged clown chasing some shadow.			<div class="sign">
+
+				<span id="flagspan-73015711609">
+											<a href="#" id="flag-73015711609" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17205891/" id="userprofile-17205891" rel="me nofollow" title="manuelturcios" class="author">manuelturcios</a><em class="date">on March 23, 2009</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73015790964">
+		<a name="comment-73015790964"></a>
+		
+<div id="rating-holder-73015790964">
+	<div class="numb-holder">
+		<span id="com-rating-73015790964">
+			<strong class="numb" id="numb-rating-73015790964">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015790964" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015790964" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			 I Have a Question Im 15 And sometimes i can guess what songs are about by reading each stanza. But what i love about Bob Dylan is that his lyrics are a challenge and i can't understand a thing he is talking about in this song. Can some break it down for and give me some tips on how to interpret songs a lot better?			<div class="sign">
+
+				<span id="flagspan-73015790964">
+											<a href="#" id="flag-73015790964" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17340304/" id="userprofile-17340304" rel="me nofollow" title="Gounomono" class="author">Gounomono</a><em class="date">on August 13, 2009</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73015886468">
+		<a name="comment-73015886468"></a>
+		
+<div id="rating-holder-73015886468">
+	<div class="numb-holder">
+		<span id="com-rating-73015886468">
+			<strong class="numb" id="numb-rating-73015886468">-2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015886468" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015886468" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			yeh your right mr tambourine man is inspiration but the inspiration comes from weed. mr tambourine man is not his dealer its his weed. weed does what he is describing in the song. trust me i'm stoned now!!!			<div class="sign">
+
+				<span id="flagspan-73015886468">
+											<a href="#" id="flag-73015886468" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17381493/" id="userprofile-17381493" rel="me nofollow" title="stevethehorse" class="author">stevethehorse</a><em class="date">on March 05, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016043879">
+		<a name="comment-73016043879"></a>
+		
+<div id="rating-holder-73016043879">
+	<div class="numb-holder">
+		<span id="com-rating-73016043879">
+			<strong class="numb" id="numb-rating-73016043879">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016043879" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016043879" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I think you nailed it, for the most part hpylori.			<div class="sign">
+
+				<span id="flagspan-73016043879">
+											<a href="#" id="flag-73016043879" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17302700/" id="userprofile-17302700" rel="me nofollow" title="degree7" class="author">degree7</a><em class="date">on April 30, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016048292">
+		<a name="comment-73016048292"></a>
+		
+<div id="rating-holder-73016048292">
+	<div class="numb-holder">
+		<span id="com-rating-73016048292">
+			<strong class="numb" id="numb-rating-73016048292">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016048292" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016048292" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Next time you leave a comment, you should be more pretentious.			<div class="sign">
+
+				<span id="flagspan-73016048292">
+											<a href="#" id="flag-73016048292" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17270756/" id="userprofile-17270756" rel="me nofollow" title="matthewconte" class="author">matthewconte</a><em class="date">on May 17, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016136412">
+		<a name="comment-73016136412"></a>
+		
+<div id="rating-holder-73016136412">
+	<div class="numb-holder">
+		<span id="com-rating-73016136412">
+			<strong class="numb" id="numb-rating-73016136412">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016136412" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016136412" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I agree, but I bet this song's still great on XTC.			<div class="sign">
+
+				<span id="flagspan-73016136412">
+											<a href="#" id="flag-73016136412" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17506612/" id="userprofile-17506612" rel="me nofollow" title="paddygilbert" class="author">paddygilbert</a><em class="date">on April 11, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016284124">
+		<a name="comment-73016284124"></a>
+		
+<div id="rating-holder-73016284124">
+	<div class="numb-holder">
+		<span id="com-rating-73016284124">
+			<strong class="numb" id="numb-rating-73016284124">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016284124" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016284124" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/171438/?mention=7015f6c4f4d9b057185504557a81227c" id="userprofile-171438" rel="me nofollow" title="@hpylori">@hpylori</a> I agree with much or all of that. Dylan, in an interview, said he had been inspired by seeing &amp; hearing a tambourine player at a street festival, the morning after some night before. To my mind, therefore, it seems to me the singer-songwriter-poet is asking "Who's gonna sing for ME?" i.e. who will inspire the singer who inspires so many others? <br>
+At least, that's what I thought back in 1971, near the end of an acid trip, as my friend played the song for us.			<div class="sign">
+
+				<span id="flagspan-73016284124">
+											<a href="#" id="flag-73016284124" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17532443/" id="userprofile-17532443" rel="me nofollow" title="buildwell" class="author">buildwell</a><em class="date">on December 01, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016284369">
+		<a name="comment-73016284369"></a>
+		
+<div id="rating-holder-73016284369">
+	<div class="numb-holder">
+		<span id="com-rating-73016284369">
+			<strong class="numb" id="numb-rating-73016284369">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016284369" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016284369" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/171438/?mention=dc372388beeeba24a561d7c201aeec74" id="userprofile-171438" rel="me nofollow" title="@hpylori">@hpylori</a> "Take me on a trip upon your magic swirlin' ship,<br>
+ My senses have been stripped, my hands can't feel to grip,<br>
+ My toes too numb to step, wait only for my boot heels<br>
+ To be wanderin'.<br>
+ I'm ready to go anywhere, I'm ready for to fade<br>
+ Into my own parade, cast your dancing spell my way,<br>
+ I promise to go under it.<br>
+<br>
+ Hey! Mr. Tambourine Man, play a song for me,<br>
+ I'm not sleepy and there is no place I'm going to.<br>
+ Hey! Mr. Tambourine Man, play a song for me,<br>
+ In the jingle jangle morning I'll come followin' you.<br>
+<br>
+ Though you might hear laughin', spinnin', swingin' madly across the sun,<br>
+ It's not aimed at anyone, it's just escapin' on the run<br>
+ And but for the sky there are no fences facin'.<br>
+ And if you hear vague traces of skippin' reels of rhyme<br>
+ To your tambourine in time, it's just a ragged clown behind,<br>
+ I wouldn't pay it any mind, it's just a shadow you're<br>
+ Seein' that he's chasing.<br>
+"<br>
+You're tellin me this fools not on salvia. 			<div class="sign">
+
+				<span id="flagspan-73016284369">
+											<a href="#" id="flag-73016284369" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17644262/" id="userprofile-17644262" rel="me nofollow" title="josh110172" class="author">josh110172</a><em class="date">on December 03, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016305867">
+		<a name="comment-73016305867"></a>
+		
+<div id="rating-holder-73016305867">
+	<div class="numb-holder">
+		<span id="com-rating-73016305867">
+			<strong class="numb" id="numb-rating-73016305867">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016305867" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016305867" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/171438/?mention=c0148740a99a3df6b3080900378ac26a" id="userprofile-171438" rel="me nofollow" title="@hpylori">@hpylori</a>  the jingle jangle morning is  a description of the first pangs of withdrawal, before you go cop heroin in the morning. You chase the dealer to get your fix. This is fairly well known song meaning,  I thought everyone knew this. I'll l ook for a source though.			<div class="sign">
+
+				<span id="flagspan-73016305867">
+											<a href="#" id="flag-73016305867" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17512478/" id="userprofile-17512478" rel="me nofollow" title="larick" class="author">larick</a><em class="date">on September 02, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016308450">
+		<a name="comment-73016308450"></a>
+		
+<div id="rating-holder-73016308450">
+	<div class="numb-holder">
+		<span id="com-rating-73016308450">
+			<strong class="numb" id="numb-rating-73016308450">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016308450" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016308450" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/171438/?mention=5ea7df9063bf28ac3c4ee46c4055a414" id="userprofile-171438" rel="me nofollow" title="@hpylori">@hpylori</a> <br>
+Although I do not know much of the context of this song I still must disagree with you. I do, however, commend you on the originality of the interpretation and I do know how tiresome it can get hearing people use drugs to explain what they don't understand. That said, it is very hard to interpret these words for anything else...<br>
+"Take me on a trip upon your magic swirling ship<br>
+My senses have been stripped<br>
+May hands can't feel to grip<br>
+My toes too numb to step<br>
+Wait only for my boot heels to be wandering<br>
+I'm ready to go anywhere, I'm ready for to fade<br>
+Into my own parade<br>
+Cast your dancing spell my way, I promise to go under it".<br>
+If I had to guess I'd say much is referring to the meaninglessness and therefore the emptiness of life and the results of such a feeling. He says <br>
+"Though I know that evenings empire has returned into sand<br>
+Vanished from my hand<br>
+Left me blindly here to stand but still not sleeping<br>
+My weariness amazes me, I'm branded on my feet<br>
+I have no one to meet<br>
+And the ancient empty street's too dead for dreaming"<br>
+I think the sleep he is referring to is death itself. There is no stimulus in his world (the street's are too empty to dream) yet he is still forced by something unknown to stand. He probably wants to kill himself (My weariness amazes me) or at least he can't understand why he is both so tired (over life) and still standing (Resisting his true thoughts thanks to instinct or something along those lines). He wants there to be purpose but he is always let down (Though you might hear laughing, spinning, swinging madly across the sun<br>
+It's not aimed at anyone) and so when he asks Mr Tambourine man to play a song he will inevitably be disappointed as it is extremely difficult to play a "song" with an instrument whose most easily compared to the triangle. 			<div class="sign">
+
+				<span id="flagspan-73016308450">
+											<a href="#" id="flag-73016308450" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17671925/" id="userprofile-17671925" rel="me nofollow" title="BabyEater75" class="author">BabyEater75</a><em class="date">on October 09, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016308451">
+		<a name="comment-73016308451"></a>
+		
+<div id="rating-holder-73016308451">
+	<div class="numb-holder">
+		<span id="com-rating-73016308451">
+			<strong class="numb" id="numb-rating-73016308451">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016308451" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016308451" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I should add that the drugs come into, of course, as an escape from this empty world. Much like Lou Reed's "Perfect Day"			<div class="sign">
+
+				<span id="flagspan-73016308451">
+											<a href="#" id="flag-73016308451" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17671925/" id="userprofile-17671925" rel="me nofollow" title="BabyEater75" class="author">BabyEater75</a><em class="date">on October 09, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016313113">
+		<a name="comment-73016313113"></a>
+		
+<div id="rating-holder-73016313113">
+	<div class="numb-holder">
+		<span id="com-rating-73016313113">
+			<strong class="numb" id="numb-rating-73016313113">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313113" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313113" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/171438/?mention=ec8b90f7eaa3b878704b3a7b51f5567d" id="userprofile-171438" rel="me nofollow" title="@hpylori">@hpylori</a> It is all about drugs. Have another listen and think about the words ...smoke rings of my mind...might help you understand.			<div class="sign">
+
+				<span id="flagspan-73016313113">
+											<a href="#" id="flag-73016313113" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17646667/" id="userprofile-17646667" rel="me nofollow" title="castalia2576" class="author">castalia2576</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014619797">
+		<a name="comment-73014619797"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014619797">
+	<div class="numb-holder">
+		<span id="com-rating-73014619797">
+			<strong class="numb" id="numb-rating-73014619797">+9</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014619797" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014619797" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014619797">
+
+				<strong class="title">General Comment</strong>This song is so genius that it has so many people arguing about its meaning even today!<br>
+ <br>
+The people who believe it is a drug song can back it up in every single line of the song. Hpylori can also back up his interpretation in, you guessed it, every single line of the song.<br>
+<br>
+My point is, that art is derived from inspiration, whether it came from pure mind or a drug induced state, and that art was created for the purpose of expressing, viewing, experimenting with, and explaining life while also providing us comfort and an escape from life. Therefore art and drugs, in a very strong way, are one and the same. They can both be used to further understand or to escape from life.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/209306/" id="userprofile-209306" rel="me nofollow" title="curious george" class="author">curious george</a><em class="date">on June 21, 2003</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73014619797#comments" id="specific_com-73014619797" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014619797" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014619797" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014619797">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014619797" id="frmreplycomment">@curious george </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014619797" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014619797" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016154944">
+		<a name="comment-73016154944"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016154944">
+	<div class="numb-holder">
+		<span id="com-rating-73016154944">
+			<strong class="numb" id="numb-rating-73016154944">+6</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016154944" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016154944" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016154944">
+
+				<strong class="title">My Interpretation</strong>It’s the high that you feel when you’re tired from doing a lot of things and have done them well. You’re tired (“my weariness amazes me”), but feel energetic and good. So you don’t want to sleep. He’s walking in NYC at maybe 6:00 in the morning feeling good in this way. The streets are empty and dead. “The ancient empty street’s too dead for dreaming”. Yet he seeks sensory stimulation of some sort because he’s not “dead” — though weary, he’s feeling so alive. Then he gets behind a tambourine man who’s walking along, playing the instrument.  Mental stimulation he so needs, amid the otherwise deadness. That’s all it takes, in that state of mind. He’s elated by and for that moment reveres the tambourine man. It’s a momentary kind of unique feeling which Dylan perfectly lyricizes for this song. Tomorrow he may see the tambourine man and not even notice.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17516648/" id="userprofile-17516648" rel="me nofollow" title="dylanite" class="author">dylanite</a><em class="date">on July 03, 2012</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73016154944#comments" id="specific_com-73016154944" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016154944" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73016154944" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016154944">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016154944" id="frmreplycomment">@dylanite </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016154944" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016154944" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-66991">
+		<a name="comment-66991"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-66991">
+	<div class="numb-holder">
+		<span id="com-rating-66991">
+			<strong class="numb" id="numb-rating-66991">+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-66991" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-66991" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-66991">
+
+				<strong class="title">General Comment</strong>Bob Dylan TOOK drugs, sure, but that doesn't necessarily mean the songs are ABOUT drugs.<br>
+<br>
+"yes, to dance beneath the diamond sky with one hand waving free, silhouetted by the sea, circled by the circus sands with all memory and fate driven deep beneath the waves let me forget about today until tomorrow" are my favorite lines in the song.  they create such a beautiful mental picture.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/31563/" id="userprofile-31563" rel="me nofollow" title="misera" class="author">misera</a><em class="date">on June 09, 2002</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=66991#comments" id="specific_com-66991" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-66991" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-66991" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-66991">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-66991" id="frmreplycomment">@misera </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="66991" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-66991" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016106141">
+		<a name="comment-73016106141"></a>
+		
+<div id="rating-holder-73016106141">
+	<div class="numb-holder">
+		<span id="com-rating-73016106141">
+			<strong class="numb" id="numb-rating-73016106141">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016106141" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016106141" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Those are my favorite lyrics in the song. Of course the song is about taking drugs, specifically in this case probably heroin, but certainly some substance sold by the Tamborine Man (the dealer) that makes you numb from the pain of life and makes you want to swirl and dance beaneath the diamond sky. "With one hand waiving free" suggests to me a reference to Zorba the Greek or Chasidic dancers or some other "old country" tribal folk dancers, so the song connects the contemporary to the ancient ruins of time and establishes a link between the past and the present, to express the universality of mankind's desire to be one with nature, or God, or the universe or whatever.			<div class="sign">
+
+				<span id="flagspan-73016106141">
+											<a href="#" id="flag-73016106141" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17491087/" id="userprofile-17491087" rel="me nofollow" title="iwikler" class="author">iwikler</a><em class="date">on December 04, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016276048">
+		<a name="comment-73016276048"></a>
+		
+<div id="rating-holder-73016276048">
+	<div class="numb-holder">
+		<span id="com-rating-73016276048">
+			<strong class="numb" id="numb-rating-73016276048">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016276048" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016276048" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Yes, This is a great thread and some right on comments and I will add this to your mental picture: He's singing about the Statue of Liberty holding the torch (one hand waving FREE)  with the sand around beach at night and I think there was an amusement park around there (CIRCUS sands).  Coney Island ? or something like that. I still sing this song when I perform if the right audience is there. 			<div class="sign">
+
+				<span id="flagspan-73016276048">
+											<a href="#" id="flag-73016276048" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17635720/" id="userprofile-17635720" rel="me nofollow" title="bob1000029" class="author">bob1000029</a><em class="date">on September 14, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014727466">
+		<a name="comment-73014727466"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014727466">
+	<div class="numb-holder">
+		<span id="com-rating-73014727466">
+			<strong class="numb" id="numb-rating-73014727466">+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014727466" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014727466" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014727466">
+
+				<strong class="title">General Comment</strong>The song isn't about drugs. It's about how you feel when you're dieing from old age. I don"t know how Dylan could know of this being young at the time he wrote it. (maybe drugs) (or some real spiritual sence) To an aged person the lyics make perfect sence. Entertainment to take them to the great beyond.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17011657/" id="userprofile-17011657" rel="me nofollow" title="no1knows" class="author">no1knows</a><em class="date">on December 15, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73014727466#comments" id="specific_com-73014727466" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014727466" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014727466" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014727466">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014727466" id="frmreplycomment">@no1knows </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014727466" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014727466" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014782657">
+		<a name="comment-73014782657"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014782657">
+	<div class="numb-holder">
+		<span id="com-rating-73014782657">
+			<strong class="numb" id="numb-rating-73014782657">+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014782657" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014782657" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014782657">
+
+				<strong class="title">General Comment</strong>Whoever said it was about death was absolutely right. It is an imaginative combining of the process of dying ("my senses have been stripped"), longing to go on that trip (an obvious pun), and the eventual funeral procession - what else could his own parade mean? He is still there "not sleepy" , feeling his soul fade as they lay him to rest, to the music of a tambourine.<br>
+<br>
+See this link for New Orleans parades and funerals<br>
+<br>
+<a rel="nofollow" href="http://http://www.nola.com/mardigras/about/index.ssf?/mardigras/about/content/stories/funerals.html">nola.com/mardigras/about/…</a>				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17025163/" id="userprofile-17025163" rel="me nofollow" title="Unpredictable" class="author">Unpredictable</a><em class="date">on February 18, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73014782657#comments" id="specific_com-73014782657" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014782657" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73014782657" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014782657">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014782657" id="frmreplycomment">@Unpredictable </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014782657" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014782657" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015639070">
+		<a name="comment-73015639070"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015639070">
+	<div class="numb-holder">
+		<span id="com-rating-73015639070">
+			<strong class="numb" id="numb-rating-73015639070">+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015639070" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015639070" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015639070">
+
+				<strong class="title">General Comment</strong>A bunch of years ago, 1970's?, I went to a small concert with the folksinger Chuck Mitchell (Joni Mitchell's first husband - and he hated to be refered to as that).  Well he gave a great concert to less than 100 people at the "Down Under" coffee house at FSU (Tallahassee Florida).  He started playing the chords to a song and told a story about he and Bob Dylan were up in the attic of someone's house.  He told us that Dylan actually shared the meaning to him.  He said it referred to the one common musician in all  New Orleans Jazz funerals.  Wealthy people would get a marching band in fancy uniforms, poorer people might only get a few musicians.  He claimed the tradition was there was always a Tambourine player who didn't march in formation, or where a matching uniform.  This was for rich people and poor people.  He claimed that the Tambourine Man symbolized DEATH and that's it.  The entire song is about death and not drugs. He then did a great version of the song with all the verses.  The death interpretation makes perfect sense if you listen to all the verses.  <br>
+especially:<br>
+Take me on a trip upon your magic swirlin' ship,<br>
+My senses have been stripped, my hands can't feel to grip,<br>
+My toes too numb to step, wait only for my boot heels<br>
+To be wanderin'.<br>
+I'm ready to go anywhere, I'm ready for to fade<br>
+Into my own parade, cast your dancing spell my way,<br>
+I promise to go under it.<br>
+<br>
+When you are dead all your senses are stripped.<br>
+<br>
+Chuck Mitchell's story sounded very convincing, and I could not have come up with this interpretation myself.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17287384/" id="userprofile-17287384" rel="me nofollow" title="gsokolow" class="author">gsokolow</a><em class="date">on October 31, 2008</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73015639070#comments" id="specific_com-73015639070" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015639070" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73015639070" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015639070">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015639070" id="frmreplycomment">@gsokolow </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015639070" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015639070" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016270628">
+		<a name="comment-73016270628"></a>
+		
+<div id="rating-holder-73016270628">
+	<div class="numb-holder">
+		<span id="com-rating-73016270628">
+			<strong class="numb" id="numb-rating-73016270628">0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016270628" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016270628" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			i didn't know all that stuff about the tambourine player, but I'm so glad I'm not crazy thinking its about death!			<div class="sign">
+
+				<span id="flagspan-73016270628">
+											<a href="#" id="flag-73016270628" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17595669/" id="userprofile-17595669" rel="me nofollow" title="blackwindowsof" class="author">blackwindowsof</a><em class="date">on July 22, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016173548">
+		<a name="comment-73016173548"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016173548">
+	<div class="numb-holder">
+		<span id="com-rating-73016173548">
+			<strong class="numb" id="numb-rating-73016173548">+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016173548" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016173548" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016173548">
+
+				<strong class="title">General Comment</strong>Adrenaline kicking from a sleepless night. Exhausted but too excited, feeling energetic, and most of all feeling good from doing a lot of things -feeling alive!<br>
+<br>
+Following a tambourine man. Like a child to Pied Piper, although he is tired physically, mentally and emotionally he is following Mr. Tambourine man, wanting him to play his song so that he can be taken by the music and for once, even in a short moment, he can escape momentarily. He wants to feel how it's like to enjoy life without worries.<br>
+<br>
+In short, Mr. Tambourine man symbolizes the heart. We have to follow the beating of our hearts and enjoy life as it comes for what it's worth.<br>
+<br>
+"Let me forget about today until tomorrow" meaning, he wants to forget today's trouble and have fun even just for today. But, he will return to his normal life tomorrow.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17536470/" id="userprofile-17536470" rel="me nofollow" title="bernadeth1" class="author">bernadeth1</a><em class="date">on October 24, 2012</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73016173548#comments" id="specific_com-73016173548" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016173548" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73016173548" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016173548">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016173548" id="frmreplycomment">@bernadeth1 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016173548" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016173548" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016336788">
+		<a name="comment-73016336788"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016336788">
+	<div class="numb-holder">
+		<span id="com-rating-73016336788">
+			<strong class="numb" id="numb-rating-73016336788">+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016336788" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016336788" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016336788">
+
+				<strong class="title">General Comment</strong>if it's not about a tambourine man, why don't these fuckers just say what they mean and stop fucking us about.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17698889/" id="userprofile-17698889" rel="me nofollow" title="mart101" class="author">mart101</a><em class="date">on October 22, 2016</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/5731/?&amp;specific_com=73016336788#comments" id="specific_com-73016336788" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016336788" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<br>						
+						</div>
+						
+						<div id="formreply-73016336788" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016336788">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016336788" id="frmreplycomment">@mart101 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="5731" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016336788" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit">
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016336788" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+			<span id='ezoic-pub-ad-placeholder-114' class="ezoic-adpicker-ad" data-ezadpicker="114" data-ez-position-type="mid_content"></span><!-- placeholder 114 blocked.  Reason : no sizes --></ul>
+		<!-- end comments-list -->
+	</div>
+	
+
+	
+	<!-- comments pagination -->
+	<div class="holder sign-box" style="text-align: center;" id="pagination">
+		&nbsp;
+	</div>
+	<!-- end comments pargination -->
+	
+<span id='ezoic-pub-ad-placeholder-117' class="ezoic-adpicker-ad" data-ezadpicker="117" data-ez-position-type="bottom_of_page"></span></div>
+
+
+
+<a name="addcomment"></a>
+	<div class="block">
+		<div class="heading">
+			<h2>Add your thoughts</h2>
+		</div>
+		<div class="holder">
+			<p><a class="lightbox" href="#popup-loginform">Log in now</a> to tell us what you think this song means. </p>
+			<p>Don’t have an account? <a href="/create/">Create an account</a> with SongMeanings to post comments, submit lyrics, and more. It’s super easy, we promise!</p>
+		</div>
+	</div>
+			<span id='ezoic-pub-ad-placeholder-118' class="ezoic-adpicker-ad" data-ezadpicker="118" data-ez-position-type="bottom_of_page"></span></div>
+
+		<!-- sidebar -->
+		<div id="sidebar">
+			
+			<!-- block-heading -->
+
+
+<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+
+<!-- END TAG --> <br><div class="block" style="padding-top: 10px; margin-top: 0px; border-top: 1px solid #DEDEDE;">
+
+	<div id="rate-widget-5731" class="rating-widget" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+		<div id="rating-header">
+			Rate These Lyrics
+		</div>
+
+		<meta itemprop="ratingValue" content="4">
+	    <meta itemprop="worstRating" content="1">
+	    <meta itemprop="bestRating" content="5">
+	    <meta itemprop="reviewCount" content="23">
+
+		<span>
+			<a id="star-1" href="#" class="star-1 rate-star"></a>
+			<a id="star-2" href="#" class="star-2 rate-star"></a>
+			<a id="star-3" href="#" class="star-3 rate-star"></a>
+			<a id="star-4" href="#" class="star-4 rate-star"></a>
+			<a id="star-5" href="#" class="star-5 rate-star"></a>
+		</span>
+
+		<div class="total_votes" data-totalvotes="23 Votes">
+			23 Votes		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var url = window.location.href;
+		if (/\/$/.test(url) == false) {
+	   		url = url + "/";
+		}
+
+		var total_votes = '23';
+		var average 	= '4';
+		setRating('.rating-widget');
+
+		var loggedin 	= 'false';
+
+		$('.rate-star').hover(
+            // Handles the mouseover
+            function() {
+                $(this).prevAll().andSelf().addClass('rate-star-hover');
+                $(this).nextAll().removeClass('rate-star-vote'); 
+
+                var rating_fyi = $(this).attr('id');
+                switch(rating_fyi) {
+                	case 'star-1':
+                		rating_fyi = "poor";
+                	break;
+
+                	case 'star-2':
+                		rating_fyi = "not so good";
+                	break;
+
+                	case 'star-3':
+                		rating_fyi = "average";
+                	break;
+
+                	case 'star-4':
+                		rating_fyi = "good";
+                	break;
+
+                	case 'star-5':
+                		rating_fyi = "excellent";
+                	break;
+                }
+                $('.total_votes').html(rating_fyi);
+            },
+            // Handles the mouseout
+            function() {
+                $(this).prevAll().andSelf().removeClass('rate-star-hover');
+                //setRating($(this).parent());
+                $('.total_votes').html($('.total_votes').data('totalvotes'));
+            }
+        );
+
+        $('.rate-star').bind('click', function(e) {
+            var star = this;
+            var lid = $(this).closest("div").attr("id").substring(12);
+            
+            var clicked_data = {
+            	command    	: "songRatingSet",
+            	lyric_id	: lid,
+                clicked_on 	: $(star).attr('class'),
+                clicked_id 	: $(star).attr('id')
+            };
+
+            $('.rate-star').removeClass('rate-star-full');
+
+            $.ajax({
+				type: "POST", 
+				url: url, 
+				data: clicked_data,
+				dataType: "json",
+				success: function(result){
+					//$('.rating-widget').data('fsr', result);
+					total_votes			= result['total_votes'];
+					if(typeof(result['user_value']) != "undefined" && result['user_value'] !== null) {
+						average 			= result['user_value'];
+					} else {
+						average 			= result['average'];
+					}
+						
+					setRating('.rating-widget');
+				},
+				complete: function(result, success) {
+					console.log(result, success);
+				}
+			});
+
+	        return false;
+        }); 
+
+        function setRating(widget) {
+        	$(widget).find('.star-' + average).prevAll().andSelf().addClass('rate-star-full');  
+    		$(widget).find('.star-' + average).nextAll().removeClass('rate-star-full');  
+
+    		if(total_votes === "1") {
+    			total_votes = "1 Vote";
+    		} else {
+    			total_votes = total_votes + " Votes";
+    		}
+
+    		$('.total_votes').data('totalvotes', total_votes);
+        	$('.total_votes').html(total_votes);
+        	return false;
+        }
+        
+    
+	});
+</script>
+<div class="block-heading-blue">
+	<h3>Add to Mixtape</h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0 18px 0 18px;">
+	<br>
+	<a href="/create/">Log in now</a> to add this track to your mixtape!
+	<br><br>
+	</div>
+
+<!-- block-heading -->
+<a name="tagsbox"></a>
+<div class="block-heading">
+	<h3>Most popular lyric tags</h3>
+</div>
+<!-- block -->
+<div class="block">
+	<ul class="tags-list" id="tags-list"><li><a href="/tags/view/sgt+peppers+lonely+hear/" title="sgt peppers lonely hear lyric tag"><strong>sgt peppers lonely hear</strong><span>1</span></a></li></ul>		<a href="/create/" class="more">Log in to add a tag</a>
+			
+	
+	
+</div><div class="block-heading">
+	<h3>More <a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan Lyrics">Bob Dylan Lyrics</a></h3>
+</div>
+<!-- block -->
+<span id='ezoic-pub-ad-placeholder-108' class="ezoic-adpicker-ad" data-ezadpicker="108" data-ez-position-type="long_content"></span><style type="text/css" >
+#sda_773 {
+width : 310px;
+clear : both;
+display : block;
+text-align : left;
+margin-top : 10px;
+margin-bottom : 10px;
+position : relative;
+font-family : Arial, Helvetica, sans-serif;
+text-align : left;
+line-height : 1em;
+}
+#sda_773  .sda_container {
+width : 150px;
+display : inline-block;
+vertical-align : top;
+margin-right : 1%;
+}
+#sda_773 .sda_title_wrapper .sda_title {
+font-size : 13px;
+margin : 0;
+border : none;
+text-align : left;
+vertical-align : middle;
+overflow-wrap : break-word;
+width : auto;
+font-weight : bold;
+padding : 0;
+font-size : 13px;
+line-height : 1.35em;
+color : #000;
+}
+#sda_773 .sda_container:hover .sda_title_wrapper .sda_title {
+text-decoration : underline;
+}
+#sda_773 .sda_container a {
+display : block;
+text-decoration : none;
+}
+#sda_773 .sda_referrer {
+font-size : 0.714em;
+font-weight : normal;
+font-style : italic;
+color : #888;
+overflow-wrap : break-word;
+line-height : 150%;
+}
+#sda_773 .sda_image_link img {
+width:150px;
+height:150px;
+}
+</style>
+<div id="sda_773" style="display:none"></div>
+<script>
+	function _jsonp_773(obj) {
+		        var obj_sda = obj.articles;
+		        var sda_html = "";
+		        for(i=0; i < obj_sda.length; i++) {
+		            sda_html = sda_html +
+		            "<div class='sda_container'>" +
+		            "<a class='sda_image_link' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            "<im" + "g src='" + obj_sda[i].image + "' class='sda_image'>" +
+		            "</a>" +
+		            "<div class='sda_title_wrapper'>" +
+		            "<a class='sda_title' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            obj_sda[i].title +
+		            "</a>" +
+		            "<div class='sda_referrer'>" + obj_sda[i].sponsored_by + "</div>" +
+		            "</div>" +
+		            "</div>";
+		        }
+				document.getElementById("sda_773").style.display = "block";
+		        document.getElementById("sda_773").innerHTML = sda_html;
+		    }
+			function _load_773() {
+				var xhrq_773 = new XMLHttpRequest();
+			    xhrq_773.open("GET", "/ez_aba_load/?aba_id=773&aba_wid=AF6C5002-9770-4346-B6E4-63C18B9ED993&aba_did=c29uZ21lYW5pbmdzLmV6b2ljLmNvbQ==", true);
+			    xhrq_773.onload = function (e) {
+				  if (xhrq_773.readyState === 4) {
+				    if (xhrq_773.status === 200) {
+				       eval(xhrq_773.responseText);
+				    }
+				  }
+				};
+			    xhrq_773.send(null);
+			}
+
+			if (typeof ez_cra_check === 'undefined') {
+
+				if (typeof loadbvjhghf === 'undefined') {
+					var xhr_773 = new XMLHttpRequest();
+				    xhr_773.open("GET", "/ezoic/prebid-ad-728x90.js", true);
+					xhr_773.onload = function (e) {
+						if(xhr_773.responseText == ""){
+		                    var loadbvjhghf = true;
+		                    _load_773();
+		                } else {
+		                    eval(xhr_773.responseText);
+		                }
+					};
+					xhr_773.onerror = function (e) {
+					  var loadbvjhghf = true;
+					  _load_773();
+					};
+					xhr_773.send(null);
+				}
+				else {
+					_load_773();
+				}
+			}
+		</script><span style='display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;' class='ezoic-ad banner-1 adtester-container adtester-container-108'><span id='div-gpt-ad-songmeanings_com-banner-1-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,250],'songmeanings_com-banner-1','ezslot_1']));</script></span></span><div class="block" style="padding: 0px 18px;">
+	<ul class="songs-list songs-list2">
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5730/" title="Like a Rolling Stone Lyrics">Like a Rolling Stone Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5727/" title="All Along the Watchtower Lyrics">All Along the Watchtower Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/47748/" title="Ballad of a Thin Man Lyrics">Ballad of a Thin Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/57315/" title="Tangled Up in Blue Lyrics">Tangled Up in Blue Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/1110/" title="Desolation Row Lyrics">Desolation Row Lyrics</a></strong>
+		</li>
+			</ul>
+</div><div style="text-align: center;">
+			<a href="http://sng.mn/cftpc/"><img src="//songmeanings.com/images/ios_badge.png" style="outline: none; text-decoration: none; width: auto; clear: both; border: none;"></a>
+		<br><br>
+		
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div><br><!-- adbrite sucks -->
+<div style="text-align: center;">
+	
+</div>
+		<span id='ezoic-pub-ad-placeholder-122' class="ezoic-adpicker-ad" data-ezadpicker="122" data-ez-position-type="sidebar"></span><span style='display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;' class='ezoic-ad banner-2 adtester-container adtester-container-122'><span id='div-gpt-ad-songmeanings_com-banner-2-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'songmeanings_com-banner-2','ezslot_3']));</script></span></span></div>
+	<span id='ezoic-pub-ad-placeholder-138' class="ezoic-adpicker-ad" data-ezadpicker="138" data-ez-position-type="bottom_of_page"></span><style type="text/css" >
+#sda_774 {
+width : 310px;
+clear : both;
+display : block;
+text-align : left;
+margin-top : 10px;
+margin-bottom : 10px;
+position : relative;
+font-family : Arial, Helvetica, sans-serif;
+text-align : left;
+line-height : 1em;
+}
+#sda_774  .sda_container {
+width : 150px;
+display : inline-block;
+vertical-align : top;
+margin-right : 1%;
+}
+#sda_774 .sda_title_wrapper .sda_title {
+font-size : 13px;
+margin : 0;
+border : none;
+text-align : left;
+vertical-align : middle;
+overflow-wrap : break-word;
+width : auto;
+font-weight : bold;
+padding : 0;
+font-size : 13px;
+line-height : 1.35em;
+color : #000;
+}
+#sda_774 .sda_container:hover .sda_title_wrapper .sda_title {
+text-decoration : underline;
+}
+#sda_774 .sda_container a {
+display : block;
+text-decoration : none;
+}
+#sda_774 .sda_referrer {
+font-size : 0.714em;
+font-weight : normal;
+font-style : italic;
+color : #888;
+overflow-wrap : break-word;
+line-height : 150%;
+}
+#sda_774 .sda_image_link img {
+width:150px;
+height:150px;
+}
+</style>
+<div id="sda_774" style="display:none"></div>
+<script>
+	function _jsonp_774(obj) {
+		        var obj_sda = obj.articles;
+		        var sda_html = "";
+		        for(i=0; i < obj_sda.length; i++) {
+		            sda_html = sda_html +
+		            "<div class='sda_container'>" +
+		            "<a class='sda_image_link' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            "<im" + "g src='" + obj_sda[i].image + "' class='sda_image'>" +
+		            "</a>" +
+		            "<div class='sda_title_wrapper'>" +
+		            "<a class='sda_title' rel='nofollow' href='" + obj_sda[i].url + "'>" +
+		            obj_sda[i].title +
+		            "</a>" +
+		            "<div class='sda_referrer'>" + obj_sda[i].sponsored_by + "</div>" +
+		            "</div>" +
+		            "</div>";
+		        }
+				document.getElementById("sda_774").style.display = "block";
+		        document.getElementById("sda_774").innerHTML = sda_html;
+		    }
+			function _load_774() {
+				var xhrq_774 = new XMLHttpRequest();
+			    xhrq_774.open("GET", "/ez_aba_load/?aba_id=774&aba_wid=0EA17F95-CB2A-4D99-A577-E4E0277BC8B5&aba_did=c29uZ21lYW5pbmdzLmV6b2ljLmNvbQ==", true);
+			    xhrq_774.onload = function (e) {
+				  if (xhrq_774.readyState === 4) {
+				    if (xhrq_774.status === 200) {
+				       eval(xhrq_774.responseText);
+				    }
+				  }
+				};
+			    xhrq_774.send(null);
+			}
+
+			if (typeof ez_cra_check === 'undefined') {
+
+				if (typeof loadbvjhghf === 'undefined') {
+					var xhr_774 = new XMLHttpRequest();
+				    xhr_774.open("GET", "/ezoic/prebid-ad-728x90.js", true);
+					xhr_774.onload = function (e) {
+						if(xhr_774.responseText == ""){
+		                    var loadbvjhghf = true;
+		                    _load_774();
+		                } else {
+		                    eval(xhr_774.responseText);
+		                }
+					};
+					xhr_774.onerror = function (e) {
+					  var loadbvjhghf = true;
+					  _load_774();
+					};
+					xhr_774.send(null);
+				}
+				else {
+					_load_774();
+				}
+			}
+		</script><span style='display:none !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-1 adtester-container adtester-container-138'><span id='div-gpt-ad-songmeanings_com-medrectangle-1-0' ezaw='300' ezah='250' style='position:relative;z-index:0;display:none;' class='ezoic-ad'><!--script-placeholder--></span></span><script>var ezzns4 = {0.50:504556,0.90:504560,1.70:504654,0.35:504552,0.80:504559,1.00:504647,1.60:504653,2.00:504657,2.60:504660,3.00:504664,0.05:504099,0.30:504551,0.60:504557,0.70:504558,1.30:504650,2.40:504659,2.80:504661,0.10:504141,0.25:504548,1.80:504655,4.00:504666,1.50:504652,4.50:504667,5.00:504669,0.20:504145,1.20:504649,1.90:504656,2.20:504658,1.10:504648,3.50:504665,0.15:504144,0.40:504554,0.45:504555,1.40:504651,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js" ></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="songmeanings_com-medrectangle-1" id="crt-4">
+<script type="text/javascript">
+var ezoflbf_2_4 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1138);};
+var ezoflbf_4 = function() { eval(ez_write_tag([[300,250],'songmeanings_com-medrectangle-1','ezslot_2']));
+		};</script><script type="text/javascript">ezoflbf_4();
+</script></div><script type='text/javascript'>setTimeout(function(){
+			if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1138);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 20.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl--></div>
+
+</div>
+					<!-- end mode-holder -->
+				</div>
+			<span id='ezoic-pub-ad-placeholder-126' class="ezoic-adpicker-ad" data-ezadpicker="126" data-ez-position-type="top_of_page"></span><!-- placeholder 126 blocked.  Reason : no sizes --></div>
+		<span id='ezoic-pub-ad-placeholder-115' class="ezoic-adpicker-ad" data-ezadpicker="115" data-ez-position-type="sidebar"></span><!-- placeholder 115 blocked.  Reason : no sizes --><span id='ezoic-pub-ad-placeholder-124' class="ezoic-adpicker-ad" data-ezadpicker="124" data-ez-position-type="bottom_of_page"></span><!-- placeholder 124 blocked.  Reason : no sizes --></div>
+		<!-- footer -->
+		
+
+<div id="footer">
+
+	<div class="footer-holder">
+
+		<div class="footer-frame">	
+			
+			<!-- panel -->
+			<div class="panel">
+				<div class="holder">
+					<h4>SongMeanings is a place for discussion and discovery.</h4>
+					<!-- topics -->
+					<ul class="topics">
+						<li>
+							<a href="#">
+								<strong>1,097,225</strong>
+								<span>Lyrics</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>110,886</strong>
+								<span>Artists</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>1,737,493</strong>
+								<span>Comments</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- column -->
+				<div class="column col1 white-inset">
+					<strong class="title">SongMeanings</strong>
+					<div class="column-holder">
+						<ul>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/forum/" rel="nofollow">Forum</a></li>
+							<li><a href="/about/team/">Who We Are</a></li>
+							<li><a href="/blog/">Read Our Blog</a></li>
+						</ul>
+						<ul>
+							<li><a href="/about/" rel="nofollow">Contact</a></li>
+							<li><a href="/about/advertising/" rel="nofollow">Advertising</a></li>
+							<li><a accesskey="8" href="/terms/" rel="nofollow">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- column col2 -->
+				<div class="column col2 white-inset">
+					<strong class="title">What’s popular</strong>
+					<ul>
+						<li><a href="/popular/lyrics/">Top Lyrics</a></li>
+						<li><a href="/mixtape/popular/">Mixtapes</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- bar -->
+			<div class="bar">
+				<div class="bar-holder">
+					<div class="white-inset" style="float: right;">
+						<div style="text-align: center;">
+	
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div>					</div>
+
+					<p>Non-lyrical content copyright 1999-2017 SongMeanings</p>
+					
+					<div style="text-align: center; color: #fff;">
+										</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<span id='ezoic-pub-ad-placeholder-125' class="ezoic-adpicker-ad" data-ezadpicker="125" data-ez-position-type="bottom_of_page"></span><!-- placeholder 125 blocked.  Reason : no sizes --></div>
+
+<div class="popup-holder">
+	<div id="popup-loginform" class="lightbox">
+		<div class="login-box-new">
+				<div class="holder-new">
+					<a href="#" class="facebook" id="modalbtn-facebook">Login with Facebook</a>
+					<div class="tooltip" id="facebook-tooltip">
+						<p>Error: Can’t log in using Facebook</p>
+					</div>
+				</div>
+				<div class="holder-new">
+					<a href="#" class="google" id="modalbtn-google">Login with Google</a>
+					<div class="tooltip" id="google-tooltip">
+						<p>Error: Can’t log in using Google</p>
+					</div>
+				</div>
+				<div class="heading-new"><span>Or</span></div>
+				<form action="#" class="login-form-new" id="login-form-new">
+					<fieldset>
+						<div class="input-holder" id="input-username">
+							<input type="text" placeholder="Username" name="name" id="name" autocomplete="off">
+					
+
+							<div class="tooltip" id="username-tooltip">
+								<p>User does not exist</p>
+							</div>
+						</div>
+						<div class="input-holder password" id="input-password">
+							<input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off">
+							<div class="tooltip" id="password-tooltip">
+								<p>Incorrect Password</p>
+							</div>
+						</div>
+						<div class="box-new" id="box-login">
+							<input type="checkbox" id="remember">
+							<label for="remember">Remember Me</label>
+							<input type="submit" value="Log In">
+						</div>
+						<div class="processing" id="box-processing" style="display:none;">
+							Logging you in...
+						</div>
+					</fieldset>
+				</form>
+				<div class="block-new">
+					<a href="/forgot/">Forgot username/password?</a>
+					<a href="/create/" class="join">Join Now!</a>
+				</div>
+		</div>
+	</div>
+</div>		<div id="back"><a href="#wrapper">Back to top</a></div>
+
+
+	</div>
+	
+	<div id="lightbox-panel">
+	<span id="lightbox-body">alert</span>
+	
+	
+	<div id="lightbox-close">
+		<a href="#" id="lightbox-exit">close</a>
+	</div>
+	
+</div>
+
+<div id="lightbox"></div>
+
+	
+	<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-e1GZ3PNfdDCkE"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-e1GZ3PNfdDCkE.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+
+
+	<div id="moverdiv">explain</div>
+
+
+
+
+
+
+<!-- Ezoic - Anchor Ad - bottom_floating -->
+<div class="ezmob-footer ezoic-floating-bottom ezo_ad"><center><span id='ezoic-pub-ad-placeholder-134'></span><!-- placeholder 134 blocked.  Reason : no sizes --></center></div>
+<!-- End Ezoic - Anchor Ad - bottom_floating -->
+<script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' src='//cdn.songmeanings.com/detroitchicago/edmonton.webp?a=a&cb=154-9&shcb=10' style='display:none;' async></script>
+<script type='text/javascript' src='//cdn.songmeanings.com/porpoiseant/jellyfish.webp?a=a&cb=154-9&shcb=10' style='display:none;' async></script>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.songmeanings_com,DomainId.7844"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.songmeanings_com,DomainId.7844"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag--></body></html><!--[ezpicker:done]-->

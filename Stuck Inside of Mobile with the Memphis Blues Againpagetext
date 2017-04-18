@@ -1,0 +1,2522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:_ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>Bob Dylan - Stuck Inside of Mobile with the Memphis Blues Again Lyrics | SongMeanings</title>
+	
+	<meta property="og:title" content="Bob Dylan - Stuck Inside of Mobile with the Memphis Blues Again Lyrics | SongMeanings" />
+	<meta property="og:type" content="song"/>
+	<meta property="og:url" content="//songmeanings.com/songs/view/108651/"/>
+	<meta property="og:site_name" content="SongMeanings"/>
+
+	
+<meta property="og:image" content="//songmeanings.com/images/img10.jpg"/>
+		
+	<link rel="canonical" href="//songmeanings.com/songs/view/108651/"/>
+
+	<link rel="alternate" media="only screen and (max-width: 640px)"
+      href="//songmeanings.com/m/songs/view/108651/" >
+	
+	
+<link media="all" rel="stylesheet" href="/css/sm.css?v=4.94" type="text/css" />
+<link media="all" rel="stylesheet" href="/css/fancybox.css?v=4.94" />
+<link media="all" rel="stylesheet" href="/css/all.css?v=4.94" />
+
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/ie.css" type="text/css"/>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/jquery.main.js"></script>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/js/ie.js"></script>
+<![endif]-->
+
+<!-- qtip popups -->
+<script type="text/javascript" src="/js/qtip2/basic/jquery.qtip.min.js"></script>
+<link media="all" rel="stylesheet" href="/js/qtip2/basic/jquery.qtip.min.css" type="text/css" />
+
+<!-- facebook -->
+<script>
+var facebook_app_id   = 219341278125724;
+var facebook_channelUrl = '//songmeanings.com/channel.html';
+</script>
+
+<!-- google -->
+<meta name="google-signin-clientid" content="458654304363.apps.googleusercontent.com" />
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email" />
+<meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity" />
+<meta name="google-signin-cookiepolicy" content="none" />
+<meta name="google-signin-approvalprompt" content="auto" />
+
+<!-- site wide js -->
+<script type="text/javascript" src="/js/site.js?v=4.97"></script>
+
+
+<script type="text/javascript" src="/js/jquery.putcursoratend.js"></script>	
+	<script type="text/javascript" src="/js/songs.js?1400"></script>
+	
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Search SongMeanings" />
+
+<link rel="image_src" href="//songmeanings.com/images/img10.jpg" />
+
+<meta property="fb:app_id" content="199712020079338" />
+
+
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+// Note: it's important to keep these in separate script blocks
+COMSCORE.beacon({
+	c1: 2,
+	c2: "6772046",
+	c3: "",
+	c4: "http://songmeanings.com/songs/view/108651/", // Replace this with the page URL that the site is on here, and also enter it into the <noscript> img below
+	c5: "",
+	c6: "",
+	c15: ""
+});
+</script>
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6772046&c3=&c4=songmeanings.com/songs/view/108651/&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- simple modal -->
+	<link type='text/css' href='/css/simplemodal/basic.css' rel='stylesheet' media='screen' />
+	<!--[if lt IE 7]>
+	<link type='text/css' href='/css/simplemodal/basic_ie.css' rel='stylesheet' media='screen' />
+	<![endif]-->
+	<script src="/js/jquery.simplemodal.js" type="text/javascript"></script>
+	<script src="/js/simplemodal_basic.js" type="text/javascript"></script>
+<!-- end simple modal -->
+
+
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-54843416-48";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-54843416-48']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'songmeanings.com']);
+_gaq.push(['f._setDomainName', 'songmeanings.com']);
+_gaq.push(['e._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['e._setCustomVar',2,'t','126',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod3',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['f._setCustomVar',2,'domain','songmeanings.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+_gaq.push(['_setAccount', 'UA-1061781-1']);
+_gaq.push(['_setDomainName', 'songmeanings.com']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1301192802";</script><base href="http://songmeanings.com/songs/view/108651/"><script type='text/javascript'>
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+
+<!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 7844;
+var ezdomain = 'songmeanings.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod3","ab_test_val":"","adgroup_rank_id":-1,"browser":"Unknown","browser_version":0,"country":"FR","device_height":528,"device_width":1280,"domain_id":7844,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"ip":"188.130.106.94","landing_page_url":"http://songmeanings.com/songs/view/108651/","os":"Unknown","page_ad_positions":"","page_view_id":"54654fb1-30f4-484b-5c36-3a3412cecd9f","pv_event_count":0,"referrer_id":0,"region":"eu-west-1","serverid":"34.252.32.218:17494","t_epoch":1491818466,"template_id":126,"time_on_site_visit":0,"url":"http://songmeanings.com/songs/view/108651/","user_agent":"Python-urllib/3.6","user_id":1301192802,"visit_id":799540343,"visit_uuid":"ae749b08-d8c1-4cec-5f90-59b7b56dc6d8"};var _ezExtraQueries = "&ez_orig=1";</script><script data-cfasync='false' type="text/javascript" src="//cdn.songmeanings.com/ezoic/impt.js?cb=154-9&v=10" async></script></head>
+<body>
+	<div id="fb-root"></div>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+
+
+
+	<div id="wrapper">
+		<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+		<div id="skip"><a href="#content">Skip to Content</a></div>
+		<div id="container">
+			<div class="container-holder">
+				 <!-- header -->
+				<div id="header" class="header_add">
+	<div class="row">
+		<div class="login-holder">
+			<div class="login-box">
+				<a class="lightbox login-new" id="login-form-modal" href="#popup-loginform">Log in</a>
+			</div>
+			
+			<span class="signup"><a href="/create/">Create Account</a></span>
+		</div>
+		
+		<strong class="logo vcard"><a class="fn org url" href="//songmeanings.com/" title="SongMeanings">SongMeanings</a></strong>
+						
+		<form action="/query/" class="search">
+			<fieldset>
+				<legend>search-form</legend>
+				<span class="text">
+					<input id="frmquery" type="text" title="Search for lyrics and artists here" value="Search for lyrics and artists here" name="query" />
+				</span>
+				<input type="submit" class="submit" value="Search" />
+				<input type="hidden" name="type" value="all"/>
+			</fieldset>
+		</form>
+
+<script>
+	$("#frmquery").focus(function() { 
+		if(this.value == 'Search for lyrics and artists here') {
+			this.value = '';
+		}
+	});
+</script>
+	</div>
+	
+<div class="row">
+		<ul class="subnav alignright">
+
+			<li><a href="/mixtape/">Mixtapes</a></li>
+			<li><a href="/forum/" rel="nofollow">Forums</a></li>
+
+			
+		</ul>
+		<ul class="subnav">
+			<li><a href="/popular/lyrics/" title="Lyrics">Lyrics</a>
+			<li>
+				<a href="/artist/directory/" title="Artists">Artists</a>
+				<span class="addi">
+					<a href="/artist/suggest/" title="Add Artist">add</a>
+				</span>
+			</li>
+			<li><a href="/journals/" title="Journals" rel="nofollow">Journals</a></li>
+			<li><a href="http://sng.mn/cftpc/" title="Download our iOS App!">iOS App</a></li>
+
+		</ul>
+	</div></div>
+				<!-- main -->
+				<div id="main">
+					<!-- mode-holder -->
+					<div class="main-holder">
+	
+<div style="text-align: center; margin: 0px auto 5px auto; width: 99%; min-height: 90px;">
+	<div style="position:absolute;top:25px;right:60px;width:48px;height:80px;overflow:hidden;">
+		<fb:like href="//songmeanings.com/songs/view/108651/" action="like" share="false" layout="box_count" width="450" show_faces="false"></fb:like>
+	</div>
+
+	<div style="width: 728px; min-height: 90px; margin: 0 auto;">
+		<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=728x90" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 
+	</div>
+
+	<div style="position:absolute; top:25px; left:50px; width:80px; height:80px; overflow:hidden;">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="//songmeanings.com/songs/view/108651/" data-via="songmeanings" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
+
+
+
+
+
+<div style="min-height: 30px;">
+
+	<div style="float: left; text-align: left; padding-top: 8px;">
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<a href="/artist/directory/b/" itemprop="url" title="Artist Directory for B"><span itemprop="title">Artists - B</span></a>				</div>
+			</li>
+			<li>
+				<a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan" >Bob Dylan</a>			</li>
+						<li id="bread_albums">
+				<a href="/albums/view/tracks/27837/" title="Hard Rain">Hard Rain</a>			</li>
+						<li>
+				Stuck Inside of Mobile with the Memphis Blues Again Lyrics			</li>
+		</ul>
+
+		<!--
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/artist/directory/s/" itemprop="url" title="Artist Directory for S">
+						<span itemprop="title">Artists - S</span>
+					</a>	
+				</div>		
+			</li> 
+
+			<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li>
+					<a href="/artist/view/songs/137439064555/" itemprop="url" title="Speedy Ortiz">
+						<span itemprop="title">Speedy Ortiz</span>
+					</a>			
+				</li>
+			</div>
+			
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/songs/view/3530822107859465452/" itemprop="url" title="No Below">
+						<span itemprop="title"> No Below </span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		-->
+
+		<div class="shadow" id="morealbums" style="display: none; z-index:5000; position: absolute; left: 40px; top: 170px; background: #fff; width: 550px; padding: 12px; border: 1px solid #DEDEDE;">
+	
+	<div style="overflow:hidden; width: 500px;">
+	<a style="" class="" href="//songmeanings.com/songs/view/108651/" title="Stuck Inside of Mobile with the Memphis Blues Again" >Stuck Inside of Mobile with the Memphis Blues Again</a> is found on the album <a href="/albums/view/tracks/27837/" title="Hard Rain">Hard Rain</a>.	</div>
+	
+	
+	<br/>
+	
+	<strong style="color: #E87743;">Found on more albums:</strong>
+	<div style="padding-top: 10px; padding-left: 20px;">
+		Bob Dylan's Greatest Hits, Vol. 2<br/>Wolftrap<br/>Blonde on Blonde/Blood on the Tracks/Time Out of Mind<br/>Masked and Anonymous [Bonus Disc]<br/>Blonde on Blonde<br/>Bob Dylan [Limited Edition Hybrid SACD Set]<br/>Blonde on Blonde [Remastered 1-CD]<br/>Blonde on Blonde [Vinyl Classics]<br/>The Collection, Vol. 3: Blonde on Blonde/Blood on the Tracks/Infidels<br/>Q 5 Star Reviews, Vol. 2<br/>More Greatest Hits<br/>Collector's Crate<br/>Highway 61 Revisted/Blonde on Blonde<br/>The Original Mono Recordings<br/>Bringing It All Back Home/Highway 61 Revisited/Blonde on Blonde<br/>		
+		
+		
+	</div>
+	<div style="z-index: 5001; position: absolute; top: 12px; right: 12px;">
+		<a href="#" id="closemorealbums">close</a>
+	</div>
+</div>	</div>
+</div>
+
+
+	<div class="main-frame">
+		<!-- content -->
+		<div id="content">
+			
+			
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#statusmsgbox").live('click', function(e) {
+			e.preventDefault();
+			$('#statusmsgbox').fadeOut();
+			return false;
+		});
+		
+		
+
+	});
+</script>		
+			<!-- block -->
+			<div style="float: right;">
+				<div class="block-feed"><div class="heading">
+	<div class="text-holder">
+		<h1>
+			<div class="h2_songtitle">
+			<a style="" class="" href="//songmeanings.com/songs/view/108651/" title="Bob Dylan – Stuck Inside of Mobile with the Memphis Blues Again" >Bob Dylan – Stuck Inside of Mobile with the Memphis Blues Again</a>			</div>
+		</h1>
+
+		
+
+							
+							<ul class="song-info">
+								<li>
+									<a class="comments" href="#comments" id="header-comments-counter">55 Comments</a>
+								</li>
+								
+								<li><a class="tags" href="/tags/lyric/108651/" title="View all lyric tags">0 Tags</a></li>
+								
+								
+								
+							</ul>
+
+							<div style="margin: 12px 0 0 0; display: block;">
+"Stuck Inside of Mobile with the Memphis Blues Again" as written by  and  Bob Dylan....</div>
+
+<div style="margin: 10px 0 0 0; display: block;">
+	<ul class="song-info">
+		<li><a href="/songs/wiki/108651/" rel="nofollow">Read More...</a></li>
+		<li><a href="/songs/edit/108651/?type=wiki" title="Edit Wiki" rel="nofollow">Edit Wiki</a></li>
+	</ul>
+</div>						</div>
+					</div>					<div class="holder lyric-box">
+						Oh, the ragman draws circles<br />
+Up and down the block<br />
+I’d ask him what the matter was<br />
+But I know that he don’t talk<br />
+And the ladies treat me kindly<br />
+And they furnish me with tape<br />
+But deep inside my heart<br />
+I know I can’t escape<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile with the<br />
+Memphis blues again<br />
+<br />
+Well, Shakespeare, he’s in the alley<br />
+With his pointed shoes and his bells<br />
+Speaking to some French girl<br />
+Who says she knows me well<br />
+And I would send a message<br />
+To find out if she’s talked<br />
+But the post office has been stolen<br />
+And the mailbox is locked<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Mona tried to tell me<br />
+To stay away from the train line<br />
+She said that all the railroad men<br />
+Just drink up your blood like wine<br />
+An’ I said, “Oh, I didn’t know that<br />
+But then again, there’s only one I’ve met<br />
+An’ he just smoked my eyelids<br />
+An’ punched my cigarette”<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Grandpa died last week<br />
+And now he’s buried in the rocks<br />
+But everybody still talks about how<br />
+Badly they were shocked<br />
+But me, I expected it to happen<br />
+I knew he’d lost control<br />
+When I speed built a fire on Main Street<br />
+And shot it full of holes<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Now the senator came down here<br />
+Showing ev’ryone his gun<br />
+Handing out free tickets<br />
+To the wedding of his son<br />
+An’ me, I nearly got busted<br />
+An’ wouldn’t it be my luck<br />
+To get caught without a ticket<br />
+And be discovered beneath a truck<br />
+Oh, Mama, is this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Now the tea preacher looked so baffled<br />
+When I asked him why he dressed<br />
+With twenty pounds of headlines<br />
+Stapled to his chest<br />
+But he cursed me when I proved it to him<br />
+Then I whispered and said, “Not even you can hide<br />
+You see, you’re just like me<br />
+I hope you’re satisfied”<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Now the rainman gave me two cures<br />
+Then he said, “Jump right in”<br />
+The one was Texas medicine<br />
+The other was just railroad gin<br />
+An’ like a fool I mixed them<br />
+An’ it strangled up my mind<br />
+An’ now people just get uglier<br />
+An’ I have no sense of time<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+And when Ruthie says come see her<br />
+In her honky-tonk lagoon<br />
+Where I can watch her waltz for free<br />
+’neath her Panamanian moon<br />
+An’ I say, “Aw come on now<br />
+You know you knew about my debutante”<br />
+An’ she says, “Your debutante just knows what you need<br />
+But I know what you want”<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br />
+<br />
+Now the bricks lay on Grand Street<br />
+Where the neon madmen climb<br />
+They all fall there so perfectly<br />
+It all seems so well timed<br />
+An’ here I sit so patiently<br />
+Waiting to find out what price<br />
+You have to pay to get out of<br />
+Going through all these things twice<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile<br />
+With the Memphis blues again<br/><br/><div style="min-height: 25px; margin:0; padding: 12px 0 0 0; border-top: 1px dotted #ddd;">
+	<a href="/songs/edit/108651/" id="lyrics-edit" class="editbutton" title="Edit Lyrics">Edit Lyrics</a>
+	<a href="/songs/edit/108651/?type=wiki" id="lyrics-wiki-edit" class="editbutton" title="Edit Song Wiki">Edit Wiki</a>
+	<a href="/songs/edit/108651/?type=video" id="lyrics-video-add" class="editbutton" title="Add Music Video">Add Video</a>
+
+	</div><br/>					</div>
+
+					<div class="holder sign-box">
+	<p>
+		Lyrics submitted by 
+		<a href="/profiles/view/24346/"  id="userprofile-24346" rel="me nofollow" title="roger wilco" >roger wilco</a>, edited by <a href="/profiles/view/16989015/"  id="userprofile-16989015" rel="me nofollow" title="Mellow_Harsher" >Mellow_Harsher</a>, <a href="/profiles/view/17625098/"  id="userprofile-17625098" rel="me nofollow" title="Roxy24" >Roxy24</a>	</p>
+	
+			<p>"Stuck Inside of Mobile With the Memphis Blues Again" as written by Bob Dylan</p>
+		<p>Lyrics © BOB DYLAN MUSIC CO</p>
+		<p>Lyrics powered by <a href="http://www.lyricfind.com/" target="_NEW" rel="nofollow">LyricFind</a></p>
+		</div>						<div class="holder" style="text-align: center;">
+							<script type="text/javascript">
+	var band_name = "Bob Dylan";
+	var song_name = "Stuck Inside of Mobile with the Memphis Blues Again";
+</script>
+<!-- BEGIN JS TAG - SM ROS Extra < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=3306658&size=300x250&promo_sizes=400x250&promo_alignment=center" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG -->						</div>
+										</div>				
+			</div>
+			
+							<div class="tabs-feed">
+					<div style="text-align: left;">
+						<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=160x600" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 					</div>
+				</div>
+						
+			<!-- block -->
+			<div class="block" id="comments-section">
+	<a name="comments" id="comments"></a>
+	<div class="heading_meanings">
+		Stuck Inside of Mobile with the Memphis Blues Again song meanings
+	</div>
+	
+	<div class="heading">
+		<a href="#addcomment" class="btn-comment"><span>Add your thoughts</span></a>
+		<h2 id="comments-counter">55 Comments</h2>
+	</div>
+
+	<div class="holder-sorting">
+		<!-- sort form -->
+		<form action="#" class="sort" id="comments-sort">
+	<fieldset>
+		<legend>sort form</legend>
+		<select title="All Comments" class="sort-select" name="sort" id="sort-commenttypes">
+			<option selected="yes" value="all">All Comment Types (55)</option><option value="4">General Comment (50) </option><option value="6">My Interpretation (4) </option><option value="8">My Opinion (1) </option>		</select>
+		
+		<span id="flycomcount" style="display: none;">
+			55		</span>
+		
+		<input type="submit" value="submit" class="hidden" />
+		<strong class="title">View by:</strong>
+		<ul>
+			<li><a class="active" href="#comments" id="sort-highest">Highest Rated</a></li>
+			<li><a href="#comments" id="sort-recent">Most Recent</a></li>
+			<li><a href="#comments" id="sort-oldest">Oldest First</a></li>
+		</ul>
+	</fieldset>
+</form>		<!-- end sort form -->
+	</div>
+
+	<div class="holder-comments">
+		<!-- comments-list -->
+		<ul class="comments-list" id="comments-list">
+				
+	<li id="fullcomment-73015767549">
+		<a name="comment-73015767549"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015767549">
+	<div class="numb-holder">
+		<span id="com-rating-73015767549">
+			<strong class="numb" id='numb-rating-73015767549'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015767549" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015767549" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015767549">
+
+				<strong class="title">General Comment</strong>Has anyone else noticed that this is the second occurence of a French girl in an alley?<br />
+<br />
+See Bob Dylan's 115th Dream:<br />
+"They asked me for some collateral<br />
+And I pulled down my pants<br />
+They threw me in the alley<br />
+When up comes this girl from France..."<br />
+<br />
+Both great songs, full of humour and some great Dylanisms.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17330626/"  id="userprofile-17330626" rel="me nofollow" title="mjfoley" class="author">mjfoley</a><em class="date">on July 01, 2009</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015767549#comments" id="specific_com-73015767549" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015767549" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015767549" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015767549">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015767549" id="frmreplycomment">@mjfoley </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015767549" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015767549" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897919">
+		<a name="comment-73015897919"></a>
+		
+<div id="rating-holder-73015897919">
+	<div class="numb-holder">
+		<span id="com-rating-73015897919">
+			<strong class="numb" id='numb-rating-73015897919'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897919" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897919" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Great catch!			<div class="sign">
+
+				<span id="flagspan-73015897919">
+											<a href="#" id="flag-73015897919" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on March 31, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016130898">
+		<a name="comment-73016130898"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016130898">
+	<div class="numb-holder">
+		<span id="com-rating-73016130898">
+			<strong class="numb" id='numb-rating-73016130898'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016130898" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016130898" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016130898">
+
+				<strong class="title">General Comment</strong>"Stuck Inside Of Mobile With The Memphis Blues Again"<br />
+Oh, the ragman draws circles<br />
+Up and down the block<br />
+I'd ask him what the matter was<br />
+But I know that he don't talk<br />
+And the ladies treat me kindly<br />
+And furnish me with tape<br />
+But deep inside my heart<br />
+I know I can't escape<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+The Ragman is an interesting character. He’s silent, drawing circles up and down the block. Is he the artist — unwilling to “talk” about his art and meaning? The ladies treat the speaker kindly, but their kindness involves tape, which can be sticky and restraining. Interesting image in view of the speaker’s comment that he’s “stuck” inside of Mobile.<br />
+<br />
+<br />
+Well Shakespeare he's in the alley<br />
+With his pointed shoes and his bells<br />
+Speaking to some French girl<br />
+Who says she knows me well<br />
+And I would send a message<br />
+To find out if she's talked<br />
+But the post office has been stolen<br />
+And the mailbox is locked<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+<br />
+Shakespeare could represent the artist’s desire to move into more “literary” territory (away from folk songs and toward poetry?) The French girl believes she knows the speaker very well, yet he is unable to communicate with her any longer (no post office) — he’s in a new place (stuck or otherwise).<br />
+<br />
+Mona tried to tell me<br />
+To stay away from the train line<br />
+She said that all the railroad men<br />
+Just drink up your blood like wine<br />
+And I said "Oh I didn't know that<br />
+But then again there's only one I've met<br />
+And he just smoked my eyelids<br />
+And punched my cigarette"<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+Is Mona the French girl? Is she associated with a disconnected past? She’s sees the railroad men of his current life (Mobile — which can suggest movement) as a threat — she advises that he “stay away from the train line.” The train can symbolize movement and change, and the Mona who is not part of the speaker’s transformation. Rather than drink his blood his blood like wine (a troubling Christ image — is the artist being crucified by those who venerated his earlier incarnation?) they smoke his eyelids! This odd, somewhat druggy image reinforces the idea that things are not what they used to be; he’s now in a world Mona could never understand.<br />
+<br />
+Grandpa died last week<br />
+And now he's buried in the rocks<br />
+But everybody still talks about<br />
+How badly they were shocked<br />
+But me, I expected it to happen<br />
+I knew he'd lost control<br />
+When he built a fire on Main Street<br />
+And shot it full of holes<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+Grandpa is a common figure in folklore (and folk music), and as an aging person also represents the past (and the wisdom of the past). The speaker of the song wasn’t shocked at his death — he expected it. Transformative change is already here. Grandpa’s attempt to shoot and burn the new order (the new art? The new society of the 1960s? Electric music?) are the reason for his extinction.<br />
+<br />
+Now the senator came down here<br />
+Showing ev'ryone his gun<br />
+Handing out free tickets<br />
+To the wedding of his son<br />
+And me, I nearly get busted<br />
+And wouldn't it be my luck<br />
+To get caught without a ticket<br />
+And be discovered beneath a truck<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+I’m thinking the Senator is part of the old order, asserting his power (the gun) and turning his son’s wedding into a spectacle with tickets. He’s commercializing something that should be intimate and real. Even a wedding, though, could be seen as a dated ritual in this new, bizarre world we’re seeing. “Caught without a ticket” is what happens to railroad bums riding the rails. The fact that it’s now a truck (perhaps a more advanced technology) is just another indication of the displacement of tradition.<br />
+<br />
+<br />
+Now the preacher looked so baffled<br />
+When I asked him why he dressed<br />
+With twenty pounds of headlines<br />
+Stapled to his chest<br />
+But he cursed me when I proved it to him<br />
+Then I whispered, "Not even you can hide<br />
+You see, you're just like me<br />
+I hope you're satisfied"<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+Here’s more change. The preacher takes his place alongside Grandpa and the senator as a figure who no longer makes sense. His spiritual life is corrupt — he seeks publicity and headlines. He doesn’t bless the song’s narrator but curses him. The speaker underscores his phoniness, telling him “you’re just like me?” “Just like me” here suggests, lost -  in a period of revolutionary change, in a place where old systems (family politics, religion) no longer have a lock on the “truth,” a place of poetic disassociation, dream-reality, getting high and no longer fitting into an established order.<br />
+<br />
+Now the rainman gave me two cures<br />
+Then he said, "Jump right in"<br />
+The one was Texas medicine<br />
+The other was just railroad gin<br />
+And like a fool I mixed them<br />
+And it strangled up my mind<br />
+And now, people just get uglier<br />
+And I have no sense of time<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+I see the “rainman” as a medicine man or shaman encouraging a new vision: “Jump right in.” he says. When the speaker drinks the “cures” he has a somewhat psychedelic experience in which time dissolves and people look “uglier.” His mind is strangled by the reality shift he perceives. (I think it’s humorous that people don’t get “ugly” but instead get “uglier!”)<br />
+ <br />
+When Ruthie says come see her<br />
+In her honky-tonk lagoon<br />
+Where I can watch her waltz for free<br />
+'Neath her Panamanian moon<br />
+And I say, "Aw come on now<br />
+You know you know about my debutante"<br />
+And she says, "Your debutante just knows what you need<br />
+But I know what you want"<br />
+Oh, Mama, can this really be the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again.<br />
+<br />
+Ruthie is part of the new reality — the debutante part of the old. The Id is in revolt against the superego.<br />
+<br />
+<br />
+Now the bricks lay on Grand Street<br />
+Where the neon madmen climb<br />
+They all fall there so perfectly<br />
+It all seems so well timed<br />
+And here I sit so patiently<br />
+Waiting to find out what price<br />
+You have to pay to get out of<br />
+Going through all these things twice<br />
+Oh, Mama, is this really the end<br />
+To be stuck inside of Mobile <br />
+With the Memphis blues again. <br />
+<br />
+The image of bricks falling so perfectly is the central image here. Is the narrator standing outside of reality observing things over which he has no control? A place where madmen climb (aspire and climb to power?)? Yes. That disconnect and powerlessness is certainly there. One can’t help but notice, though, that out chaos and change, out of dream-like and sometimes troubling images comes this beautiful song. The song’s imagery can appear random on first listening, but it comes to make artistic sense, to be a rich and provocative statement about both the positive and negative aspects of radical change whether in society, in music or in consciousness. The artist lays the words and verses of the song on Grand Street (no longer on Main Street) like the perfectly fallen bricks. He creates art from chaos, beauty from meaninglessness, understanding from disorientation.<br />
+Grand Street is a place of magic and beauty. The narrator is still stuck in the mundane world, still struggling through the change of Mobile, but nearing Memphis, the longed-for place of artistic beauty and truth.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17503505/"  id="userprofile-17503505" rel="me nofollow" title="bookmn" class="author">bookmn</a><em class="date">on March 16, 2012</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73016130898#comments" id="specific_com-73016130898" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016130898" title="3 Replies">3 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73016130898" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016130898">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016130898" id="frmreplycomment">@bookmn </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016130898" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016130898" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016141020">
+		<a name="comment-73016141020"></a>
+		
+<div id="rating-holder-73016141020">
+	<div class="numb-holder">
+		<span id="com-rating-73016141020">
+			<strong class="numb" id='numb-rating-73016141020'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016141020" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016141020" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			You are brilliant!!!			<div class="sign">
+
+				<span id="flagspan-73016141020">
+											<a href="#" id="flag-73016141020" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17505571/"  id="userprofile-17505571" rel="me nofollow" title="Connectification" class="author">Connectification</a><em class="date">on May 01, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016141264">
+		<a name="comment-73016141264"></a>
+		
+<div id="rating-holder-73016141264">
+	<div class="numb-holder">
+		<span id="com-rating-73016141264">
+			<strong class="numb" id='numb-rating-73016141264'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016141264" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016141264" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Bob's brilliant! (but, thanks...)			<div class="sign">
+
+				<span id="flagspan-73016141264">
+											<a href="#" id="flag-73016141264" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17503505/"  id="userprofile-17503505" rel="me nofollow" title="bookmn" class="author">bookmn</a><em class="date">on May 02, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016313091">
+		<a name="comment-73016313091"></a>
+		
+<div id="rating-holder-73016313091">
+	<div class="numb-holder">
+		<span id="com-rating-73016313091">
+			<strong class="numb" id='numb-rating-73016313091'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313091" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313091" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17503505/?mention=0136f0d83b6b2177e9151ee641af5757"  id="userprofile-17503505" rel="me nofollow" title="@bookmn" >@bookmn</a> IMO you are WAY over analyzing this song. The song is about a retreat into despondence. Each verse represents a dead end, a place where things are out of kilter, don't work. This despondence culminates in the final verse. Things seem to "fall perfectly" and are so "well timed" but for the singer the reality is  he sits patiently wondering what price, you have to pay to get out of  all of these things ((The Memphis Blues) twice". It is a song of feeling trapped.<br />
+Take one verse about the Senator<br />
+"Showing everyone his gun" is symbolic of the power the rich and powerful display<br />
+"Wedding of his son" shows that to these people everything always is just fine<br />
+"Me I nearly got busted"- the singer is not part of the upper class, he is a member of the underclass, the one's the Senator controls and arrests for petty crimes<br />
+"And wouldn't it be my luck"-transition<br />
+"To be caught without a ticket, and be discovered beneath a truck".<br />
+As with the other verses. this is the height of powerlessness and despair. It is the theme of the entire song. Nothing goes right and conventional forces (Railroad men- preacher) either assault one or are phonies. Even "Ruthie" sees through the singer's pretenses of happiness.<br />
+<br />
+The idea that "Memphis" is a longed for place of beauty and he is nearing it is nonsense. Memphis is dreaded and is quite literal, for the blues of terrible despair somehow are associated with it and to find one again in them is excruciating. ("Can this really be the end".			<div class="sign">
+
+				<span id="flagspan-73016313091">
+											<a href="#" id="flag-73016313091" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014771840">
+		<a name="comment-73014771840"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014771840">
+	<div class="numb-holder">
+		<span id="com-rating-73014771840">
+			<strong class="numb" id='numb-rating-73014771840'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014771840" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014771840" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014771840">
+
+				<strong class="title">General Comment</strong>listen you guys, this song is about the circus his world turned into once he went electric. All chaotic and surreal. Around this era many songs are about the same thing, so don't let them trick you into any other b.s. <br />
+Anyway, Mobile is a southern town, I think in Alabama,i.e. folk music<br />
+Memphis, i.e. Elvis, i.e. rock n' roll<br />
+So he's stuck in the middle of both tendencies <br />
+Great concept, great song				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17021956/"  id="userprofile-17021956" rel="me nofollow" title="cavern" class="author">cavern</a><em class="date">on February 03, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73014771840#comments" id="specific_com-73014771840" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014771840" title="3 Replies">3 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014771840" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014771840">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014771840" id="frmreplycomment">@cavern </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014771840" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014771840" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015666955">
+		<a name="comment-73015666955"></a>
+		
+<div id="rating-holder-73015666955">
+	<div class="numb-holder">
+		<span id="com-rating-73015666955">
+			<strong class="numb" id='numb-rating-73015666955'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015666955" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015666955" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			When I followed the lyrics I succesfully interpreted them following your idea!!! But...after all...that's the best thing about Dylan: you can't fully understand him!!!			<div class="sign">
+
+				<span id="flagspan-73015666955">
+											<a href="#" id="flag-73015666955" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17295370/"  id="userprofile-17295370" rel="me nofollow" title="Thomaspwgy" class="author">Thomaspwgy</a><em class="date">on January 03, 2009</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016051169">
+		<a name="comment-73016051169"></a>
+		
+<div id="rating-holder-73016051169">
+	<div class="numb-holder">
+		<span id="com-rating-73016051169">
+			<strong class="numb" id='numb-rating-73016051169'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016051169" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016051169" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			How about this--a "mobile" is a sound truck used to record live music.  They are better able to control the sound by recording it outside of the venue.  Anyway, maybe "mobile" is the symbol of playing live, and the memphis blues is a symbol for he is simply homesick.  He did say at the end of Scorcese's film that he was burnt out and just wanted to go home.  Just a theory.  The other theory, is he was smoking alot of weed, or taking alot of acid.  Really the imagery is absurd.  Maybe his life had just become a living hell, a joke, w/ a bunch of lemmings and sycophants in a carnival world where he had just become too big.  Like "I am a Walrus", it is really just nonsense.  "Texas medicine and railroad gin" is what, peyote and cheap liquor, w/ a bad trip combined w/ a bad hangover where "everyone just gets uglier."  Grampa went nuts by "building a fire on main st. and then shot it full of holes."  Sometimes it is just fun to listen to the imagery w/ out caring what it is about, like Come Together.  Who cares what Lennon really meant, just enjoy the cool sounding lyrics.  "Hold you in his objay you can feel his disease." (I think that is the line).  Unlike Positively 4t ST, which begs the listener to wonder who he is so pissed off at, this song is just silly, and if you listen to him sing, he is almost giddy.  The guy is a genius for sure, but I wonder if he was/is bi-polar?  He could be so angry, and other times almost like a happy little kid.  This is a happy song in my view.  It definitely puts me in a good mood.  BTW, the drums are killer, as are the guitar fills, both done my Nashville aces.  Sometimes it is fun to just focus on just that.  Like all great tunes, there is something new everytime you listen!			<div class="sign">
+
+				<span id="flagspan-73016051169">
+											<a href="#" id="flag-73016051169" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17465300/"  id="userprofile-17465300" rel="me nofollow" title="railroadgin" class="author">railroadgin</a><em class="date">on May 27, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016313092">
+		<a name="comment-73016313092"></a>
+		
+<div id="rating-holder-73016313092">
+	<div class="numb-holder">
+		<span id="com-rating-73016313092">
+			<strong class="numb" id='numb-rating-73016313092'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313092" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313092" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17021956/?mention=afc1492ad1284a94edcc97b82791955d"  id="userprofile-17021956" rel="me nofollow" title="@cavern" >@cavern</a> Everyone here refuses to look at these songs in context. One must look at this one in relation to the entire album, and to his previous work, especially the album before it, Highway 61 Revisited. Although I agree there might be some influence of his weariness with his "following" here, if it were a response to what you say it would be prominent on Highway 61 which it isn't. The only reference is very specific in the last verse of Desolation Row where Dylan remarks on the letter printed in Sing Out magazine that ripped him for betraying the folk music movement. ("I received you letter yesterday.") I will generally comment on the album's overall despair and weariness but I do not think at all this is an album dedicated to the issues around going electric.  Dylan was not that prosaic an artist. You lose a point.			<div class="sign">
+
+				<span id="flagspan-73016313092">
+											<a href="#" id="flag-73016313092" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015561343">
+		<a name="comment-73015561343"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015561343">
+	<div class="numb-holder">
+		<span id="com-rating-73015561343">
+			<strong class="numb" id='numb-rating-73015561343'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015561343" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015561343" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015561343">
+
+				<strong class="title">General Comment</strong>well, i think it's about being stuck in a cycle, and that everything is pretty much the same no matter what.<br />
+<br />
+"i know i can't escape"- he can't escape this cycle and is basically stuck doing the same thing (and a mobile just turns round and round always playing the same song).<br />
+<br />
+just my interpretation, i don't know.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17246093/"  id="userprofile-17246093" rel="me nofollow" title="jordynsaysrawr" class="author">jordynsaysrawr</a><em class="date">on June 19, 2008</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015561343#comments" id="specific_com-73015561343" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015561343" title="3 Replies">3 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015561343" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015561343">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015561343" id="frmreplycomment">@jordynsaysrawr </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015561343" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015561343" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897915">
+		<a name="comment-73015897915"></a>
+		
+<div id="rating-holder-73015897915">
+	<div class="numb-holder">
+		<span id="com-rating-73015897915">
+			<strong class="numb" id='numb-rating-73015897915'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897915" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897915" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Awesome. Hadn't thought of that before. Indeed.			<div class="sign">
+
+				<span id="flagspan-73015897915">
+											<a href="#" id="flag-73015897915" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on March 31, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016296556">
+		<a name="comment-73016296556"></a>
+		
+<div id="rating-holder-73016296556">
+	<div class="numb-holder">
+		<span id="com-rating-73016296556">
+			<strong class="numb" id='numb-rating-73016296556'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016296556" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016296556" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17246093/?mention=eb2f57b9116d00295336b266a43bd2e2"  id="userprofile-17246093" rel="me nofollow" title="@jordynsaysrawr" >@jordynsaysrawr</a> An' here I sit so patiently<br />
+Waiting to find out what price<br />
+You have to pay to get out of<br />
+Going through all these things twice.<br />
+<br />
+So I think I agree with this. What's a "mobile" here?			<div class="sign">
+
+				<span id="flagspan-73016296556">
+											<a href="#" id="flag-73016296556" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17657521/"  id="userprofile-17657521" rel="me nofollow" title="dan1183903" class="author">dan1183903</a><em class="date">on April 30, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016313093">
+		<a name="comment-73016313093"></a>
+		
+<div id="rating-holder-73016313093">
+	<div class="numb-holder">
+		<span id="com-rating-73016313093">
+			<strong class="numb" id='numb-rating-73016313093'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313093" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313093" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17246093/?mention=7c9ea5ddc80febc8bf30c652e2dc1547"  id="userprofile-17246093" rel="me nofollow" title="@jordynsaysrawr" >@jordynsaysrawr</a> Agree. But Mobile is a city in Alabama. He's stuck in Mobile with the Memphis Blues. I do like the reference that Memphis is the home of Elvis. So if there is a reference here, it is that the idea that the artist's life, that Rock and Roll would free him, has turned out to be an illusion.			<div class="sign">
+
+				<span id="flagspan-73016313093">
+											<a href="#" id="flag-73016313093" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016313114">
+		<a name="comment-73016313114"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016313114">
+	<div class="numb-holder">
+		<span id="com-rating-73016313114">
+			<strong class="numb" id='numb-rating-73016313114'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313114" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313114" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016313114">
+
+				<strong class="title">General Comment</strong>With Dylan, I think often attempts at understanding misfires because one does not look at the context of the song within the album, the period of time Dylan was writing, the issues that were important to him, and the arc of his career. Thus there attempts to make Desolation Row about the Holocaust, which it is not. It is about contemporary America, which is almost all he wrote about beyond relationships.<br />
+On Highway 61 Revisited, Dylan reached his zenith in his scathing assault on the American shadow and the corruption of society. This was non personal (Tombstone Blues, Highway 61, Desolation Row,  Ballad of a Thin Man) and semi personal (Like a Rolling Stone). This critique was withering and all out.<br />
+However the album ends with the astonishing and exceptional Desolation Row, which is acoustic, not electric.<br />
+In Desolation Row, the fury Dylan has mounted, not only in this album, but in the previous one (Bringing it All Back Home-where is "home"?-good old USA), and the three albums before it, is now finally dying down. like a fire that is becoming embers. Dylan is weary and he retreats to sanctuary where he can spin his vision in broad, still stark, but gentler terms (in tone) of a world gone mad and off the rails.<br />
+What  I find interesting is Blonde on Blonde is the next stage in this transition of weariness. The artist has little more to say in his previous incendiary manner. However these issues are still with him but he chooses to frame them differently. The political becomes far more personal.<br />
+With a difference.<br />
+The weariness of Desolation Row has turned into a semi exhaustion and despair. Where there is wit, it is sardonic and muted ("To live outside the law you must be honest. I know that you would say that you agree.")<br />
+If one listens closely, almost the entire album is from a frame of reference of bleakness and dispossession. "Just Like a Woman" is a wail of betrayal.  "I Want You" is a song of pleading. "Sooner or Later" is in the same vein.<br />
+<br />
+So we come to Stuck of Mobile-a truly exceptional major work. I don't think deconstructing the individual verses is so important. The tone is terribly bleak and the constant refrain is of one who is trapped and literally cannot escape. There may be some truth that his relationship to his audience was a trigger, but these are themes Dylan had been wrestling with all his adult life. And the presence of the great Visions of Johanna is almost the same song philosophically raised to another octave.<br />
+<br />
+Everywhere Dylan turns in this song, in every verse, there is a dead end, everywhere. As the song says, "I know I can't escape". The refrain , as a wail (Ohhh, Mamma" or Ahhh, Mama") becomes deeper and more pronounced as the song nears its conclusion of " "What price- you have to pay to get out of, going through all these things twice" (or more-he was in his 20's when he wrote it-surprise.)<br />
+Therefore I don't think it is necessary to try and deconstruct each verse as a particular thing, the tone, mood and references generally speak for themselves, whether it be the railroad men, the girls in the alley, the rain man's cures, Ruthie, the preacher, the Senator. As in Desolation Row, they are the mosaic of a landscape, but now not of corruption but of dead ends, of being trapped.<br />
+<br />
+However, there is one linkage people do not see in this song and it shows the shift I mentioned from previous work. The song it inverts is "Like a Rolling Stone". In that song, and in almost all Dylan's previous work, he is in control, he is the caustic observer, casting wisdom to the landscape, to the culture with what feels like a fiery prophet's vision.<br />
+Now the roles are changed. In Stuck Inside of Mobile it is DYLAN who is now the the dispossessed, the outcast. He feels powerless now before the forces of the society that he has condemned. This does not mean he agrees with its distortions, only that he feels overcome by them<br />
+How else to explain the 5th verse  and the Senator. Dylan is not invited to the party, is oblivious to those in power, and now it is HE who is"Out on the streets wit no direction home" and fears he will be "discovered beneath a truck"<br />
+As with Desolation Row, Dylan hides this terrible nihilism within a beautiful musical score, that becomes haunting and compelling.<br />
+<br />
+When I first heard this song, I was in college. I had not heard Blonde on Blonde and I listened to the jaunty but yearning "I Want You." Then this came on. I was with some younger college kids, a couple, and the song began to draw me in. At the end of the 5th verse (the Senator) I burst into tears. The young guy looked at me and said "Wow, you look like you really know what he was talking about." All I could do was nod.<br />
+It was 1970 and for a generation that was assaulted and displaced by the War, and was in terrible conflict with its parental generation, the song reflected exactly how I felt at the time. The personal was deeply political.<br />
+A great, great song, on a great album by the greatest Rock-Folk  lyricist who ever lived				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73016313114#comments" id="specific_com-73016313114" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016313114" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73016313114" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016313114">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016313114" id="frmreplycomment">@ken1025751 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016313114" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016313114" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016313115">
+		<a name="comment-73016313115"></a>
+		
+<div id="rating-holder-73016313115">
+	<div class="numb-holder">
+		<span id="com-rating-73016313115">
+			<strong class="numb" id='numb-rating-73016313115'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313115" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313115" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17673598/?mention=99bc8aa0a1914948ce5d3b4fc0ef8ada"  id="userprofile-17673598" rel="me nofollow" title="@ken1025751" >@ken1025751</a> I don't know why he site did not format my post properly. Sorry. this /n makes no sense to me.			<div class="sign">
+
+				<span id="flagspan-73016313115">
+											<a href="#" id="flag-73016313115" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 21, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016319435">
+		<a name="comment-73016319435"></a>
+		
+<div id="rating-holder-73016319435">
+	<div class="numb-holder">
+		<span id="com-rating-73016319435">
+			<strong class="numb" id='numb-rating-73016319435'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016319435" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016319435" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17673598/?mention=87eb8642257e791c9f3b725b0e073ebc"  id="userprofile-17673598" rel="me nofollow" title="@ken1025751" >@ken1025751</a><br />
+I fully agree with this commentator in that, for me at least, the whole point of this song is  the feeling that comes in the moment of realization that one is utterly trapped, trapped in a situation of one's own making, despite warnings and one's own deep-down knowledge that things would inevitably come to this. <br />
+To whom, other than 'Mama' - the one utterly trustworthy source - would one dare turn for confirmation that 'this could Really Be' the End, the ultimate consequence of failure to get it right This Time? <br />
+The first time I heard this song performed live by Dylan was in a closed rehearsal session with the members of the Grateful Dead, prior to them all going on tour together. The dead played it regularly as part of their own repertoire of songs. Bob was obviously enjoying himself, and they really let themselves go with the spirit of the song. It went on for a good 15 minutes, and experience was truly hair-raising.			<div class="sign">
+
+				<span id="flagspan-73016319435">
+											<a href="#" id="flag-73016319435" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17684263/"  id="userprofile-17684263" rel="me nofollow" title="Munk67" class="author">Munk67</a><em class="date">on March 19, 2016</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014850342">
+		<a name="comment-73014850342"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014850342">
+	<div class="numb-holder">
+		<span id="com-rating-73014850342">
+			<strong class="numb" id='numb-rating-73014850342'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014850342" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014850342" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014850342">
+
+				<strong class="title">General Comment</strong>I'm not sure what it means, but I love the images.  The line about the railroad man is a reference to the mountain ballad "A Mole in the Ground," sung by Bascom Lamar Lunsford: "I don't like a railroad man./A railroad man, he'll kill kill you when he can,/And he'll drink up your blood like wine."  And then Dylan follows it with the surreal "An' he just smoked my eyelids/An' punched my cigarette."<br />
+Brilliant.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17046197/"  id="userprofile-17046197" rel="me nofollow" title="gershom" class="author">gershom</a><em class="date">on June 16, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73014850342#comments" id="specific_com-73014850342" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014850342" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014850342" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014850342">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014850342" id="frmreplycomment">@gershom </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014850342" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014850342" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015307762">
+		<a name="comment-73015307762"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015307762">
+	<div class="numb-holder">
+		<span id="com-rating-73015307762">
+			<strong class="numb" id='numb-rating-73015307762'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015307762" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015307762" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015307762">
+
+				<strong class="title">General Comment</strong>scotch & worstishire  sauce = texas medicine<br />
+Cider & tomato juice = railroad gin				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17184319/"  id="userprofile-17184319" rel="me nofollow" title="edrebber" class="author">edrebber</a><em class="date">on May 28, 2007</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015307762#comments" id="specific_com-73015307762" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015307762" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015307762" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015307762">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015307762" id="frmreplycomment">@edrebber </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015307762" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015307762" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016051172">
+		<a name="comment-73016051172"></a>
+		
+<div id="rating-holder-73016051172">
+	<div class="numb-holder">
+		<span id="com-rating-73016051172">
+			<strong class="numb" id='numb-rating-73016051172'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016051172" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016051172" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			That is too literal.  Dylan is playing games w/ imagery.  I think the texas medicine is peyote, and the railroad gin is rot-gut booze.  He either has a bad trip, or a bad hangover from mixing the two, or both.  "now people just get uglier, an' I have no sense of time."			<div class="sign">
+
+				<span id="flagspan-73016051172">
+											<a href="#" id="flag-73016051172" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17465300/"  id="userprofile-17465300" rel="me nofollow" title="railroadgin" class="author">railroadgin</a><em class="date">on May 27, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015373260">
+		<a name="comment-73015373260"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015373260">
+	<div class="numb-holder">
+		<span id="com-rating-73015373260">
+			<strong class="numb" id='numb-rating-73015373260'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015373260" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015373260" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015373260">
+
+				<strong class="title">General Comment</strong>Oh I had thought that texas medicine and railroad gin were types of acid.  Especially back in the 60's, people would sell spot with "street-names" that pretty much said what type of ride you were in for.  I thought maybe Dylan mixed two types that didn't go well together, but I guess crazy_Ira and edrebber's comments would make more sense.<br />
+I think that the stanza that starts "When Ruthie says come see her" is just about him coming to see a woman who is trying to seduce him.  He says that his debutante (his girlfriend) stands between him doing anything with her and she says that his girlfriend gives him the love that he needs but that she can give him the pleasure that he wants.<br />
+Great song.  It makes me happy anytime I hear it.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17203328/"  id="userprofile-17203328" rel="me nofollow" title="jparl001" class="author">jparl001</a><em class="date">on August 20, 2007</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015373260#comments" id="specific_com-73015373260" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015373260" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015373260" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015373260">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015373260" id="frmreplycomment">@jparl001 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015373260" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015373260" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015412581">
+		<a name="comment-73015412581"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015412581">
+	<div class="numb-holder">
+		<span id="com-rating-73015412581">
+			<strong class="numb" id='numb-rating-73015412581'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015412581" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015412581" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015412581">
+
+				<strong class="title">General Comment</strong>anybody have a clue on the dead grandpa?<br />
+difficult song				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17215297/"  id="userprofile-17215297" rel="me nofollow" title="Zwink" class="author">Zwink</a><em class="date">on October 15, 2007</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015412581#comments" id="specific_com-73015412581" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015412581" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015412581" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015412581">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015412581" id="frmreplycomment">@Zwink </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015412581" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015412581" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897912">
+		<a name="comment-73015897912"></a>
+		
+<div id="rating-holder-73015897912">
+	<div class="numb-holder">
+		<span id="com-rating-73015897912">
+			<strong class="numb" id='numb-rating-73015897912'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897912" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897912" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I heard somewhere that it referred to JFK. The 'fire on main street' that he shot full of holes - thus showing he'd lost control - was the Bay of Pigs. Kinda makes sense in that 'everyone still talks about how badly they were shocked' - everyone knew where they were when it happened (JFK's assassination) - and, for good measure he mentions 'the senator' in the next verse. Ever since hearing this, the song makes sense - it's about power, greed, politics, warpedness... etc.<br />
+<br />
+When the Dead played it in the late eighties it took on renewed meaning, as the Noriega thing in Panama was boiling over at that time... but Panama is a metaphor for US imperialism, if anything is... carving out a little zone of another country, installing your control there. One of the other commenters talked of Dylan being prescient - I'd agree, and, it's not too much of a stretch - he and Hunter S. Thompson were astute observers of the ugly underbelly of U.S. reality...			<div class="sign">
+
+				<span id="flagspan-73015897912">
+											<a href="#" id="flag-73015897912" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on March 31, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016051178">
+		<a name="comment-73016051178"></a>
+		
+<div id="rating-holder-73016051178">
+	<div class="numb-holder">
+		<span id="com-rating-73016051178">
+			<strong class="numb" id='numb-rating-73016051178'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016051178" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016051178" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Maybe, maybe he is just being silly.  He may be getting the biggest laugh right now w/ a big glass of bourbon laughin hysterically at these comments!  Abbey road--the VW license 28if...uh huh, right.			<div class="sign">
+
+				<span id="flagspan-73016051178">
+											<a href="#" id="flag-73016051178" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17465300/"  id="userprofile-17465300" rel="me nofollow" title="railroadgin" class="author">railroadgin</a><em class="date">on May 27, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015775020">
+		<a name="comment-73015775020"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015775020">
+	<div class="numb-holder">
+		<span id="com-rating-73015775020">
+			<strong class="numb" id='numb-rating-73015775020'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015775020" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015775020" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015775020">
+
+				<strong class="title">General Comment</strong>"Punched my cigarette" is a reference to Dylan's manager, Albert Grossman, who smoked his cigarettes using an unorthodox fist-grip. I read this in the excellent book "The Mansion On the Hill" by Fred Goodman. This book describes the birth of the modern music industry, focusing on the business side of the rises of Neil Young, Bob Dylan and Bruce Springsteen.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17334405/"  id="userprofile-17334405" rel="me nofollow" title="PaulAnka" class="author">PaulAnka</a><em class="date">on July 14, 2009</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/108651/?&specific_com=73015775020#comments" id="specific_com-73015775020" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015775020" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015775020" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015775020">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015775020" id="frmreplycomment">@PaulAnka </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="108651" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015775020" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015775020" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016313184">
+		<a name="comment-73016313184"></a>
+		
+<div id="rating-holder-73016313184">
+	<div class="numb-holder">
+		<span id="com-rating-73016313184">
+			<strong class="numb" id='numb-rating-73016313184'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016313184" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016313184" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17334405/?mention=aa9ad55db1f9d7d925f79d09c066f098"  id="userprofile-17334405" rel="me nofollow" title="@PaulAnka" >@PaulAnka</a> One must be careful in ascribing direct meaning from a life experience. As described above, the old song about  the railroad men is very influential. Dylan was extremely aware of folk music and its traditions. I agree that the image of Grossman and cigarettes, from what I've read,  probably came to Dylan as he was writing this verse. The potency of the image probably appealed to him. Is it about Grossman? I doubt it. The image was useful to inform the lyric and Dylan most likely drew upon it for resonant power. But the artist has broader intentions as he draws from multiple sources. I did read the account and  in the limited regard, I think you are correct.			<div class="sign">
+
+				<span id="flagspan-73016313184">
+											<a href="#" id="flag-73016313184" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on December 23, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+			</ul>
+		<!-- end comments-list -->
+	</div>
+	
+
+	
+	<!-- comments pagination -->
+	<div class="holder sign-box" style="text-align: center;" id="pagination">
+		&nbsp;
+	</div>
+	<!-- end comments pargination -->
+	
+</div>
+
+
+
+<a name="addcomment"></a>
+	<div class="block">
+		<div class="heading">
+			<h2>Add your thoughts</h2>
+		</div>
+		<div class="holder">
+			<p><a class="lightbox" href="#popup-loginform">Log in now</a> to tell us what you think this song means. </p>
+			<p>Don’t have an account? <a href="/create/">Create an account</a> with SongMeanings to post comments, submit lyrics, and more. It’s super easy, we promise!</p>
+		</div>
+	</div>
+			</div>
+
+		<!-- sidebar -->
+		<div id="sidebar">
+			
+			<!-- block-heading -->
+
+
+<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=300x250" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> <br/><div class="block" style="padding-top: 10px; margin-top: 0px; border-top: 1px solid #DEDEDE;">
+
+	<div id="rate-widget-108651" class="rating-widget" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		<div id="rating-header">
+			Rate These Lyrics
+		</div>
+
+		<meta itemprop="ratingValue" content="5" />
+	    <meta itemprop="worstRating" content="1"/>
+	    <meta itemprop="bestRating" content="5" />
+	    <meta itemprop="reviewCount" content="2" />
+
+		<span>
+			<a id="star-1" href="#" class="star-1 rate-star"></a>
+			<a id="star-2" href="#" class="star-2 rate-star"></a>
+			<a id="star-3" href="#" class="star-3 rate-star"></a>
+			<a id="star-4" href="#" class="star-4 rate-star"></a>
+			<a id="star-5" href="#" class="star-5 rate-star"></a>
+		</span>
+
+		<div class="total_votes" data-totalvotes="2 Votes">
+			2 Votes		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var url = window.location.href;
+		if (/\/$/.test(url) == false) {
+	   		url = url + "/";
+		}
+
+		var total_votes = '2';
+		var average 	= '5';
+		setRating('.rating-widget');
+
+		var loggedin 	= 'false';
+
+		$('.rate-star').hover(
+            // Handles the mouseover
+            function() {
+                $(this).prevAll().andSelf().addClass('rate-star-hover');
+                $(this).nextAll().removeClass('rate-star-vote'); 
+
+                var rating_fyi = $(this).attr('id');
+                switch(rating_fyi) {
+                	case 'star-1':
+                		rating_fyi = "poor";
+                	break;
+
+                	case 'star-2':
+                		rating_fyi = "not so good";
+                	break;
+
+                	case 'star-3':
+                		rating_fyi = "average";
+                	break;
+
+                	case 'star-4':
+                		rating_fyi = "good";
+                	break;
+
+                	case 'star-5':
+                		rating_fyi = "excellent";
+                	break;
+                }
+                $('.total_votes').html(rating_fyi);
+            },
+            // Handles the mouseout
+            function() {
+                $(this).prevAll().andSelf().removeClass('rate-star-hover');
+                //setRating($(this).parent());
+                $('.total_votes').html($('.total_votes').data('totalvotes'));
+            }
+        );
+
+        $('.rate-star').bind('click', function(e) {
+            var star = this;
+            var lid = $(this).closest("div").attr("id").substring(12);
+            
+            var clicked_data = {
+            	command    	: "songRatingSet",
+            	lyric_id	: lid,
+                clicked_on 	: $(star).attr('class'),
+                clicked_id 	: $(star).attr('id')
+            };
+
+            $('.rate-star').removeClass('rate-star-full');
+
+            $.ajax({
+				type: "POST", 
+				url: url, 
+				data: clicked_data,
+				dataType: "json",
+				success: function(result){
+					//$('.rating-widget').data('fsr', result);
+					total_votes			= result['total_votes'];
+					if(typeof(result['user_value']) != "undefined" && result['user_value'] !== null) {
+						average 			= result['user_value'];
+					} else {
+						average 			= result['average'];
+					}
+						
+					setRating('.rating-widget');
+				},
+				complete: function(result, success) {
+					console.log(result, success);
+				}
+			});
+
+	        return false;
+        }); 
+
+        function setRating(widget) {
+        	$(widget).find('.star-' + average).prevAll().andSelf().addClass('rate-star-full');  
+    		$(widget).find('.star-' + average).nextAll().removeClass('rate-star-full');  
+
+    		if(total_votes === "1") {
+    			total_votes = "1 Vote";
+    		} else {
+    			total_votes = total_votes + " Votes";
+    		}
+
+    		$('.total_votes').data('totalvotes', total_votes);
+        	$('.total_votes').html(total_votes);
+        	return false;
+        }
+        
+    
+	});
+</script>
+<div class="block-heading-blue">
+	<h3>Add to Mixtape</h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0 18px 0 18px;">
+	<br/>
+	<a href="/create/">Log in now</a> to add this track to your mixtape!
+	<br/><br/>
+	</div>
+
+<!-- block-heading -->
+<a name="tagsbox"></a>
+<div class="block-heading">
+	<h3>Most popular lyric tags</h3>
+</div>
+<!-- block -->
+<div class="block">
+	<ul class="tags-list" id="tags-list">We do not have any tags for Stuck Inside of Mobile with the Memphis Blues Again lyrics.  Why not add your own?<br/><br/></ul>		<a href="/create/" class="more">Log in to add a tag</a>
+			
+	
+	
+</div><div class="block-heading">
+	<h3>More <a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan Lyrics" >Bob Dylan Lyrics</a></h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0px 18px;">
+	<ul class="songs-list songs-list2">
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5730/" title="Like a Rolling Stone Lyrics" >Like a Rolling Stone Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5731/" title="Mr. Tambourine Man Lyrics" >Mr. Tambourine Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5727/" title="All Along the Watchtower Lyrics" >All Along the Watchtower Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/47748/" title="Ballad of a Thin Man Lyrics" >Ballad of a Thin Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/57315/" title="Tangled Up in Blue Lyrics" >Tangled Up in Blue Lyrics</a></strong>
+		</li>
+			</ul>
+</div><div style="text-align: center;">
+			<a href="http://sng.mn/cftpc/"><img src="//songmeanings.com/images/ios_badge.png" style="outline: none; text-decoration: none; width: auto; clear: both; border: none;"></a>
+		<br/><br/>
+		
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div><br/><!-- adbrite sucks -->
+<div style="text-align: center;">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3747639166192015";
+/* sm_skyscraper_160x600 */
+google_ad_slot = "7283450858";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+		</div>
+	</div>
+
+</div>
+					<!-- end mode-holder -->
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		
+
+<div id="footer">
+
+	<div class="footer-holder">
+
+		<div class="footer-frame">	
+			
+			<!-- panel -->
+			<div class="panel">
+				<div class="holder">
+					<h4>SongMeanings is a place for discussion and discovery.</h4>
+					<!-- topics -->
+					<ul class="topics">
+						<li>
+							<a href="#">
+								<strong>1,097,225</strong>
+								<span>Lyrics</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>110,886</strong>
+								<span>Artists</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>1,737,493</strong>
+								<span>Comments</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- column -->
+				<div class="column col1 white-inset">
+					<strong class="title">SongMeanings</strong>
+					<div class="column-holder">
+						<ul>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/forum/" rel="nofollow">Forum</a></li>
+							<li><a href="/about/team/">Who We Are</a></li>
+							<li><a href="/blog/">Read Our Blog</a></li>
+						</ul>
+						<ul>
+							<li><a href="/about/" rel="nofollow">Contact</a></li>
+							<li><a href="/about/advertising/" rel="nofollow">Advertising</a></li>
+							<li><a accesskey="8" href="/terms/" rel="nofollow">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- column col2 -->
+				<div class="column col2 white-inset">
+					<strong class="title">What’s popular</strong>
+					<ul>
+						<li><a href="/popular/lyrics/">Top Lyrics</a></li>
+						<li><a href="/mixtape/popular/">Mixtapes</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- bar -->
+			<div class="bar">
+				<div class="bar-holder">
+					<div class="white-inset" style="float: right;">
+						<div style="text-align: center;">
+	
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div>					</div>
+
+					<p>Non-lyrical content copyright 1999-2017 SongMeanings</p>
+					
+					<div style="text-align: center; color: #fff;">
+										</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup-holder">
+	<div id="popup-loginform" class="lightbox">
+		<div class="login-box-new">
+				<div class="holder-new">
+					<a href="#" class="facebook" id="modalbtn-facebook">Login with Facebook</a>
+					<div class="tooltip" id="facebook-tooltip">
+						<p>Error: Can’t log in using Facebook</p>
+					</div>
+				</div>
+				<div class="holder-new">
+					<a href="#" class="google" id="modalbtn-google">Login with Google</a>
+					<div class="tooltip" id="google-tooltip">
+						<p>Error: Can’t log in using Google</p>
+					</div>
+				</div>
+				<div class="heading-new"><span>Or</span></div>
+				<form action="#" class="login-form-new" id="login-form-new">
+					<fieldset>
+						<div class="input-holder" id="input-username">
+							<input type="text" placeholder="Username" name="name" id="name" autocomplete="off"  />
+					
+
+							<div class="tooltip" id="username-tooltip">
+								<p>User does not exist</p>
+							</div>
+						</div>
+						<div class="input-holder password" id="input-password">
+							<input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off"/>
+							<div class="tooltip" id="password-tooltip">
+								<p>Incorrect Password</p>
+							</div>
+						</div>
+						<div class="box-new" id="box-login">
+							<input type="checkbox" id="remember" />
+							<label for="remember">Remember Me</label>
+							<input type="submit" value="Log In" />
+						</div>
+						<div class="processing" id="box-processing" style="display:none;">
+							Logging you in...
+						</div>
+					</fieldset>
+				</form>
+				<div class="block-new">
+					<a href="/forgot/">Forgot username/password?</a>
+					<a href="/create/" class="join">Join Now!</a>
+				</div>
+		</div>
+	</div>
+</div>		<div id="back"><a href="#wrapper">Back to top</a></div>
+
+
+	</div>
+	
+	<div id="lightbox-panel">
+	<span id="lightbox-body">alert</span>
+	
+	
+	<div id="lightbox-close">
+		<a href="#" id="lightbox-exit">close</a>
+	</div>
+	
+</div>
+
+<div id="lightbox"></div>
+
+	
+	<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-e1GZ3PNfdDCkE"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-e1GZ3PNfdDCkE.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+
+
+	<div id="moverdiv">explain</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.songmeanings_com,DomainId.7844"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.songmeanings_com,DomainId.7844"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script type='text/javascript' src='//cdn.songmeanings.com/detroitchicago/edmonton.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+<script type='text/javascript' src='//cdn.songmeanings.com/porpoiseant/jellyfish.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+</body>
+
+</html>
+

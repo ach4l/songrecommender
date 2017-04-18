@@ -1,0 +1,2730 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+<head><script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(el,evt,handler){if(el.addEventListener){el.addEventListener(evt,handler,false)}else if(el.attachEvent){el.attachEvent('on'+evt,handler)}else{el['on'+evt]=handler()}};__ez.ck.get=function(n,e){null!==e&&(n=n+"_"+e);for(var t=n+"=",r=decodeURIComponent(document.cookie),o=r.split(";"),i=0;i<o.length;i++){for(var u=o[i];" "===u.charAt(0);)u=u.substring(1);if(0===u.indexOf(t))return u.substring(t.length,u.length)}return""};__ez.queue=function(){function e(e,i,n,r,s,o,a,l){var u=new f.file(e,i,n,r,s,o,a);l===!0?d[e]=u:h[e]=u,c[e]=u,t(u)}function i(e,i,n,r,s,o,a,u){s===!0&&(e=e+"_"+l++);var p=new f.func(e,i,n,r,o,a);u===!0?d[e]=p:h[e]=p,c[e]=p,t(p)}function t(e){n(e)!==!0&&e.process()}function n(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var t=e.blockedBy[i];if(c.hasOwnProperty(t)===!1)return r(e.name+" blocked = "+t),!0;if(e.proceedIfError===!0&&c[t].isError===!0)return!1;if(c[t].isComplete===!1)return r(e.name+" blocked = "+t),!0}return!1}function r(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i"),n=t.exec(i),r=n?n[1]:null;"1"===r&&console.debug(e)}function s(){a++,a>10||(r("let's go"),o(d),o(h))}function o(e){for(var i in e)if(e.hasOwnProperty(i)!==!1){var t=e[i];t.isComplete===!0||n(t)||t.isInitialized===!0||t.isError===!0?t.isError===!0?r(t.name+": error"):t.isComplete===!0?r(t.name+": complete already"):t.isInitialized===!0&&r(t.name+": initialized already"):t.process()}}var a=0,l=0,c=[],d=[],h=[],f={func:function(e,i,t,n,s,o){var a=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=!1,this.blockedBy=n,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=o,this.process=function(){r("... func = "+e),a.isInitialized=!0,a.isComplete=!0;var i=a.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[a.funcName].apply(null,this.parameters)),this.deleteWhenComplete===!0&&delete c[e]}},file:function(e,i,t,n,o,a,l){var c=this;this.name=e,this.path=i,this.async=o,this.defer=a,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=l,this.process=function(){c.isInitialized=!0,r("... file = "+e);var t=document.createElement("script");t.src=i,o===!0?t.async=!0:a===!0&&(t.defer=!0),t.onerror=function(){r("----- ERR'D: "+c.name),c.isError=!0,c.isBlock===!0&&s()},t.onreadystatechange=t.onload=function(){var e=t.readyState;r("----- F'D: "+c.name),(!e||/loaded|complete/.test(e))&&(c.isComplete=!0,c.isBlock===!0&&s())},document.getElementsByTagName("head")[0].appendChild(t)}}};return{addFile:e,addFunc:i,items:c}}();var __ezDotData=function(a,b){this.name=a,this.val=b};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=Base64._utf8_encode(a);j<a.length;)c=a.charCodeAt(j++),d=a.charCodeAt(j++),e=a.charCodeAt(j++),f=c>>2,g=(3&c)<<4|d>>4,h=(15&d)<<2|e>>6,i=63&e,isNaN(d)?h=i=64:isNaN(e)&&(i=64),b=b+this._keyStr.charAt(f)+this._keyStr.charAt(g)+this._keyStr.charAt(h)+this._keyStr.charAt(i);return b},decode:function(a){var c,d,e,f,g,h,i,b="",j=0;for(a=a.replace(/[^A-Za-z0-9+\/=]/g,"");j<a.length;)f=this._keyStr.indexOf(a.charAt(j++)),g=this._keyStr.indexOf(a.charAt(j++)),h=this._keyStr.indexOf(a.charAt(j++)),i=this._keyStr.indexOf(a.charAt(j++)),c=f<<2|g>>4,d=(15&g)<<4|h>>2,e=(3&h)<<6|i,b+=String.fromCharCode(c),64!=h&&(b+=String.fromCharCode(d)),64!=i&&(b+=String.fromCharCode(e));return b=Base64._utf8_decode(b)},_utf8_encode:function(a){a=a.replace(/rn/g,"n");for(var b="",c=0;c<a.length;c++){var d=a.charCodeAt(c);d<128?b+=String.fromCharCode(d):d>127&&d<2048?(b+=String.fromCharCode(d>>6|192),b+=String.fromCharCode(63&d|128)):(b+=String.fromCharCode(d>>12|224),b+=String.fromCharCode(d>>6&63|128),b+=String.fromCharCode(63&d|128))}return b},_utf8_decode:function(a){for(var b="",c=0,d=c1=c2=0;c<a.length;)d=a.charCodeAt(c),d<128?(b+=String.fromCharCode(d),c++):d>191&&d<224?(c2=a.charCodeAt(c+1),b+=String.fromCharCode((31&d)<<6|63&c2),c+=2):(c2=a.charCodeAt(c+1),c3=a.charCodeAt(c+2),b+=String.fromCharCode((15&d)<<12|(63&c2)<<6|63&c3),c+=3);return b}},__ez.dot.dataToStr=function(a){if(void 0===a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},__ez.dot.getCC=function(){var a="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(a=_ezaq.country),a},__ez.dot.getDID=function(){var a="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(a=_ezaq.domain_id.toString()),a},__ez.dot.getEpoch=function(a){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(a=_ezaq.t_epoch),a},__ez.dot.getURL=function(a){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp)&&(a="//g.ezoic.net"+a),a},__ez.dot.isValid=function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof __ezDotData==!1)return console.error("Invalid data. ",a[b]),!1;return!0},__ez.dot.isDefined=function(){for(var a=0;a<arguments.length;a++)if(void 0===arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){function c(a,b){d(a,b,0,0,0,0,0),f()}function d(b,c,d,e,f,h,i){if(__ez.dot.isDefined(b,b.getSlotElementId)){var j=parseInt(b.getTargeting("ap")[0]),k=b.getSizes()[0],l=k.l.toString()+"x"+k.j.toString(),m=g(b),n=b.getSlotElementId();__ez.dot.isDefined(m,n)&&__ez.dot.isValid(c)&&a.push({type:"impression",impression_id:m,domain_id:__ez.dot.getDID(),unit:n,t_epoch:__ez.dot.getEpoch(0),revenue:d,est_revenue:e,ad_position:j,ad_size:l,bid_floor_filled:f,bid_floor_prev:h,stat_source_id:i,country_code:_ez.dot.getCC(),data:__ez.dot.dataToStr(c)})}}function e(b,c){var d=b.split("/");if(__ez.dot.isDefined(b)&&3===d.length&&__ez.dot.isValid(c)){var e=d[0],f=d[2];a.push({type:"impression",impression_id:f,domain_id:__ez.dot.getDID(),unit:e,t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}}function f(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(a))),a=[])}function g(a){var b=0;try{var c=a.getTargetingMap();if(-1===a.getSlotElementId().indexOf("div-gpt-ad"))return b;if(void 0!==c)for(var e in c)if(-1!==e.indexOf("iid")&&void 0!==c[e][0]){b=c[e][0];break}}catch(a){}return b}var a=[],b="/porpoiseant/army.gif";return{Add:d,AddAndFire:c,AddById:e,Fire:f}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&ezJsu===!0||"undefined"!=typeof _ez_sa&&_ez_sa===!0||"undefined"!=typeof window.isAmp&&isAmp===!0)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(a,b){this.name=a,this.val=b};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(a,b){this.AddImpPixel(a,b,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(a,b){this.AddPVPixel(a,b),this.FirePixels()},AddImpPixel:function(a,b,c,d,e,f,g){if(this.isDefined(a,a.getSlotElementId)){var h=parseInt(a.getTargeting("ap")[0]),i=a.getSizes()[0],j=i.l.toString()+"x"+i.j.toString(),k="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(k=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var m=this.getSlotIID(a),n=a.getSlotElementId();this.isDefined(m,n)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:m,domain_id:k,unit:n,t_epoch:this.tEpoch,revenue:c,est_revenue:d,ad_position:h,ad_size:j,bid_floor_filled:e,bid_floor_prev:f,stat_source_id:g,country_code:l,data:b}))}},AddImpPixelById:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString());var d=a.split("/");if(this.isDefined(a)&&3===d.length&&this.validateData(b)){var e=d[0],f=d[2];b=this.convertDataToStr(b),this.pixels.push({type:"impression",impression_id:f,domain_id:c,unit:e,t_epoch:this.tEpoch,data:b})}},AddPVPixel:function(a,b){var c="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(c=_ezaq.domain_id.toString()),this.isDefined(a)&&this.validateData(b)&&(b=this.convertDataToStr(b),this.pixels.push({type:"pageview",pageview_id:a,domain_id:c,t_epoch:this.tEpoch,data:b}))},FirePixels:function(){"undefined"!=typeof document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(__ez.template.isOrig===!0?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(a,b){return new EzoicPixelData(a,b)},convertDataToStr:function(a){if("undefined"==typeof a)return[];try{for(var b in a)a[b].val=a[b].val+""}catch(a){}return a},getSlotIID:function(a){var b=0;try{var c=a.getTargetingMap(),d=a.getSlotElementId();if(d.indexOf("div-gpt-ad")===-1)return b;if("undefined"!=typeof c)for(var e in c)if(e.indexOf("iid")!==-1&&"undefined"!=typeof c[e][0]){b=c[e][0];break}}catch(a){}return b},isDefined:function(){for(var a=0;a<arguments.length;a++)if("undefined"==typeof arguments[a]||null===arguments[a])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(a){for(var b=0;b<a.length;b++)if(a[b]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",a[b]),!1;return!0}};</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<title>Bob Dylan - Desolation Row Lyrics | SongMeanings</title>
+	
+	<meta property="og:title" content="Bob Dylan - Desolation Row Lyrics | SongMeanings" />
+	<meta property="og:type" content="song"/>
+	<meta property="og:url" content="//songmeanings.com/songs/view/1110/"/>
+	<meta property="og:site_name" content="SongMeanings"/>
+
+	
+<meta property="og:image" content="//songmeanings.com/images/img10.jpg"/>
+		
+	<link rel="canonical" href="//songmeanings.com/songs/view/1110/"/>
+
+	<link rel="alternate" media="only screen and (max-width: 640px)"
+      href="//songmeanings.com/m/songs/view/1110/" >
+	
+	
+<link media="all" rel="stylesheet" href="/css/sm.css?v=4.94" type="text/css" />
+<link media="all" rel="stylesheet" href="/css/fancybox.css?v=4.94" />
+<link media="all" rel="stylesheet" href="/css/all.css?v=4.94" />
+
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" media="all" href="/css/ie.css" type="text/css"/>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="/js/jquery.main.js"></script>
+
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="/js/ie.js"></script>
+<![endif]-->
+
+<!-- qtip popups -->
+<script type="text/javascript" src="/js/qtip2/basic/jquery.qtip.min.js"></script>
+<link media="all" rel="stylesheet" href="/js/qtip2/basic/jquery.qtip.min.css" type="text/css" />
+
+<!-- facebook -->
+<script>
+var facebook_app_id   = 219341278125724;
+var facebook_channelUrl = '//songmeanings.com/channel.html';
+</script>
+
+<!-- google -->
+<meta name="google-signin-clientid" content="458654304363.apps.googleusercontent.com" />
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email" />
+<meta name="google-signin-requestvisibleactions" content="http://schemas.google.com/AddActivity" />
+<meta name="google-signin-cookiepolicy" content="none" />
+<meta name="google-signin-approvalprompt" content="auto" />
+
+<!-- site wide js -->
+<script type="text/javascript" src="/js/site.js?v=4.97"></script>
+
+
+<script type="text/javascript" src="/js/jquery.putcursoratend.js"></script>	
+	<script type="text/javascript" src="/js/songs.js?1400"></script>
+	
+	<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Search SongMeanings" />
+
+<link rel="image_src" href="//songmeanings.com/images/img10.jpg" />
+
+<meta property="fb:app_id" content="199712020079338" />
+
+
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+// Note: it's important to keep these in separate script blocks
+COMSCORE.beacon({
+	c1: 2,
+	c2: "6772046",
+	c3: "",
+	c4: "http://songmeanings.com/songs/view/1110/", // Replace this with the page URL that the site is on here, and also enter it into the <noscript> img below
+	c5: "",
+	c6: "",
+	c15: ""
+});
+</script>
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6772046&c3=&c4=songmeanings.com/songs/view/1110/&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+<!-- simple modal -->
+	<link type='text/css' href='/css/simplemodal/basic.css' rel='stylesheet' media='screen' />
+	<!--[if lt IE 7]>
+	<link type='text/css' href='/css/simplemodal/basic_ie.css' rel='stylesheet' media='screen' />
+	<![endif]-->
+	<script src="/js/jquery.simplemodal.js" type="text/javascript"></script>
+	<script src="/js/simplemodal_basic.js" type="text/javascript"></script>
+<!-- end simple modal -->
+
+
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-54843416-48";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-54843416-48']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'songmeanings.com']);
+_gaq.push(['f._setDomainName', 'songmeanings.com']);
+_gaq.push(['e._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['e._setCustomVar',2,'t','126',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod4',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','old_site_gc',3]);
+_gaq.push(['f._setCustomVar',2,'domain','songmeanings.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+_gaq.push(['_setAccount', 'UA-1061781-1']);
+_gaq.push(['_setDomainName', 'songmeanings.com']);
+_gaq.push(['_trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "165041431";</script><base href="http://songmeanings.com/songs/view/1110/"><script type='text/javascript'>
+var ezoTemplate = 'old_site_gc';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script>
+
+<!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 7844;
+var ezdomain = 'songmeanings.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ab_test_id":"mod4","ab_test_val":"","adgroup_rank_id":16,"browser":"Unknown","browser_version":0,"country":"FR","device_height":528,"device_width":1280,"domain_id":7844,"engaged_time_visit":0,"forensiq_score":-1,"form_factor_id":1,"ip":"188.130.106.94","landing_page_url":"http://songmeanings.com/songs/view/1110/","os":"Unknown","page_ad_positions":"","page_view_id":"6b01e91e-2d00-4530-61b6-e29b24386c45","pv_event_count":0,"referrer_id":0,"region":"eu-west-1","serverid":"34.253.136.102:13469","t_epoch":1491818378,"template_id":126,"time_on_site_visit":0,"url":"http://songmeanings.com/songs/view/1110/","user_agent":"Python-urllib/3.6","user_id":165041431,"visit_id":595653627,"visit_uuid":"2a32dad8-c8d6-4691-5b6c-f3ebf6b77c39"};var _ezExtraQueries = "&ez_orig=1";</script><script data-cfasync='false' type="text/javascript" src="//cdn.songmeanings.com/ezoic/impt.js?cb=154-9&v=10" async></script></head>
+<body>
+	<div id="fb-root"></div>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+
+
+
+
+	<div id="wrapper">
+		<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+		<div id="skip"><a href="#content">Skip to Content</a></div>
+		<div id="container">
+			<div class="container-holder">
+				 <!-- header -->
+				<div id="header" class="header_add">
+	<div class="row">
+		<div class="login-holder">
+			<div class="login-box">
+				<a class="lightbox login-new" id="login-form-modal" href="#popup-loginform">Log in</a>
+			</div>
+			
+			<span class="signup"><a href="/create/">Create Account</a></span>
+		</div>
+		
+		<strong class="logo vcard"><a class="fn org url" href="//songmeanings.com/" title="SongMeanings">SongMeanings</a></strong>
+						
+		<form action="/query/" class="search">
+			<fieldset>
+				<legend>search-form</legend>
+				<span class="text">
+					<input id="frmquery" type="text" title="Search for lyrics and artists here" value="Search for lyrics and artists here" name="query" />
+				</span>
+				<input type="submit" class="submit" value="Search" />
+				<input type="hidden" name="type" value="all"/>
+			</fieldset>
+		</form>
+
+<script>
+	$("#frmquery").focus(function() { 
+		if(this.value == 'Search for lyrics and artists here') {
+			this.value = '';
+		}
+	});
+</script>
+	</div>
+	
+<div class="row">
+		<ul class="subnav alignright">
+
+			<li><a href="/mixtape/">Mixtapes</a></li>
+			<li><a href="/forum/" rel="nofollow">Forums</a></li>
+
+			
+		</ul>
+		<ul class="subnav">
+			<li><a href="/popular/lyrics/" title="Lyrics">Lyrics</a>
+			<li>
+				<a href="/artist/directory/" title="Artists">Artists</a>
+				<span class="addi">
+					<a href="/artist/suggest/" title="Add Artist">add</a>
+				</span>
+			</li>
+			<li><a href="/journals/" title="Journals" rel="nofollow">Journals</a></li>
+			<li><a href="http://sng.mn/cftpc/" title="Download our iOS App!">iOS App</a></li>
+
+		</ul>
+	</div></div>
+				<!-- main -->
+				<div id="main">
+					<!-- mode-holder -->
+					<div class="main-holder">
+	
+<div style="text-align: center; margin: 0px auto 5px auto; width: 99%; min-height: 90px;">
+	<div style="position:absolute;top:25px;right:60px;width:48px;height:80px;overflow:hidden;">
+		<fb:like href="//songmeanings.com/songs/view/1110/" action="like" share="false" layout="box_count" width="450" show_faces="false"></fb:like>
+	</div>
+
+	<div style="width: 728px; min-height: 90px; margin: 0 auto;">
+		<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=728x90" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 
+	</div>
+
+	<div style="position:absolute; top:25px; left:50px; width:80px; height:80px; overflow:hidden;">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="//songmeanings.com/songs/view/1110/" data-via="songmeanings" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+</div>
+
+
+
+
+
+<div style="min-height: 30px;">
+
+	<div style="float: left; text-align: left; padding-top: 8px;">
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<a href="/artist/directory/b/" itemprop="url" title="Artist Directory for B"><span itemprop="title">Artists - B</span></a>				</div>
+			</li>
+			<li>
+				<a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan" >Bob Dylan</a>			</li>
+						<li id="bread_albums">
+				<a href="/albums/view/tracks/1080/" title="MTV Unplugged">MTV Unplugged</a>			</li>
+						<li>
+				Desolation Row Lyrics			</li>
+		</ul>
+
+		<!--
+		<ul class="breadcrumbs">
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/artist/directory/s/" itemprop="url" title="Artist Directory for S">
+						<span itemprop="title">Artists - S</span>
+					</a>	
+				</div>		
+			</li> 
+
+			<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+				<li>
+					<a href="/artist/view/songs/137439064555/" itemprop="url" title="Speedy Ortiz">
+						<span itemprop="title">Speedy Ortiz</span>
+					</a>			
+				</li>
+			</div>
+			
+			<li>
+				<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="/songs/view/3530822107859465452/" itemprop="url" title="No Below">
+						<span itemprop="title"> No Below </span>
+					</a>
+				</div>
+			</li>
+		</ul>
+		-->
+
+		<div class="shadow" id="morealbums" style="display: none; z-index:5000; position: absolute; left: 40px; top: 170px; background: #fff; width: 550px; padding: 12px; border: 1px solid #DEDEDE;">
+	
+	<div style="overflow:hidden; width: 500px;">
+	<a style="" class="" href="//songmeanings.com/songs/view/1110/" title="Desolation Row" >Desolation Row</a> is found on the album <a href="/albums/view/tracks/1080/" title="MTV Unplugged">MTV Unplugged</a>.	</div>
+	
+	
+	<br/>
+	
+	<strong style="color: #E87743;">Found on more albums:</strong>
+	<div style="padding-top: 10px; padding-left: 20px;">
+		The Genuine Bootleg Series<br/>Western Electric<br/>From Newport to the Ancient Empty Street in LA<br/>Highway 61 Revisited<br/>Bob Dylan [Limited Edition Hybrid SACD Set]<br/>The Q 5 Star Reviews, Vol. 1<br/>Highway 61 Revisited [Japan]<br/>Sammlung<br/>As Good as It Gets: The Ultimate Emmett Grogan Acetates<br/>Testament<br/>MTV Unplugged [Bonus Track]<br/>The Collection: Another Side of Bob Dylan/Bringing It All Back Home/Highway 61 Revisited<br/>Highway 61 Revisted/Blonde on Blonde<br/>The Original Mono Recordings<br/>Bringing It All Back Home/Highway 61 Revisited/Blonde on Blonde<br/>		
+		
+		
+	</div>
+	<div style="z-index: 5001; position: absolute; top: 12px; right: 12px;">
+		<a href="#" id="closemorealbums">close</a>
+	</div>
+</div>	</div>
+</div>
+
+
+	<div class="main-frame">
+		<!-- content -->
+		<div id="content">
+			
+			
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#statusmsgbox").live('click', function(e) {
+			e.preventDefault();
+			$('#statusmsgbox').fadeOut();
+			return false;
+		});
+		
+		
+
+	});
+</script>		
+			<!-- block -->
+			<div style="float: right;">
+				<div class="block-feed"><div class="heading">
+	<div class="text-holder">
+		<h1>
+			<div class="h2_songtitle">
+			<a style="" class="" href="//songmeanings.com/songs/view/1110/" title="Bob Dylan – Desolation Row" >Bob Dylan – Desolation Row</a>			</div>
+		</h1>
+
+		
+
+							
+							<ul class="song-info">
+								<li>
+									<a class="comments" href="#comments" id="header-comments-counter">121 Comments</a>
+								</li>
+								
+								<li><a class="tags" href="/tags/lyric/1110/" title="View all lyric tags">1 Tags</a></li>
+								
+								
+								
+							</ul>
+
+							<div style="margin: 12px 0 0 0; display: block;">
+This is by a long way not my own 'produce',I've cut and pasted stuff from a variety of places and added my own to arrive at what is hopefully a reasonable interpretation :...</div>
+
+<div style="margin: 10px 0 0 0; display: block;">
+	<ul class="song-info">
+		<li><a href="/songs/wiki/1110/" rel="nofollow">Read More...</a></li>
+		<li><a href="/songs/edit/1110/?type=wiki" title="Edit Wiki" rel="nofollow">Edit Wiki</a></li>
+	</ul>
+</div>						</div>
+					</div>					<div class="holder lyric-box">
+						They're selling postcards of the hanging, they're painting the passports brown<br />
+The beauty parlor is filled with sailors, the circus is in town<br />
+Here comes the blind commissioner, they've got him in a trance<br />
+One hand is tied to the tight-rope walker, the other is in his pants<br />
+And the riot squad they're restless, they need somewhere to go<br />
+As Lady and I look out tonight, from Desolation Row<br />
+<br />
+Cinderella, she seems so easy, "It takes one to know one," she smiles<br />
+And puts her hands in her back pockets Bette Davis style<br />
+And in comes Romeo, he's moaning. "You Belong to Me I Believe"<br />
+And someone says, "You're in the wrong place, my friend, you'd better leave"<br />
+And the only sound that's left after the ambulances go<br />
+Is Cinderella sweeping up on Desolation Row<br />
+<br />
+Now the moon is almost hidden, the stars are beginning to hide<br />
+The fortune telling lady has even taken all her things inside<br />
+All except for Cain and Abel and the hunchback of Notre Dame<br />
+<br />
+Everybody is making love or else expecting rain<br />
+And the Good Samaritan, he's dressing, he's getting ready for the show<br />
+He's going to the carnival tonight on Desolation Row<br />
+<br />
+Ophelia, she's 'neath the window for her I feel so afraid<br />
+On her twenty-second birthday she already is an old maid<br />
+To her, death is quite romantic she wears an iron vest<br />
+Her profession's her religion, her sin is her lifelessness<br />
+And though her eyes are fixed upon Noah's great rainbow<br />
+She spends her time peeking into Desolation Row<br />
+<br />
+Einstein, disguised as Robin Hood with his memories in a trunk<br />
+Passed this way an hour ago with his friend, a jealous monk<br />
+Now he looked so immaculately frightful as he bummed a cigarette<br />
+And he when off sniffing drainpipes and reciting the alphabet<br />
+You would not think to look at him, but he was famous long ago<br />
+For playing the electric violin on Desolation Row<br />
+<br />
+Dr. Filth, he keeps his world inside of a leather cup<br />
+But all his sexless patients, they're trying to blow it up<br />
+Now his nurse, some local loser, she's in charge of the cyanide hole<br />
+And she also keeps the cards that read, "Have Mercy on His Soul"<br />
+They all play on the penny whistles, you can hear them blow<br />
+If you lean your head out far enough from Desolation Row<br />
+<br />
+Across the street they've nailed the curtains, they're getting ready for the feast<br />
+The Phantom of the Opera in a perfect image of a priest<br />
+They are spoon feeding Casanova to get him to feel more assured<br />
+Then they'll kill him with self-confidence after poisoning him with words<br />
+And the Phantom's shouting to skinny girls, "Get outta here if you don't know"<br />
+Casanova is just being punished for going to Desolation Row"<br />
+<br />
+At midnight all the agents and the superhuman crew<br />
+Come out and round up everyone that knows more than they do<br />
+Then they bring them to the factory where the heart-attack machine<br />
+Is strapped across their shoulders and then the kerosene<br />
+Is brought down from the castles by insurance men who go<br />
+Check to see that nobody is escaping to Desolation Row<br />
+<br />
+Praise be to Nero's Neptune, the Titanic sails at dawn<br />
+Everybody's shouting, "Which side are you on?!"<br />
+And Ezra Pound and T.S. Eliot fighting in the captain's tower<br />
+While calypso singers laugh at them and fishermen hold flowers<br />
+Between the windows of the sea where lovely mermaids flow<br />
+And nobody has to think too much about Desolation Row<br />
+<br />
+Yes, I received your letter yesterday, about the time the doorknob broke<br />
+When you asked me how I was doing, was that some kind of joke<br />
+All these people that you mention, yes, I know them, they're quite lame<br />
+I had to rearrange their faces and give them all another name<br />
+Right now, I can't read too good, don't send me no more letters no<br />
+Not unless you mail them from Desolation Row<br/><br/><div style="min-height: 25px; margin:0; padding: 12px 0 0 0; border-top: 1px dotted #ddd;">
+	<a href="/songs/edit/1110/" id="lyrics-edit" class="editbutton" title="Edit Lyrics">Edit Lyrics</a>
+	<a href="/songs/edit/1110/?type=wiki" id="lyrics-wiki-edit" class="editbutton" title="Edit Song Wiki">Edit Wiki</a>
+	<a href="/songs/edit/1110/?type=video" id="lyrics-video-add" class="editbutton" title="Add Music Video">Add Video</a>
+
+	</div><br/>					</div>
+
+					<div class="holder sign-box">
+	<p>
+		Lyrics submitted by 
+		<a href="/profiles/view/28/"  id="userprofile-28" rel="me nofollow" title="Jack" >Jack</a>	</p>
+	
+			<p>"Desolation Row" as written by Bob Dylan</p>
+		<p>Lyrics © BOB DYLAN MUSIC CO</p>
+		<p>Lyrics powered by <a href="http://www.lyricfind.com/" target="_NEW" rel="nofollow">LyricFind</a></p>
+		</div>						<div class="holder" style="text-align: center;">
+							<script type="text/javascript">
+	var band_name = "Bob Dylan";
+	var song_name = "Desolation Row";
+</script>
+<!-- BEGIN JS TAG - SM ROS Extra < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=3306658&size=300x250&promo_sizes=400x250&promo_alignment=center" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG -->						</div>
+										</div>				
+			</div>
+			
+							<div class="tabs-feed">
+					<div style="text-align: left;">
+						<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=160x600" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> 					</div>
+				</div>
+						
+			<!-- block -->
+			<div class="block" id="comments-section">
+	<a name="comments" id="comments"></a>
+	<div class="heading_meanings">
+		Desolation Row song meanings
+	</div>
+	
+	<div class="heading">
+		<a href="#addcomment" class="btn-comment"><span>Add your thoughts</span></a>
+		<h2 id="comments-counter">121 Comments</h2>
+	</div>
+
+	<div class="holder-sorting">
+		<!-- sort form -->
+		<form action="#" class="sort" id="comments-sort">
+	<fieldset>
+		<legend>sort form</legend>
+		<select title="All Comments" class="sort-select" name="sort" id="sort-commenttypes">
+			<option selected="yes" value="all">All Comment Types (121)</option><option value="4">General Comment (114) </option><option value="6">My Interpretation (4) </option><option value="7">Song Meaning (3) </option>		</select>
+		
+		<span id="flycomcount" style="display: none;">
+			121		</span>
+		
+		<input type="submit" value="submit" class="hidden" />
+		<strong class="title">View by:</strong>
+		<ul>
+			<li><a class="active" href="#comments" id="sort-highest">Highest Rated</a></li>
+			<li><a href="#comments" id="sort-recent">Most Recent</a></li>
+			<li><a href="#comments" id="sort-oldest">Oldest First</a></li>
+		</ul>
+	</fieldset>
+</form>		<!-- end sort form -->
+	</div>
+
+	<div class="holder-comments">
+		<!-- comments-list -->
+		<ul class="comments-list" id="comments-list">
+				
+	<li id="fullcomment-73015823391">
+		<a name="comment-73015823391"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015823391">
+	<div class="numb-holder">
+		<span id="com-rating-73015823391">
+			<strong class="numb" id='numb-rating-73015823391'>+10</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015823391" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015823391" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015823391">
+
+				<strong class="title">General Comment</strong>The following is my interpretation of Desolation Row by Bob Dylan.  I view this song to be Bob Dylan’s crowning achievement in songwriting.  The question could be asked ‘Why should Desolation Row should be given special consideration among the many classics that Dylan composed?’  The answer to this question is that Desolation Row moves beyond the poetic folk anthem (which it certainly is) in becoming an apocalyptic epic poem in the tradition of the modernist literary movement.   Although many of Dylan’s best songs are poetic, few contain the depth of metaphor, and none contain the carefully structured depth and allusions of Desolation Row.  Both through its lyrics and through its structure it resembles the writings of the epic poems of the modernism movement, and it is no coincidence that both T.S. Eliot and Ezra Pound are alluded to during the course of the song.  <br />
+T.S. Eliot once wrote: “Poems should communicate before they are understood.”  This is precisely what Bob Dylan does in Desolation Row.  Desolation Row perhaps most closely resembles T.S. Eliot’s The Waste Land. In this poem, Eliot comments on what he sees to be a world in social and cultural decline in response to the horrors of World War I.  The structure of Eliot’s masterpiece is broken into five highly metaphorical segments, each portraying a different scene.  Eliot, working in the modernist tradition, requires the reader to interpret the text that is laced with metaphors and strewn with cultural and literary allusions.  Eliot expected the reader to struggle with making sense of the piece, and counted on fact that a meaningful interpretation of the poem required immersion of hundreds of the classic texts of western culture.  Although Dylan does not seem to share Eliot’s elitist vision for poetry and the arts, he was highly educated, he clearly read Eliot and Pound, he uses metaphoric allusion in Desolation Row, and he was reacting against what he saw to be a troubled society mirroring Eliot’s own reaction against his society.  Like Eliot in The Waste Land, Dylan tells of a world in confusion.  Dylan portrays the world through metaphors, and reacts against the flawed philosophies in the world that are held out as panaceas (i.e. materialism, religion, and science), and calls for a new enlightenment or awareness, through the use of a number of unrelated scenes that each reinforce his central theme.<br />
+I believe the ‘Desolation Row’ that Dylan refers to in the song is actually a metaphor for an enlightened state of mind or awareness of the world as it is, not as it is presented through the false lenses of religion or science.  ‘Desolation Row’ is clearly represented as a place that some characters are at, “peeking into”, “trying to escape to”, or are “punished for going to.”  However, this place should be seen as more than a physical place, and seen as a new state of mind, or way of thinking.  It also should be clear that this state of mind, while enlightening, carries burdens with it.  For Dylan, it appears that seeing the truth is not necessarily a ticket to happiness.  In fact, the truth is often highly troubling. Dylan suggests that seeing reality as it really is, or reaching ‘Desolation Row’, is necessary to avoid impending disaster, but that it can be depressing because it involves the realization that many of the things that we have believed in or sought after are actually not the panaceas they appeared to be.<br />
+This can be seen in the first verse by Cinderella’s cynical response to the speaker saying “it takes one to know one.”  Clearly Cinderella is no longer waiting for Prince Charming, but instead is taking matters in her own hands.  She flirts rather than remaining passive and waiting for Prince Charming.  The romantic conception of Cinderella is somehow perverted, and she has a new awareness of the world as she is left “sweeping up on Desolation Row’.   The ideal image of romance is defeated, and there will be no storybook ending, but life goes on as she sweeps up the mess.  Romeo enters and again is challenged by a speaker.  Romeo, like Cinderella, also is in the wrong place because he also represents ideal notions of romance.  Rather than speaking sweetly in verse he moans and chases Cinderella, rather than Juliet as he should.  Things are not as they should be according to ideals.  Conventions are being upset.  ‘Desolation Row’ is not place where conventional endings are brought off, instead it is a place where there are recognitions of harsh realities.  Romeo either cannot understand this or cannot accept this.  He promptly takes the speakers advice and leaves by committing suicide, hence the sound of the ambulances.  Romeo is an example of how there are painful realizations that come with the enlightenment found at ‘Desolation Row’.<br />
+The third verse gives a clear warning of what is to come if society continues on its current path.  The “moon is almost hidden” and “the stars are beginning to hide.”  This foreshadows a storm, which is a metaphor for the problems the world will encounter on its present course.  “The fortune telling lady has even taken all her things inside” because she recognizes the pending storm/disaster.  Those who are paying attention are taking precautions and shielding themselves from the coming problems.  Cain and Able are not because they are too busy being involved in conflict to notice.  This is brother against brother.  It also may allude to war or conflict generally.  Everyone else is “making love, or else expecting rain” because they are either too involved in their lives “making love” (or seeking personal gratification) to notice or see the storm brewing or “else expecting rain”, i.e. the fortune telling lady, and they are running from the coming storm. “The Good Samaritan” from the Biblical parable who represents the good, wise, and just person who is generally spat upon by society is getting ready for the carnival that he is going to attend on Desolation Row.  The Good Samaritan is going to go into the approaching storm and deal with it in some way.  Perhaps this suggests we should too, if we are doing the right thing.  Rather than not realizing the problem, or running from it, we should acknowledge it and deal with it in some way.<br />
+The fourth verse tells us about Ophelia, Hamlet’s lover in Hamlet.  Ophelia hopes that Hamlet will marry her, but it is not going to happen.  Ophelia’s peeking into Desolation reveals that marriage to Hamlet is impossible and she contemplates suicide.  It also may suggest that her religious beliefs do not provide the answers she always believed.  The “iron vest” she wears symbolizes enclosure, as well as her fate; she drowns herself in a river in Hamlet.  Ophelia clings to hope symbolized through “Noah’s great rainbow” that represented God’s promise to man that he would not bring another great flood.  It may symbolize hope through Hamlet’s promise to marry Ophelia, as well symbolize the hope of her religious beliefs.  The problem for Ophelia is that the promises don’t add up with reality as she sees it when she peeks into true reality on Desolation Row.  This verse also develops a theme of sin and dealing with sin.  Ophelia breaks God’s law by having premarital sex with Hamlet.  This guilt weighs heavy on her throughout Hamlet.  This problem is subtly suggested by the phrase “her profession’s her religion, her sin is her lifelessness.”  Ophelia’s only profession prostituting herself to Hamlet.  The verse  hints at the church’s inability to successfully address man’s problems in reality, a topic that will be revisited later.  Things don’t look good for Ophelia, she contemplates her fate, while we know what will happen to her.  Ophelia is another example of how Desolation Row can be destructive as well as enlightening.<br />
+The fifth verse brings in a discussion of the failings of modern science to resolve society’s problems.  “Einsten disguised as Robin Hood” symbolizes modern science’s attempt or tendency to be hailed as the answer in our times.  Robin Hood is the classic hero, while in addition, it is not insignificant to note that he ‘stole from the rich and gave to the poor.’  His friend the “jealous monk” symbolizes religion, Christianity, or perhaps more specifically Catholicism.  Religion is jealous of science.  Science has gradually replaced religion as the relied upon source for explaining the world’s problems.   In the metaphor, science gets to play the hero, while religion merely tags along trying to keep up.  The “memories in a trunk” may represent the past scientific tradition where science actually contributed to man’s enlightenment.  However, now these times are in the past.  Today, science “looks immaculately frightful” suggesting the potential dangers that science offers the world.  The ‘He’ in this verse, goes off acting like a bum, rather than a hero, by “bumming cigarettes”, “sniffing drainpipes”, and stating its dogmatic findings in “reciting the alphabet.”  It is unclear whether the ‘he’ is referring to “Einstein disguised as Robin Hood” or the “jealous monk”, but in either case the speaker suggests that he sees the flaws of science or religion, not the idealic image that they would like us to see.  The speaker comments “you would not think to look at him that he was famous long ago, for playing the electric violin on Desolation Row.”  This suggests that you would not by looking at science or religion today that once it did a great deal in contributing to man’s enlightenment.  The music of the electric violin on Desolation Row is a metaphor for something contributing to enlightenment. This verse clearly leaves us with the impression that science and religion will not resolve all of society’s problems.<br />
+ The sixth verse is a fairly nebulous verse.  Dr. Filth is a reference to an actual holocaust official who cut off the genitals of patients and put them in a pouch made of skin.  Presumably, ‘the world’ inside the cup represents the perverted worldview of Dr. Filth.  The victims are trying to blow it up in order to defeat a morally bankrupt reality, but of course they will fail because they do not have the power to do it.  “The nurse, some local loser” represents the common average person who collaborates with something that is wrong, rather than standing up to it.  The nurse aids Dr. Filth, rather than standing up to what is wrong.  The nurse “keeps the cards that read ‘have mercy on your soul’”, rather than playing them.  The nurse has the ability to take a stand, to ease pain, but chooses not to out of self-interest.  The verse ends with another reference to Desolation Row as a place of awareness, suggested that you can hear the music ‘if you lean your head out far enough on Desolation Row’<br />
+The seventh verse talks about “the agents” and the “superhuman crew”, probably references to agents of the establishment and religious leaders, “rounding up everyone that knows more than they do” and punishing them.  The instruments of punishment are “brought down from the castles” which seems almost like feudal imagery, the establishment attempting to control the masses.  The insurance men, are those making sure that “no one is escaping to Desolation Row”.  This suggests once again, that Desolation Row is a place (or more precisely a state of mind) where people learn the truth about the world, which is dangerous to the establishment that benefits from people buying into the status quo.  <br />
+The eighth verse gives us the images of unpredictability and impeding doom on our present course.  Nero was the insane Roman Emporer.  Neptune was the changeable god of the sea.  The Titanic, the ship destined to sink, is sailing on these unpredictable waters.  The people on the Titanic (society today), are too busy worried about their position on the sinking vessel to take notice of the bigger picture, until it is too late.  Ezra Pound and T.S. Eliot were two modernist poets who wrestled with the problems of their time and tried metaphorically through their poetry to call for the enlightenment of the masses to address the problems of a harsh reality.  Desolation Row in many ways mirrors key works of T.S. Eliot or Ezra Pound, especially T.S. Eliot’s The Wasteland.  These visionary poets (who may or may not have all the answers) are fighting for control of the sinking vessel, while everyone else is oblivious to the situation.  While Dylan mirrors the style of Eliot or Pound in this poem, he does not have the elitist bent of them.  He may, in fact, be taking a jab at these poets by suggesting they are on the Titanic and too busy fighting over which elitist apocalyptic metaphor for society is correct to be helpful in finding a solution.  Regardless, what is clear is that nobody is thinking about going to Desolation Row (or gaining true awareness) because they are too distracted by what is going on in their lives.  <br />
+In the final verse, the speaker addresses an unnamed person saying that he received a letter from the person yesterday, “about the time the door knob broke”.   The door knob represents the way out of Desolation Row, they way back to the conventional way of thinking, the way not concerned with the new awareness of reality.  Now that the door knob broke, there is no going back to the conventional way of thinking. “When you asked me how I was doing, was that some kind of joke?” shows a general disdain for the conventional unenlightened way of thinking.  The speaker is not interested in how he is doing according to the conventional way of thinking.  The speaker is struggling with all of the problems of the world, and likely isn’t feeling too good about things, but above all else, he is uninterested in how he is doing in the conventional way of defining well-being.  “And all these people that you mention, yes I know them they’re quite lame” also refers to this change in the speaker’s priorities.  The speaker does not care how people are doing in the conventional way of thinking (whether they bought a new car or house, or are happy according to the conventional way of thinking, etc.).  “I had to rearrange their faces, and give them all another name” may be a veiled reference to including them in the ideas found in the song.  “Right now, I can’t read too good, don’t send me no more letters, no” refers to the fact that the speaker doesn’t want to hear any more about the concerns of the conventional way of thinking about life.  He’s not interested, his perspective has changed, it’s no longer relevant to him.  “Not unless you mail them from Desolation Row” means that the speaker is only listening to the enlightened perspective or awareness found in the state of mind of Desolation Row.  It suggests that the writer has the ability to go to Desolation Row himself if he wants to.  It hints at the spiritual journey that the speaker thinks people need to take to get to Desolation Row.<br />
+				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17353863/"  id="userprofile-17353863" rel="me nofollow" title="mpalmer" class="author">mpalmer</a><em class="date">on October 18, 2009</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73015823391#comments" id="specific_com-73015823391" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015823391" title="5 Replies">5 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015823391" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015823391">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015823391" id="frmreplycomment">@mpalmer </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015823391" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015823391" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016034330">
+		<a name="comment-73016034330"></a>
+		
+<div id="rating-holder-73016034330">
+	<div class="numb-holder">
+		<span id="com-rating-73016034330">
+			<strong class="numb" id='numb-rating-73016034330'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016034330" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016034330" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			That was one of the best analyses I've ever seen on this site! Incredible work, and an enjoyable read. Thanks a lot.			<div class="sign">
+
+				<span id="flagspan-73016034330">
+											<a href="#" id="flag-73016034330" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17387518/"  id="userprofile-17387518" rel="me nofollow" title="HyperBully" class="author">HyperBully</a><em class="date">on March 28, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016156278">
+		<a name="comment-73016156278"></a>
+		
+<div id="rating-holder-73016156278">
+	<div class="numb-holder">
+		<span id="com-rating-73016156278">
+			<strong class="numb" id='numb-rating-73016156278'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016156278" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016156278" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I have to agree with HyperBully. This was a very interesting prespective though I disagree in some details. I took a glimpse into desolation row recently, i think and with this text I'll be listening to this song in a whole other way now, thanks.			<div class="sign">
+
+				<span id="flagspan-73016156278">
+											<a href="#" id="flag-73016156278" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17514516/"  id="userprofile-17514516" rel="me nofollow" title="patobebado" class="author">patobebado</a><em class="date">on July 10, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016281041">
+		<a name="comment-73016281041"></a>
+		
+<div id="rating-holder-73016281041">
+	<div class="numb-holder">
+		<span id="com-rating-73016281041">
+			<strong class="numb" id='numb-rating-73016281041'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016281041" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016281041" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+															<br />
+I know how old this comment is. I just wanted to say thanks. Also this is incredibly meta<br />
+<br />
+"And nobody has to think too much<br />
+About Desolation Row"<br />
+<br />
+“Poems should communicate before they are understood.”<br />
+<br />
+This song is fabulous satire of the wasteland			<div class="sign">
+
+				<span id="flagspan-73016281041">
+											<a href="#" id="flag-73016281041" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17641103/"  id="userprofile-17641103" rel="me nofollow" title="mark105516" class="author">mark105516</a><em class="date">on October 28, 2014</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310213">
+		<a name="comment-73016310213"></a>
+		
+<div id="rating-holder-73016310213">
+	<div class="numb-holder">
+		<span id="com-rating-73016310213">
+			<strong class="numb" id='numb-rating-73016310213'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310213" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310213" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17353863/?mention=97ae6e6f6a2beb6db2b5312cfa3b4980"  id="userprofile-17353863" rel="me nofollow" title="@mpalmer" >@mpalmer</a> A tremendous review. I don't agree with everything but your opening was so right on. It mirrors my own review completely (see newest). I would only add the last verse is about a real event, the letter published in Sing Out magazine rebuking Dylan for abandoning the protest movement. The verse is his counter." I will listen to you only when you wake up (to the state of awareness" you reference. Otherwise, don't bother me.<br />
+Very nice job.<br />
+.			<div class="sign">
+
+				<span id="flagspan-73016310213">
+											<a href="#" id="flag-73016310213" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 03, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310217">
+		<a name="comment-73016310217"></a>
+		
+<div id="rating-holder-73016310217">
+	<div class="numb-holder">
+		<span id="com-rating-73016310217">
+			<strong class="numb" id='numb-rating-73016310217'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310217" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310217" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			PO.S. Best review of all. But read mine too. It deals with mote than the lyrics.			<div class="sign">
+
+				<span id="flagspan-73016310217">
+											<a href="#" id="flag-73016310217" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 03, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016145330">
+		<a name="comment-73016145330"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016145330">
+	<div class="numb-holder">
+		<span id="com-rating-73016145330">
+			<strong class="numb" id='numb-rating-73016145330'>+7</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016145330" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016145330" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016145330">
+
+				<strong class="title">General Comment</strong>Desolation Row was written in 1965, a crucial year in Dylan's career. He'd made a break from the folk scene that has brought him his early success. He'd broken up with Suze Roloto and had an affair with Joan Baez that had recently ended. He'd met Allen Ginsburg the previous year and made a personal connection to the original Beats. He'd taken hallucinogens. And the success of the Beatles had revived his childhood love of rock music. If you look at the themes of other songs he'd written in the year past, he made a lot of direct references to the changes going on in him and him relationships and his art: "Positively 4th Street," "My back Pages," etc. I think this is another. Desolation Row is a place outside of normal society. It's where the Beats live. (Two lines are lifted from Kerouac's "Desolation Angels.") It's Bohemia. And he's writing about the world as he sees it from there. The song isn't overtly political, though there are images that could be government agents and politicians (Nero, the commissioner). The characters are given names from literature or history -- a technique he used widely at the time. I would say that he had people in mind when he wrote the characters, although, in their depiction, the primary consideration is probably writing a good lyric rather than accuracy of any kind. It was Ginsberg's favorite Dylan song, so something tells be that Ginsberg saw himself in it somewhere. I think Ophelia bares a sharp resemblance to Baez, peeking into the Row but outside of it, an old maid in spirit at 22, the age Dylan met her. The "iron vest" possibly a reference to Joan of Arc's armor; a zealous devotion to her profession, looking for (political) salvation, but "lifeless" in the sense that she wouldn't cut loose and enjoy herself. Watch some footage of the super-serious Baez in the mid sixties, and you'll see what I mean. But resemblance to real people is secondary to their role as archetypes -- characters who will always be a part of life, in any era. And likely Dylan himself is in there, or previous incarnations of him. Cassanova certainly sounds like a rock star who's being tightly managed, punished for dabbling in the freedom of the Beats. Einstein/Robin Hood sounds like someone from an older generation, but the "electric violin" seems a reference to Dylan's adopting electric instruments. So it's probably part experience part people he's observed, and, in the end, a collection of universal images that will outlive the people who may have inspired them.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17511439/"  id="userprofile-17511439" rel="me nofollow" title="thedroid" class="author">thedroid</a><em class="date">on May 18, 2012</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73016145330#comments" id="specific_com-73016145330" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016145330" title="3 Replies">3 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73016145330" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016145330">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016145330" id="frmreplycomment">@thedroid </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016145330" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016145330" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016166360">
+		<a name="comment-73016166360"></a>
+		
+<div id="rating-holder-73016166360">
+	<div class="numb-holder">
+		<span id="com-rating-73016166360">
+			<strong class="numb" id='numb-rating-73016166360'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016166360" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016166360" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			The Einstein is in my view a reference to himself.  Ddisguised as Robin Hood" is his own start to the folk music where he came in out of nowhere with a fictional name and a fictional past.  The jealous monk are the religious folkies clinging to life in the past as he tries to abandon the folk scene and do something new.  "Sniffing draintiles and reciting the alphabet" is what others though he had done by abandoning folk for rock...they thought he went nuts.  Why would he abandon what made him famous?  The part about the electric violin reinforces this, only it is really an electric guitar, and HE is the Einstein.  This is my favorite verse.  He WAS an Einstein, a bit arrogant, but also a genius and he knew it.  He said most of his songs are autobiographical.			<div class="sign">
+
+				<span id="flagspan-73016166360">
+											<a href="#" id="flag-73016166360" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17465300/"  id="userprofile-17465300" rel="me nofollow" title="railroadgin" class="author">railroadgin</a><em class="date">on September 10, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016178142">
+		<a name="comment-73016178142"></a>
+		
+<div id="rating-holder-73016178142">
+	<div class="numb-holder">
+		<span id="com-rating-73016178142">
+			<strong class="numb" id='numb-rating-73016178142'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016178142" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016178142" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I really like your interpretation a lot. And taking it one step further, the reference to Einstein disguised as Robin Hood, and his friend a jealous Monk. I was wondering if this could possibly be a reference to Simon and Garfunkel. It could make sense....they started out in the Folk scene before making it big with Sounds of Silence, which was initially recorded as a primarily accoustic track, but was later 'electrified' prior to it release as a single, thus catipulting S&G as successful big hit BEAT musicians (their transformation from the Folk scene to the Beat scene?<br />
+It might be somewhat of a stretch I suppose.			<div class="sign">
+
+				<span id="flagspan-73016178142">
+											<a href="#" id="flag-73016178142" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17343933/"  id="userprofile-17343933" rel="me nofollow" title="Louis126" class="author">Louis126</a><em class="date">on November 24, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016189165">
+		<a name="comment-73016189165"></a>
+		
+<div id="rating-holder-73016189165">
+	<div class="numb-holder">
+		<span id="com-rating-73016189165">
+			<strong class="numb" id='numb-rating-73016189165'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016189165" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016189165" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I enjoyed your intelligent comment. It is a deep mine of language to which this great genius, or as David Bowie called him , "the super brow" took us all, and we are still enjoying the exploration. As he said, "all these people that you mentioned, I know them, they're quite lame, I had to rearrange their faces, and give them all another name." The essence of symbolism is using disparate word images to set these ideas flowing in our minds. Next one in line to the crown was Jim Morrison who has followed Bob as a endless source of mystery and the fount of many a doctoral thesis by those who marvel and describe but can't create.			<div class="sign">
+
+				<span id="flagspan-73016189165">
+											<a href="#" id="flag-73016189165" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17556455/"  id="userprofile-17556455" rel="me nofollow" title="Solipsism" class="author">Solipsism</a><em class="date">on January 31, 2013</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015758806">
+		<a name="comment-73015758806"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015758806">
+	<div class="numb-holder">
+		<span id="com-rating-73015758806">
+			<strong class="numb" id='numb-rating-73015758806'>+5</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015758806" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015758806" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015758806">
+
+				<strong class="title">Song Meaning</strong>Desolation Row is a state of mind representing the developing counter culture of the 1960s that is outside of the establishment, convention, and the mainstream culture.  The artists, free thinkers, and misfits congregate on Desolation Row to strip away the false illusions of society.  The use of the characters leads ultimately to why Dylan, and "Lady" (Joan Baez) are a part of Desolation Row. <br />
+<br />
+The name, Desolation Row, may have been a combination of Desolation Angels (Kerouac) with Cannery Row (Steinbeck) and influenced by the writings by Woody Guthrie about the underclass of society desiring change.  Musician Al Kooper asserts Desolation Row is in Greenwich Village in New York City, based on personal contact with Dylan, but this appears unlikely from the lyrics.<br />
+<br />
+The characters on Desolation Row are a part of the carnival show that represent, verse by verse: politics, traditional roles, evil, religion, science, medicine and love.  Many of the characters are counter culture misfits, both good and bad, that have caused society to question the status quo.<br />
+<br />
+Likely, the first verse has historical basis from Dylan's days in Minnesota when he discovered that people commercially sold postcards of local hangings (see footnote below).   The setting is the absurdity of a world (circus) with "blind" politicians "tied to tight rope walkers" pleasing only themselves with "one hand in their pants" the "riot squads need some place to go."   Historically, the riot squad hung three persons from the jail of the "blind commissioner."<br />
+<br />
+The second verse with a meeting between the "easy" virtue Cinderella, who through her will power (and a slipper) changed her place in society, and the traditional lover, Romeo, does not go as expected when he becomes possessive ("you belong to me I believe"), and he is told be does not have a place ("You're in the wrong place, my friend, You better leave").  That another resident stepped in to forcefullyÂ defend ("ambulances leave" or that Romeo committed suicide again) shows how far Romeo has strayed from the expectation of assigned roles when this fairy tale romance does not end with Cinderella falling in love with the prince.  The traditional roles of women do not apply anymore.<br />
+<br />
+The third verse is in stark contrast to the second as the storm builds ("The stars are beginning to hide") and "everyone" goes inside and "is making love" ("or expecting rain").  Excluded are Cain and Abel, presumably as they represent jealousy and evil, and the Hunchback, for his betrayal of family.  The Good Samaritan is in contrast as he "does unto others" and is invited to the carnival in contrast to the evil.    <br />
+<br />
+The fourth verse centers on the suicidal Ophelia who is an outsider due top the "iron vest" of her traditional religion.  She is old before her time because she is not true to herself ("Her profession's her religion, her sin is her lifelessness.").  She is fixed on Noah's Rainbow (a time for judgment after purification), and so she only peeks into the life of Desolation Row as an outsider.  She is the stereotype of a religion based on self denial and not allowing one to experience life. <br />
+ <br />
+The fifth verse centers on the disheveled Einstein and "his friend" ("With his friend, a jealous monk")  (Isaac Newton was a monk that would have been jealous of Al's abilities) who was known for "playing the electric violin on Desolation Row."  There is a famous black and white picture of the middle-aged Einstein playing his violin.  The reference to Dylan's electric guitar at the Newport Folk Concert that changed music, as Einstein did Newton's physics, is unmistakable.  Einstein is still misunderstood "and reciting the alphabet" (presumably e=mc2) while investigating black holes in the universe ("went off sniffing drainpipes").  He wears a disguise (Robin Hood a do-gooder) to shield himself from the potential uses of his discoveries that he keeps locked "in a trunk."<br />
+<br />
+The sixth verse centers on the medical profession that medicate (slang "cyanide hole" for closet of medications that kill patients who may question) the "sexless patients" trying to blow up their theories.  Dr. Filth is likely Sigmund Freud based on the "F" name, the "sexless patients," and his atheist viewpoint that led to his split with Carl Jung thus requiring his nurse "she also keeps the cards that read "Have mercy on his soul"."  Freud's reliance on drugs to medicate patients, and personally, added with his sexual repression theories may make him Dr. Filth. "Penny whistles" would represent the common man who was not troubled by Freud's sexual theories, and who's lives were often at odds with the theories. [As a note, I have discounted the Josef Mengele interpretation due to his not using drugs (cyanide or other) in his experiments, unlikely to hire "local loser" nurse instead of Army personnel, nor being at the era of penny whistles].<br />
+<br />
+Verse seven features Casanova being nurtured ("to get him to feel more assured") by the Phantom of the Opera (a disfigured genius who nurtured Christine), as the great lover is being poisoned with word and self-confidence as a punishment for his visit to Desolation Row (where no pretense is allowed).  The "skinny girls" are being urged to leave as, presumably, Casanova will return to his correct place in the social order and they have no place at the "feast."  Apparently, Casanova's trip to Desolation Row was to find a love not "in an image of a priest."  They have "nailed the curtains" to prevent entry, or escape, or even a look, for those wishing to exchange their place in society. <br />
+<br />
+Verse eight centers on what happens at midnight when the agents "round everyone up"  that "knows more than they do."  This may be interpreted in many ways, but the "heart-attack machine strapped across their shoulders" is common slang for a guitar that is burning on "kerosene brought from the castles" as it is played at the club or "factory."  (see Andy Warhol "Factory" etc.).   The insurance men are the police.  [this verse has been interpreted to involve paranoid agents of the federal government enforcing the status quo and the killing of residents of DR, but I find this inconsistent with the line "strapped across their shoulders," and the message of the song.  No matter what, this verse is inconsistent with the characters of the other verses, and may have been added at a different time.]<br />
+<br />
+In verse nine, everything is unraveling, and the unsinkable society ("the Titanic sails at dawn") is about to to be sunk by the goddess of the sea (Neptune) inspired by the tyrant policies of  a politician (Nero).  A fight has broken out between Pound and Eliot (both had distinct ideas on the place of races and were in the "captain's tower") in the war of ideas over civil rights (and everybody's shouting "Which side are you on?").  This sounds like the fight for civil rights that was occurring in 1965, that was being led by the residents of Desolation Row.<br />
+<br />
+The last verse is separated by a long harmonica solo, and a personal tone that is separate from the circus of surreal characters of the previous verses.  Dylan is unable to change the past ("the door knob broke") and is residing on Desolation Row as the only alternative in repressive society where he is seen as a dangerous subversive for his leadership role in civil rights ("When you asked how I was doing, was that some kind of joke?").  He does not want to respond to the questions (from "the letter") from mainstream society until the writer joins him in an understanding that the song is coming from the counter culture of dissidents on Desolation Row ("Don't send me no more letters no, not unless you mail them from Desolation Row.").  Both Dylan, and "Lady," (Baez) "look out" as members of a group desiring social change. <br />
+<br />
+The rich set of cultural and religious stereotypes as metaphors to describe society is reinforced by the use of imagery in each phrase.  No doubt, the song was intended to have many meanings, and was as Joan Baez said in Diamonds and Rust, to give all of us "some vagueness" that we need.<br />
+<br />
+Perhaps, this song was the best description of the counter counter that was emerging at the time, and that paved the way for social evolution by a group that had previously been outcast from politics.<br />
+Â <br />
+<br />
+<br />
+Footnote 1:  On June 15, 1920, a mob of 10,000 lynched three men, Isaac McGhie, Elias Clayton and Elmer Jackson at the corner of First Street and Second Avenue East in Duluth MN. The men were in town with a traveling circus and were dubiously accused of raping a local girl. (On June 15, 1920, Dylan’s then ten-year-old father lived in a third floor apartment at 221 North Lake Avenue.) The Police Commissioner instructed the guards not to use their guns to defend the young men who were broken out of jail by the mob. Postcards with a photo of the incident were sold as souvenirs. It seems likely that the opening lines of Desolation Row, refer to this incident and the players involved, or to Duluth in general.<br />
+				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17315851/"  id="userprofile-17315851" rel="me nofollow" title="wildasu" class="author">wildasu</a><em class="date">on June 15, 2009</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73015758806#comments" id="specific_com-73015758806" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015758806" title="1 Reply">1 Reply</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015758806" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015758806">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015758806" id="frmreplycomment">@wildasu </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015758806" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015758806" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897968">
+		<a name="comment-73015897968"></a>
+		
+<div id="rating-holder-73015897968">
+	<div class="numb-holder">
+		<span id="com-rating-73015897968">
+			<strong class="numb" id='numb-rating-73015897968'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897968" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897968" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Fuckin' awesome. thank you for such a comprehensive set of references & analysis			<div class="sign">
+
+				<span id="flagspan-73015897968">
+											<a href="#" id="flag-73015897968" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on April 01, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014660797">
+		<a name="comment-73014660797"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014660797">
+	<div class="numb-holder">
+		<span id="com-rating-73014660797">
+			<strong class="numb" id='numb-rating-73014660797'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014660797" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014660797" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014660797">
+
+				<strong class="title">General Comment</strong>When reading the lyrics, the first question that I had was whether the "Desolation Row" described in the song was a good or bad place.  "Desolate" means "uninhabited," and doesn't necessarily have any bad connotations.  Everyone here seems to think it's a bad place to be, but I think the opposite.  You look at the imagery and descriptions Dylan uses of places outside DR, and you might agree with me.<br />
+Verse 3:<br />
+The world is ending.  Or at least people think it is.  The stars and the moon are hiding, the fortune teller doesn't have any more fortunes to tell, and everyone is "making love/ Or else expecting rain."  (Nuclear rain?)  But inside DR, no one is frightened.  There's a carnival going on.<br />
+Verses 6-8:<br />
+Everything in these verses happens outside of DR.  And it all sucks.  You have things like a "cyanide hole" and a "heart attack machine," which in my mind are symbols for the "rat race" of life.  In these verses, people like Cassanova are trying to get to DR, a clear sign that it's better than wherever they are.<br />
+Verse 10:<br />
+I think that the first 9 verses were parts of the letter that the narrator received.  The "people that you mention" were all the characters from the rest of the poem.  The doorknob breaking refers to the question from the earlier verse "Which side are you on?"  Basically, are you in DR or the outside world, because now the door between them doesn't work.<br />
+<br />
+I'm not too clear on what the punchline might be, but I would guess that DR is a place where there is no oppression (e.g. no Dr. Filth, Phantom, or insurence men), so the song is a tirade against depression.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/16994902/"  id="userprofile-16994902" rel="me nofollow" title="McShark" class="author">McShark</a><em class="date">on June 04, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73014660797#comments" id="specific_com-73014660797" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014660797" title="4 Replies">4 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014660797" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014660797">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014660797" id="frmreplycomment">@McShark </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014660797" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014660797" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897929">
+		<a name="comment-73015897929"></a>
+		
+<div id="rating-holder-73015897929">
+	<div class="numb-holder">
+		<span id="com-rating-73015897929">
+			<strong class="numb" id='numb-rating-73015897929'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897929" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897929" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I think it's a state of mind, enlightenment, hipness itself - alternative culture and reality in the truest sense.<br />
+<br />
+Awesome interpretetion. I wouldn't disagree with any of it. I think the song is brilliant in its poetic economy of words and evocativeness.			<div class="sign">
+
+				<span id="flagspan-73015897929">
+											<a href="#" id="flag-73015897929" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on April 01, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016052173">
+		<a name="comment-73016052173"></a>
+		
+<div id="rating-holder-73016052173">
+	<div class="numb-holder">
+		<span id="com-rating-73016052173">
+			<strong class="numb" id='numb-rating-73016052173'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016052173" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016052173" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			The doorknob breaking refers to her no longer being shut out of DR.  He gets the letter at the same time the doorknob breaks.  She is in La La land, while he is in reality (DR).  He doesn't want to hear about all of these circus freaks, and their craziness from the fantasy (outside) world, he wants to hear them (why he rearranged their faces) from reality.  He is in reality (DR--not a bad place), whereas she is in fantasy land, w/ her circus freaks, total non-reality.  This must be what Dylan sees in the world of entertainment--a bunch of hangers-on, sycophants, suck-ups, narcissists, etc. who need to get to desolation row.  For Dylan, desolation row is lonely, but safe, and real.  He is healthy, they are frauds.  Like many tunes, Dylan is throwing you w/ the imagery.  Most listeners assume DR is a bad place filled w/ lonliness and despair...but if you assume DR is a good place, then reread the lyrics, it will make sense.  I read the verses backwards, starting at the end w/ his letter he received.  It makes more sense that way.			<div class="sign">
+
+				<span id="flagspan-73016052173">
+											<a href="#" id="flag-73016052173" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17465300/"  id="userprofile-17465300" rel="me nofollow" title="railroadgin" class="author">railroadgin</a><em class="date">on May 31, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016064013">
+		<a name="comment-73016064013"></a>
+		
+<div id="rating-holder-73016064013">
+	<div class="numb-holder">
+		<span id="com-rating-73016064013">
+			<strong class="numb" id='numb-rating-73016064013'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016064013" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016064013" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			the first verse is about an actual incident that occurred near Dylan's home town in the 1920s where three black circus workers were hung unjustly and they printed postcards of their hanging corpses. alot of the other verses probably refer to other incident's like this; "doctor filth", "Einstein disguised as robin hood". i think the last verse reinforces your opinion. he only wants the letter if he knows that the person he cares about "mails it from desolation row". even though he can't "read too good" as long as he knows that the person is safe is DR, he is at peace			<div class="sign">
+
+				<span id="flagspan-73016064013">
+											<a href="#" id="flag-73016064013" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17471999/"  id="userprofile-17471999" rel="me nofollow" title="metrodome934" class="author">metrodome934</a><em class="date">on July 16, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016064448">
+		<a name="comment-73016064448"></a>
+		
+<div id="rating-holder-73016064448">
+	<div class="numb-holder">
+		<span id="com-rating-73016064448">
+			<strong class="numb" id='numb-rating-73016064448'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016064448" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016064448" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			hmm. nice way to think of this. But what about the skinny girls mentioned by phantom, or Ophelia. I think that some of these refer to a prostitution home, as mentioned in an earlier replies. just think about it. I'm going to go comment on Ballad of a Thin Man now. wish me luck. 			<div class="sign">
+
+				<span id="flagspan-73016064448">
+											<a href="#" id="flag-73016064448" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17471960/"  id="userprofile-17471960" rel="me nofollow" title="rocknrollerz" class="author">rocknrollerz</a><em class="date">on July 18, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73015469042">
+		<a name="comment-73015469042"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73015469042">
+	<div class="numb-holder">
+		<span id="com-rating-73015469042">
+			<strong class="numb" id='numb-rating-73015469042'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015469042" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015469042" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73015469042">
+
+				<strong class="title">General Comment</strong>Wow.  This song is an absolute masterpiece, and a perfect example of Bob Dylan as a literary and musical genius.  It is absolutely amazing to me that someone who was all of 24 years old (Dylan's age at the time he wrote the song) had the vision and creativity to pen something like this.  Of all his songs, this one is probably my favorite.  It's a marvelous ending to probably his most significant album, Highway 61 Revisited.<br />
+<br />
+That being said, I think there are a few, very important things to take into account when trying to interpret this song.  1.) He is essentially reacting to a letter that he received from someone.  He is describing those who appear to be mutual aquaintances in a manner that seems more appropriate to him.  2.) The actual Highway 61 ends in Minnesota (where Dylan was born) and is considered by some to be sort of a 'end of civilization' type of place, where society's forsaken end up.  This song itself, is also an end of Highway 61, as it is the last song on the album,  and 3.) like all Dylan songs, it will mean something different to everyone.  There really is no right or wrong answer when it comes to his songs =).  I do however, really enjoy the way such a tragic narrative is put to to such beautiful guitar work (played by future grammy winning country/session musician Charlie McCoy).<br />
+<br />
+The first verse serves to introduce you to the type of place Desolation Row is.  "They're selling postcards of the hanging/they're painting the passports brown" etc.  The postcards line is a reference to an event that occurred in Minnesota, where 2 black men were lynched and hung, only to have the photographs of their hanging put on postcards in the area.  Nazi's painted passports of the Jews brown during the Holocaust.  This verse also is the first indication that Dylan too, is in this place of horrors.  i.e.: "As Lady and I look out tonight from Desolation Row."<br />
+<br />
+The following several verses are important because they all reference characters that are either tragic or downfallen, and events that are considered to be historical disasters or crimes against humanity.  Once again indicating that Desolation Row is not a place someone would want to be.<br />
+<br />
+In verse 2, Cinderella is doomed to a life of being misunderstood by others, and cleaning up the messes of Desolation Row, which is similar of course to the life she leads in the fairy tale. i.e.  : "Cinderella, she seems so easy" and "Cinderella sweeping up On Desolation Row."<br />
+In the same verse, Romeo kills himself after being told he cannot have the woman he desires (And someone says, 'You're in the wrong place, my friend<br />
+You better leave.'  And the only sound that's left<br />
+After the ambulances go...)  This too, being accurate with the story in "Romeo and Juliet."<br />
+<br />
+Verse 3 is interesting to me, because it hints at the possibility that some people on Desolation Row are worse off than others.  Some may still have hope, while others may be eternally doomed.  A scenario is laid out where it becomes nightime, and appears a storm or storm clouds are on the way (Now the moon is almost hidden/The stars are beginning to hide).  Everyone has packed it up and gone inside to make love or because of the expected rainfall.  Note here that Cain and Abel and the Hunchback of Notre Dame cannot go inside because Cain and Abel have been banished to Desolation Row (like being banished from Eden in the Bible) and noone will make love to the Hunchback because he is hideous and his love goes unreturned (as in the story).  So while some others can escape Desolation Row for a while, others are trapped there permanently.  And leave it up to the Good Samaritan to visit there to lend a helping hand or attempt to save others (as in the Biblical story).<br />
+<br />
+Verse 4 is important because it is the only verse that references someone who is not on Desolation Row.  It mentions Ophelia, who peeks into there on occasion.  I believe that Dylan is calling the person who wrote him the initial letter Ophelia.  She may not be on Desolation Row (yet), but she peeks in there (sends Dylan the letter) to see what is going on.  This character is also tragic i.e. "On her twenty-second birthday/She already is an old maid" and "Her profession's her religion/Her sin is her lifelessness."  It is worth nothing also that Ophelia is from Shakespeare's Hamlet, a story in which she committs suicide by drownging herself in a river while wearing an iron vest, because of multiple issues with her family and love (To her, death is quite romantic/<br />
+She wears an iron vest).<br />
+<br />
+Verse 5 is about Einstein disguised as Robin Hood. The song implies that Einstein was once a great, well respected man of sound mind and intelligence.  However, now he is little more than a crazy bum who sniffs drainpipes and talks to himself i.e.:  "Then he went off sniffing drainpipes/And reciting the alphabet."  During his living years, Einstein was often thought of as crazy, and that his ideas were nonsense.  This may lead someone to keep their ideas to themselves and display an outwards persona that does not match the inside (Einstein, disguised as Robin Hood/With his memories in a trunk).<br />
+<br />
+Verse 6 about Dr. Filth and the cyanide hole is another reference to the Holocaust, where Jews were tricked into shower rooms by Nazi doctors, only to be gassed to death.  It is included in this song as an example of a crime against humanity, which seems to occurr frequently in this horrible place called Desolation Row.  It is likely because of the 2 Holocaust references I have mentioned, that people interpret the whole song to be about the Holocaust.<br />
+<br />
+Verse 7 is interesting because it mentions the only character on Desolation Row who is not considered 'tragic'.  This of course is Casanova, a man who was a one-time consort of European royalty, popes and cardinals, and is frequently referenced as the world's greatest lover.  It appears Casanova has mistakenly ended up on Desolation Row where he does not belong.   The tragic, local Row inhabitants like The Phantom of the Opera of course must torture him out of jealousy, in an attempt to make him feel like they do, i.e. "They're spoonfeeding Casanova/To get him to feel more assured/Then they'll kill him with self-confidence/<br />
+After poisoning him with words."  Great use of characters here by Dylan- The Phantom who is hideous and wears a mask, foiled with Casanova, the ladies man.  Also interesting that the skinny girls come to see Casanova- skinny indicating desirable physical beauty- only to be chased away by the Phantom, whom one must believe has been shot down by women of this type many times before.<br />
+<br />
+Verse 8 about the superhuman crew and the insurance men are likely symbolic of government authority figures (the superhuman crew) and other people who believe in their own self importance (the insurance men.  The term is likely only used to reference those of the establishment, as this would be deemed a 'square' sort of job in the 60's) who attempt to bully, hush, and mock those who preach ideas that are different to the ones they believe in.  This is a theme that has showed up in many Dylan songs, especially on this album (see Ballad of A Thin Man).  The line "Come out and round up everyone/That knows more than they do" shows the mentality of the people who attempt to stifle anyone smarter or more creative.  Not also, that the agents, superhuman crew, and insurance men don't want anyone escaping to Desolation Row, for this may be a place where you can see how things really are in humanity- not through the rose colored glasses those in power want you to see through.<br />
+<br />
+The next verse is the end of the line for many people on Desolation Row.  They are doomed to die there, either for the sins they have committed, or because of other issues they may have.  The fact they are all sailing on the Titanic, yet still arguing in the captain's tower and about which side to sit on shows the ignorance many of these people are burdened with.  The titanic ultimately sinks, of course- this is obvious to everyone not on Desolation Row i.e.: "While calypso singers laugh at them/And fisherman hold flowers".  These people are not on the Row, they are out in the waters, watching the event that is about to happen before their eyes.  Interesting to note, that Ezra Pound and T.S. Eliot were both ex-patriates, meaning they were born in one country and lived their lives in another.  Much like someone being born with a clean slate, but ending up an ex-patriate, living on Desolation Row.  These 2 persons also frequently feuded with each other over various philosophies and ideologies during their lifetime.<br />
+<br />
+And of course, the final and most important verse<br />
+(this is indicated in the way it is seperated from the rest of the song by a harmonica solo).  This verse is where Dylan reveals that he received the letter, in which the author discusses her life, friends, and various circumstances of trivial nature, (About the time the door knob broke) completely oblivious to the fact that Dylan, is living in despair on Desolation Row.  Dylan cannot relate to her (Don't send me no more letters no/Now unless you mail them/From Desolation Row ) because of their different places in life at ths time.  Dylan's response is of the nature that all the people and situations she mentions are not what she thinks they are.  He compares them to characters (Cinderella, The Phantom, etc) and horrible situations (Holocaust, the hanging, Titanic, etc).  i.e.: "All these people that you mention/<br />
+Yes, I know them, they're quite lame/I had to rearrange their faces/And give them all another name."  Of course it should go without saying that Desolation Row is a metaphorical place, not a physical location.<br />
+<br />
+There you have it, my interpretation in a nutshell.  Let me know what you think!				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17232041/"  id="userprofile-17232041" rel="me nofollow" title="SmoothLikeARhapsody" class="author">SmoothLikeARhapsody</a><em class="date">on January 13, 2008</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73015469042#comments" id="specific_com-73015469042" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73015469042" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73015469042" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73015469042">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73015469042" id="frmreplycomment">@SmoothLikeARhapsody </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73015469042" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73015469042" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897959">
+		<a name="comment-73015897959"></a>
+		
+<div id="rating-holder-73015897959">
+	<div class="numb-holder">
+		<span id="com-rating-73015897959">
+			<strong class="numb" id='numb-rating-73015897959'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897959" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897959" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Pretty awesome analysis! I'd agree with almost all of it, except I have a different interpretation of Verse 7.<br />
+<br />
+I think Dylan's calling out the whole 'romance industry' itself - the codependent glamor around our 'secular religion' feeding the capitalist machine... gotta sell all this stuff. The spoonfeeding of Casanova, killing him with self-confidence, poisoning him with words - I think is about the warping and perverting of actual true love, Eros, with a whole concocted persona... or, on a more subtle level - the utterly 'disillusioning' aspect of revelatory knowledge, i.e. - once you get a look at what's actually going on, you can't really continue the way you before... in a way, Casanova can't describe what he's seen on Desolation Row, not from his self-confident ego perspective, no matter how many words he has at his disposal...			<div class="sign">
+
+				<span id="flagspan-73015897959">
+											<a href="#" id="flag-73015897959" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on April 01, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310216">
+		<a name="comment-73016310216"></a>
+		
+<div id="rating-holder-73016310216">
+	<div class="numb-holder">
+		<span id="com-rating-73016310216">
+			<strong class="numb" id='numb-rating-73016310216'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310216" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310216" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17232041/?mention=b46a0c90d32a483941e15290cd751ac3"  id="userprofile-17232041" rel="me nofollow" title="@SmoothLikeARhapsody" >@SmoothLikeARhapsody</a> Dylan is not living in despair in Desolation Row. That comes on Blonde on Blonde. Here he is angry and frustrated and weary but stiil, trying to get people to see.. good thoughts though on a lot of it.			<div class="sign">
+
+				<span id="flagspan-73016310216">
+											<a href="#" id="flag-73016310216" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 03, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73016099839">
+		<a name="comment-73016099839"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73016099839">
+	<div class="numb-holder">
+		<span id="com-rating-73016099839">
+			<strong class="numb" id='numb-rating-73016099839'>+3</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016099839" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016099839" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73016099839">
+
+				<strong class="title">General Comment</strong>I remain a firm believer that this this song is discussing, in no uncertain terms, the Holocaust. Now, whether Dylan is using the Holocaust as an alagory toward a greater meaning, or a greater warning, I do not know. <br />
+<br />
+The language shows clear indicators towards some key moments in the Holocaust.<br />
+<br />
+Verse One:<br />
+<br />
+They’re selling postcards of the hanging<br />
+They’re painting the passports brown<br />
+The beauty parlor is filled with sailors<br />
+The circus is in town<br />
+Here comes the blind commissioner<br />
+They’ve got him in a trance<br />
+One hand is tied to the tight-rope walker<br />
+The other is in his pants<br />
+And the riot squad they’re restless<br />
+They need somewhere to go<br />
+As Lady and I look out tonight<br />
+From Desolation Row<br />
+<br />
+The maccabre facination with public violence, the crowds are gathering . . . the blind commissioner Hindenberg idly sits in the back doing nothing . . . the riot squad is restless . .. they need someplace to go . . . Something bad is brewing, something in the people, in the population.  A storm is coming as he leans out the window, you can smell it, feel it . . . <br />
+<br />
+<br />
+Verse two:<br />
+<br />
+Cinderella, she seems so easy<br />
+“It takes one to know one,” she smiles<br />
+And puts her hands in her back pockets<br />
+Bette Davis style<br />
+And in comes Romeo, he’s moaning<br />
+“You Belong to Me I Believe”<br />
+And someone says, “You’re in the wrong place my friend<br />
+You better leave”<br />
+And the only sound that’s left<br />
+After the ambulances go<br />
+Is Cinderella sweeping up<br />
+On Desolation Row<br />
+<br />
+You're in the wrong plcae, friend.  Listen and see what happens to Romeo -- the star crossed lover who dares cross the social fabric to love a hated rival.  Romeo is in desolation row, the Jewish neighborhood, and is reminded, kindly (My friend) to leave, you're in the wrong place.   The conflagration hinted at in verse one happens, in an instant, in between the lines of verse two.  Abulances haul off the wounded and dead from a destructive rampage -- remember the riot squad is restless, they need a place to go, and they are getting ready for the hanging, the sailors are in town . . . and then its all gone.  Windows broke, and Cinderella -- the poor orphaned step-sister is right back where she always is, in her neighboorhood, cleaning up after another anti-Jewish show of force and violence.  Also consider Cinderella as a metaphor for the jews in Europe -- a member of the family, but not REALLY a member of the family.<br />
+<br />
+Third Verse:<br />
+<br />
+Now the moon is almost hidden<br />
+The stars are beginning to hide<br />
+The fortune-telling lady<br />
+Has even taken all her things inside<br />
+All except for Cain and Abel<br />
+And the hunchback of Notre Dame<br />
+Everybody is making love<br />
+Or else expecting rain<br />
+And the Good Samaritan, he’s dressing<br />
+He’s getting ready for the show<br />
+He’s going to the carnival tonight<br />
+On Desolation Row<br />
+<br />
+Consider Cain and Abel, the first murderer and the first innocent victim.  Consider the Hunchback, an inncocent victim who saw unjust things, and for years did nothing.  Consider the Good Samaritan -- the non-Jew who helped the jewish man on the road after being robbed.  Its dark, dead dark of night.  The only people who dare hit the street are either those looking for trouble, the innocent soon-to-be-victim, or the few who stick their necks out to help.  <br />
+<br />
+Verse Four:<br />
+<br />
+Now Ophelia, she’s ’neath the window<br />
+For her I feel so afraid<br />
+On her twenty-second birthday<br />
+She already is an old maid<br />
+To her, death is quite romantic<br />
+She wears an iron vest<br />
+Her profession’s her religion<br />
+Her sin is her lifelessness<br />
+And though her eyes are fixed upon<br />
+Noah’s great rainbow<br />
+She spends her time peeking<br />
+Into Desolation Row<br />
+<br />
+Ah, this is the Christian community, generally, in the form of a nun or otherwise religiously active soul.  She is young, impressionable.  Ophelia was a fool who mooned for Hamlet.  This verse makes tremendous sense in the context of the dicsussion with Hamlet in the Nunnery Scene.  And her eyes are fixed on Noah's Great rainbow -- a symbol of the promise of God to mankind that he will never again allow the world to be destroyed -- although she keeps her hopes facing the rainbow, she looks into desolation row, peeking, watching the horror and chaos of the persecution.  In Hamlet, she gives mutes and cryptic reference to what is happening to the characters.  Same thing here.<br />
+<br />
+<br />
+Verse Five:<br />
+<br />
+Einstein, disguised as Robin Hood<br />
+With his memories in a trunk<br />
+Passed this way an hour ago<br />
+With his friend, a jealous monk<br />
+He looked so immaculately frightful<br />
+As he bummed a cigarette<br />
+Then he went off sniffing drainpipes<br />
+And reciting the alphabet<br />
+Now you would not think to look at him<br />
+But he was famous long ago<br />
+For playing the electric violin<br />
+On Desolation Row<br />
+<br />
+The intelligencia and those who have the ability are getting out.  Einstein left Germany in teh face of harsh rising anti-jewish attacks.  You wouldn't know it, looking at him now as a famous man, but long ago he was a just a simple Jew  who lived in Desolation row.  <br />
+<br />
+Verse Six:<br />
+<br />
+Dr. Filth, he keeps his world<br />
+Inside of a leather cup<br />
+But all his sexless patients<br />
+They’re trying to blow it up<br />
+Now his nurse, some local loser<br />
+She’s in charge of the cyanide hole<br />
+And she also keeps the cards that read<br />
+“Have Mercy on His Soul”<br />
+They all play on pennywhistles<br />
+You can hear them blow<br />
+If you lean your head out far enough<br />
+From Desolation Row<br />
+<br />
+<br />
+I have read a few other comments about this being Dr. Mengele.  I don't think that is exactly correct.  I think this is not likely far off.  They all play on pennywhistles, you can hear them blow.  The marching, rythmic music, all in unison.  You can hear them, just out side, if you lean out far enough from desolation row.  The music, the marching, the bad doctor and his helpless nurse -- they are not in desloation row.  They may be coming.  But they are far off, in another part of the city.  If you listen, though, you can hear them . . . . <br />
+<br />
+<br />
+Verse Seven:<br />
+<br />
+Across the street they’ve nailed the curtains<br />
+They’re getting ready for the feast<br />
+The Phantom of the Opera<br />
+A perfect image of a priest<br />
+They’re spoonfeeding Casanova<br />
+To get him to feel more assured<br />
+Then they’ll kill him with self-confidence<br />
+After poisoning him with words<br />
+And the Phantom’s shouting to skinny girls<br />
+“Get Outa Here If You Don’t Know<br />
+Casanova is just being punished for going<br />
+To Desolation Row”<br />
+<br />
+I always felt that based on my understanding of the song, this was the most literal verse.  Kristallnacht.  <br />
+<br />
+Verse Eight:<br />
+<br />
+Now at midnight all the agents<br />
+And the superhuman crew<br />
+Come out and round up everyone<br />
+That knows more than they do<br />
+Then they bring them to the factory<br />
+Where the heart-attack machine<br />
+Is strapped across their shoulders<br />
+And then the kerosene<br />
+Is brought down from the castles<br />
+By insurance men who go<br />
+Check to see that nobody is escaping<br />
+To Desolation Row<br />
+<br />
+The round-ups of the super human crew. taken to a factory and murdered.  Insurance men -- men who ensure nobody leaves the factory death camp and returns to desolation row.  Zyklon B gas, dropped into the shower heads in death centers, was marked as kerosene for shipment during the Holocaust.  I don't know that I can say more than Dylan says.  As the song moves on, his point gets mroe clear and more horrible.  As the holocaust marches onward, Dylan's own song decides there is little need for symbolism.  And who can blame him?<br />
+<br />
+Verse Nine:<br />
+<br />
+Praise be to Nero’s Neptune<br />
+The Titanic sails at dawn<br />
+And everybody’s shouting<br />
+“Which Side Are You On?”<br />
+And Ezra Pound and T. S. Eliot<br />
+Fighting in the captain’s tower<br />
+While calypso singers laugh at them<br />
+And fishermen hold flowers<br />
+Between the windows of the sea<br />
+Where lovely mermaids flow<br />
+And nobody has to think too much<br />
+About Desolation Row<br />
+<br />
+<br />
+Now Dylan takes a step back.  And this, in my opinion, is as harsh an indictment as he can offer against the world which turned its back.  Here we see TS Elliot and Ezra Pound, being feted as they sail away from exploding Europe.  Nobody has to think too much about Desolation Row now -- not at sea, heading back to the US or England.  Safe and sound.  Praise be to Nero's Neptune, praise be the God of the Sea that will keep that madness and messiness far away from us!  We can run away, we are free and safe and sound behind our ocean's walls.  I love the line about the people shouting what side are you on -- on the Titanic.  It doesn't matter what side you're on -- the ship is sinking.  Morally, they are doomed for not doing anything.  They argue about what side of the issue they are on -- but in the end they are all doomed.<br />
+<br />
+<br />
+Verse Ten:<br />
+<br />
+Yes, I received your letter yesterday<br />
+(About the time the doorknob broke)<br />
+When you asked how I was doing<br />
+Was that some kind of joke?<br />
+All these people that you mention<br />
+Yes, I know them, they’re quite lame<br />
+I had to rearrange their faces<br />
+And give them all another name<br />
+Right now I can’t read too good<br />
+Don’t send me no more letters, no<br />
+Not unless you mail them<br />
+From Desolation Row<br />
+<br />
+<br />
+<br />
+Our author is just about finished.  Having stayed in Desolation Row as long as possible, they are coming for him.  The door is kicked in.  The bad guys are coming.  And unless you are here, in Desolation Row -- or eventually cross back over the ocean to fight these people -- don't bother trying to contact me.  I shall not hold out hope until you have reached desolation row.  When you asked how I was doing -- is that a joke?  A spiteful response, and angry person, who has just relayed all of the horrors of the Holocaust and the respondant askes how he's doing.  He has been altering passports, trying to get people out.  Changing faces, changing appearances.  I have tried to take care of your people you ask about . . . but right now the Hun is at the door, and I am (likely) doomed.  come soon -- or don't come at all.<br />
+<br />
+<br />
+That is my opinion of the song.  <br />
+				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17488543/"  id="userprofile-17488543" rel="me nofollow" title="Sioux33" class="author">Sioux33</a><em class="date">on November 14, 2011</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73016099839#comments" id="specific_com-73016099839" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73016099839" title="2 Replies">2 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73016099839" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73016099839">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73016099839" id="frmreplycomment">@Sioux33 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73016099839" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73016099839" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73016167357">
+		<a name="comment-73016167357"></a>
+		
+<div id="rating-holder-73016167357">
+	<div class="numb-holder">
+		<span id="com-rating-73016167357">
+			<strong class="numb" id='numb-rating-73016167357'>+1</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016167357" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016167357" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			I believe you are spot on - thanks for the insight. I hope you're putting that mind of yours to some good use! CruisinG			<div class="sign">
+
+				<span id="flagspan-73016167357">
+											<a href="#" id="flag-73016167357" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17529813/"  id="userprofile-17529813" rel="me nofollow" title="CruisinG" class="author">CruisinG</a><em class="date">on September 14, 2012</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310214">
+		<a name="comment-73016310214"></a>
+		
+<div id="rating-holder-73016310214">
+	<div class="numb-holder">
+		<span id="com-rating-73016310214">
+			<strong class="numb" id='numb-rating-73016310214'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310214" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310214" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17488543/?mention=9ebc2e486118a98969a226fdf51215f3"  id="userprofile-17488543" rel="me nofollow" title="@Sioux33" >@Sioux33</a> This is NOT about the Holocaust, although it certainly is referenced often. I don't know why so many people think this. Dylan's obsession was contemporary America. The first verse is about an historical incident that happened in Minnesota (as others have noted) about 3 black men who were lynched for allegedly raping a white girl. Pictures were taken and made into post cards. The 8th verse is entirely about conventional Western business rat race issues and jealousy of non conformism, and the last verse is a rebuke to the editor of Sing Out magazine who ripped Dylan personally. Did Dylan use Holocaust references to buttress  and parallel his revulsion of the darkness in society and the war in Vietnam? Certainly. Is it only about the Holocaust? No.			<div class="sign">
+
+				<span id="flagspan-73016310214">
+											<a href="#" id="flag-73016310214" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 03, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014576312">
+		<a name="comment-73014576312"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014576312">
+	<div class="numb-holder">
+		<span id="com-rating-73014576312">
+			<strong class="numb" id='numb-rating-73014576312'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014576312" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014576312" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014576312">
+
+				<strong class="title">General Comment</strong>Oh my god.  This has got to be the greatest Dylan song...in my humble opinion.  The guitar is to die for, hearing it is like an orgasm for the full 11+ minutes.  I have no idea really what it's about, except for it's definitely about depression and lonliness and how all of humanity is linked through those two elements.  Highway 61 Revisted is one of Dylan's best, and this song makes the album, amongst others.  I want this song played at my funeral.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/14225/"  id="userprofile-14225" rel="me nofollow" title="chelzador" class="author">chelzador</a><em class="date">on March 16, 2003</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73014576312#comments" id="specific_com-73014576312" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014576312" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014576312" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014576312">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014576312" id="frmreplycomment">@chelzador </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014576312" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014576312" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014709767">
+		<a name="comment-73014709767"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014709767">
+	<div class="numb-holder">
+		<span id="com-rating-73014709767">
+			<strong class="numb" id='numb-rating-73014709767'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014709767" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014709767" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014709767">
+
+				<strong class="title">General Comment</strong>Just a theory:<br />
+I think all the references in the song are allusions to the Cold War.<br />
+I think Ophelia in her iron vest is the nuclear bomb ("Her profession's her religion / her sin is her lifelessness"..."Noah's Great Rainbow" is a time when the rains stop and the Earth is purified.) In 1964-5, when "Desolation Row" was written, the Manhattan Project was exactly 22 years old. I'm beginning to believe that DR is supposed to be a story narrated BY the "masters of war" - specifically, LBJ - describing a certain level of hopeless guilt over the state of the world. I think the key to this is  the line early on, "And the riot squad, they're restless / They need somewhere to go / as Lady and I look out tonight from desolation row"<br />
+Lady being Ladybird Johnson...Desolation Row being Pennsylvania Avenue. (I wonder if Bob is going to send me a prize for figuring this out.)<br />
+The song is full of references to a bipolar world. Every verse contains a life-and-death struggle between mortal enemies: Romeo and Cinderella (the chaser and the chasee); Cain and Abel (murdered and murderer); Einstein and the Monk (science and religion); Dr. Filth and his patients; the Phantom and Cassanova; the Agents/Insurance Men and Everyone Who Knows More Than They Do; Pound and Eliott. (Side note: These combatants are always black and white, good and evil, yet they each have something in common. Romeo and Cinderella have one thing in common: Bad timing. Cain and Abel for all their differences are brothers. Einstein's science supplanted the Monk's religion. The Agents want to find information; the people they arrest do, too. Pound and Eliott are both poets.)<br />
+Meanwhile, everyone besides the main combatants in each scene are "either making love or else expecting rain." All the calypso singers and fishermen are the other countries of the world, holding their breath in fear of nuclear war. Even Einstein has gone mad at the prospect of what's happened.<br />
+"Across the street they've nailed the curtain" is definitely a reference to the Iron Curtain. The "Phantom of the Opera" is tricky; but I think it might be Brezhnev, punishing Khrushchev for "going to desolation row," i.e. calling Kennedy and backing down from nuclear war.<br />
+Another theory is that Cinderella is South Vietnam, and North Vietnam is Romeo. "Puts her hands in her back pockets" may be a reference to American aid. "Sweeping up on desolation row" = leadership getting rich off American aid. <br />
+<br />
+I also think that "Nero" IS "Einstein" -- playing the electric violin while the world burns down. "Nero's Neptune" is the cataclysmic Flood, the apocalypse, cross-referenced by "Noah's great rainbow."<br />
+<br />
+"The Titanic sails at dawn" is another reference to the apocalypse pending. "Dawn" and sunrise in this song mean the final duel, the armageddon. That's why the fortune teller's bringing her things inside as the stars begin to hide.<br />
+<br />
+"Yes I received your letter yesterday" - I think this verse is about the near-failure to open communications during the missile crisis. "when you asked me how I was doing" reminds me heavily of the scene in "Dr. Strangelove" where the President and the Soviet Premiere go back and forth for several minutes asking each other "how are you?"<br />
+I think the last three lines "right now I can't read too good / don't send me no more letters, no / not unless you mail them from desolation row" are implying a hardening of the willingness to compromise. They're saying, don't talk to me until you're on my side.<br />
+<br />
+I could be wrong about any or all of this...I look forward to hearing what people have to say...<br />
+Josh				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17006883/"  id="userprofile-17006883" rel="me nofollow" title="luckystrike6" class="author">luckystrike6</a><em class="date">on November 20, 2004</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73014709767#comments" id="specific_com-73014709767" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014709767" title="3 Replies">3 Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014709767" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014709767">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014709767" id="frmreplycomment">@luckystrike6 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014709767" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014709767" style="display: none;">
+								<div class="answer-holder" id="fullcomment-73015897934">
+		<a name="comment-73015897934"></a>
+		
+<div id="rating-holder-73015897934">
+	<div class="numb-holder">
+		<span id="com-rating-73015897934">
+			<strong class="numb" id='numb-rating-73015897934'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73015897934" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73015897934" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			Awesome.			<div class="sign">
+
+				<span id="flagspan-73015897934">
+											<a href="#" id="flag-73015897934" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17388253/"  id="userprofile-17388253" rel="me nofollow" title="rspinoza" class="author">rspinoza</a><em class="date">on April 01, 2010</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016064026">
+		<a name="comment-73016064026"></a>
+		
+<div id="rating-holder-73016064026">
+	<div class="numb-holder">
+		<span id="com-rating-73016064026">
+			<strong class="numb" id='numb-rating-73016064026'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016064026" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016064026" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			nice try but no			<div class="sign">
+
+				<span id="flagspan-73016064026">
+											<a href="#" id="flag-73016064026" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17471999/"  id="userprofile-17471999" rel="me nofollow" title="metrodome934" class="author">metrodome934</a><em class="date">on July 16, 2011</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+	<div class="answer-holder" id="fullcomment-73016310215">
+		<a name="comment-73016310215"></a>
+		
+<div id="rating-holder-73016310215">
+	<div class="numb-holder">
+		<span id="com-rating-73016310215">
+			<strong class="numb" id='numb-rating-73016310215'>0</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73016310215" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73016310215" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>		<div class="text">
+			<a href="/profiles/view/17006883/?mention=ce5c76b7f7ff0319c874f4b77c7a0653"  id="userprofile-17006883" rel="me nofollow" title="@luckystrike6" >@luckystrike6</a> NO. See my other replies. You've lost yourself in literalness.			<div class="sign">
+
+				<span id="flagspan-73016310215">
+											<a href="#" id="flag-73016310215" class="flag">Flag</a>
+										</span>
+
+
+
+				<a href="/profiles/view/17673598/"  id="userprofile-17673598" rel="me nofollow" title="ken1025751" class="author">ken1025751</a><em class="date">on November 03, 2015</em>&nbsp;&nbsp;			</div>
+		</div>
+	</div>
+
+						</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014770512">
+		<a name="comment-73014770512"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014770512">
+	<div class="numb-holder">
+		<span id="com-rating-73014770512">
+			<strong class="numb" id='numb-rating-73014770512'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014770512" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014770512" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014770512">
+
+				<strong class="title">General Comment</strong>I thought this was interesting, in an interview for Playboy magazine in '66, when asked what he would do if elected president, Dylan replied that he would "immediately rewrite 'The Star Spangled Banner', and little school children, instead of memorizing'"America the Beautiful' would have to memorize 'Desolation Row.'"<br />
+<br />
+Also, this song might have been influenced by Kerouac's 1965 novel "Desolation Angels", which contains the phrases "perfect image of a priest" and "her sin is her lifelessness".<br />
+<br />
+The first line, i've discovered, is a reference to a hanging of three Black men in Duluth, Minnesota (Dylan's home town) in 1920. In order to keep the memory of the event alive, "postcards of the hanging" were sold in Duluth.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17020886/"  id="userprofile-17020886" rel="me nofollow" title="mrjones" class="author">mrjones</a><em class="date">on February 01, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73014770512#comments" id="specific_com-73014770512" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014770512" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014770512" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014770512">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014770512" id="frmreplycomment">@mrjones </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014770512" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014770512" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+		
+	<li id="fullcomment-73014891576">
+		<a name="comment-73014891576"></a>
+		
+		<div class="com-normal">
+			
+<div id="rating-holder-73014891576">
+	<div class="numb-holder">
+		<span id="com-rating-73014891576">
+			<strong class="numb" id='numb-rating-73014891576'>+2</strong>
+		</span>
+	
+				
+		<div style="display: none; text-align: center;" id="com-whorated-73014891576" class="com-whorated">
+			<span class="processing"></span>
+		</div>
+
+		<div id="processing-73014891576" style="text-align: center; padding: 8px 8px 0px 12px; display: none;">
+			<span class="processing"></span>
+		</div>
+	</div>
+</div>			
+			<div class="text" id="comment-73014891576">
+
+				<strong class="title">General Comment</strong>Few things about this song. First, Dylan sometimes uses a metaphor that has actual reference. As one poster said, there were postcards made of a hanging that occured in his town, and I've heard that brown passports allude to those given to Jews in Nazi Germany. But Desolation Row is obviously a good place, a place outside convention, the establishment, common society--at least the bad parts. Each verse then is a comment on some negative aspect of our society. For instance, the heart attack machine, kerosene, insurance salesman is about work, the workforce, capitalism. The heart attack machine is work that kills you as you're forced to burn midnight oil/kerosene for your employee. Insurance salesmen--the bureaucrats, white collar managers, they who run things--insure that the machine is running smoothly and that none are slacking, that all are working, to make the machine make as much as possible. (I should say I read this interp of this verse online and I think it's spot on.) So while there are many references that Dylan uses which can be hard to decipher--who's Einstein etc.--everything has to do with society at large and the sanctuary of Desolation Row: the anti-establishment, the state of being where society's negative aspects do not encroach. Dylan can also be tough to understand when you're not real good at understanding poetry in general. And again, it may be the case--and I think it is, as with most artirsts--that Dylan sometimes writes about things and people in his own inner circle, his life, so deciphering allusions to those would be impossible.				
+				<div class="sign">
+					
+					
+					<a href="/profiles/view/17059987/"  id="userprofile-17059987" rel="me nofollow" title="Jollin674" class="author">Jollin674</a><em class="date">on September 08, 2005</em>&nbsp;&nbsp;&nbsp;<a href="/songs/view/1110/?&specific_com=73014891576#comments" id="specific_com-73014891576" title="Permalink" rel="nofollow">Link</a>				</div>
+				
+				<ul class="answers">
+					<li>
+						<div class="title">
+							<a rel="nofollow" href="#" class="replies close-replies" id="showreplies-73014891576" title="No Replies">No Replies</a>
+							
+							<span class="login">								<a class="lightbox" href="#popup-loginform" rel="nofollow">Log in to reply</a>
+								</span>							
+
+							<Br>						
+						</div>
+						
+						<div id="formreply-73014891576" style="display: none;">
+							
+<!-- comment-form -->
+<form action="#" class="comment-form-reply" id="comment-form-reply-73014891576">
+		
+		<div class="area" id="reply-errors-box" style="display: none;">
+			<label for="type">&nbsp;</label>
+			
+			<span id="reply-errors" style="color: #ff0000;">There was an error.</span>
+		</div>
+
+		<div class="area">
+			<div class="textarea">
+				<div class="holder">
+					<div class="frame">
+						<textarea name="frmreplycomment" class="frmreplycomment-73014891576" id="frmreplycomment">@Jollin674 </textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" value="1110" name="frmreplylid" id="frmreplylid">
+		<input type="hidden" value="101" name="frmaid" id="frmaid">
+		<input type="hidden" value="73014891576" name="frmreplycid" id="frmreplycid">
+		<input type="submit" value="Add reply" class="submit" />
+
+</form>
+
+		
+
+
+						</div>
+						
+						<div id="thesereplies-73014891576" style="display: none;">
+													</div>
+			
+					</li>
+					
+				</ul>
+			
+				
+			</div>
+		</div>
+	</li>
+	
+			</ul>
+		<!-- end comments-list -->
+	</div>
+	
+
+	
+	<!-- comments pagination -->
+	<div class="holder sign-box" style="text-align: center;" id="pagination">
+		&nbsp;
+	</div>
+	<!-- end comments pargination -->
+	
+</div>
+
+
+
+<a name="addcomment"></a>
+	<div class="block">
+		<div class="heading">
+			<h2>Add your thoughts</h2>
+		</div>
+		<div class="holder">
+			<p><a class="lightbox" href="#popup-loginform">Log in now</a> to tell us what you think this song means. </p>
+			<p>Don’t have an account? <a href="/create/">Create an account</a> with SongMeanings to post comments, submit lyrics, and more. It’s super easy, we promise!</p>
+		</div>
+	</div>
+			</div>
+
+		<!-- sidebar -->
+		<div id="sidebar">
+			
+			<!-- block-heading -->
+
+
+<!-- BEGIN JS TAG - SM ROS ATF < - DO NOT MODIFY -->
+<SCRIPT SRC="http://ib.adnxs.com/ttj?id=5951356&size=300x250" TYPE="text/javascript"></SCRIPT>
+<!-- END TAG --> <br/><div class="block" style="padding-top: 10px; margin-top: 0px; border-top: 1px solid #DEDEDE;">
+
+	<div id="rate-widget-1110" class="rating-widget" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+		<div id="rating-header">
+			Rate These Lyrics
+		</div>
+
+		<meta itemprop="ratingValue" content="4" />
+	    <meta itemprop="worstRating" content="1"/>
+	    <meta itemprop="bestRating" content="5" />
+	    <meta itemprop="reviewCount" content="12" />
+
+		<span>
+			<a id="star-1" href="#" class="star-1 rate-star"></a>
+			<a id="star-2" href="#" class="star-2 rate-star"></a>
+			<a id="star-3" href="#" class="star-3 rate-star"></a>
+			<a id="star-4" href="#" class="star-4 rate-star"></a>
+			<a id="star-5" href="#" class="star-5 rate-star"></a>
+		</span>
+
+		<div class="total_votes" data-totalvotes="12 Votes">
+			12 Votes		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var url = window.location.href;
+		if (/\/$/.test(url) == false) {
+	   		url = url + "/";
+		}
+
+		var total_votes = '12';
+		var average 	= '4';
+		setRating('.rating-widget');
+
+		var loggedin 	= 'false';
+
+		$('.rate-star').hover(
+            // Handles the mouseover
+            function() {
+                $(this).prevAll().andSelf().addClass('rate-star-hover');
+                $(this).nextAll().removeClass('rate-star-vote'); 
+
+                var rating_fyi = $(this).attr('id');
+                switch(rating_fyi) {
+                	case 'star-1':
+                		rating_fyi = "poor";
+                	break;
+
+                	case 'star-2':
+                		rating_fyi = "not so good";
+                	break;
+
+                	case 'star-3':
+                		rating_fyi = "average";
+                	break;
+
+                	case 'star-4':
+                		rating_fyi = "good";
+                	break;
+
+                	case 'star-5':
+                		rating_fyi = "excellent";
+                	break;
+                }
+                $('.total_votes').html(rating_fyi);
+            },
+            // Handles the mouseout
+            function() {
+                $(this).prevAll().andSelf().removeClass('rate-star-hover');
+                //setRating($(this).parent());
+                $('.total_votes').html($('.total_votes').data('totalvotes'));
+            }
+        );
+
+        $('.rate-star').bind('click', function(e) {
+            var star = this;
+            var lid = $(this).closest("div").attr("id").substring(12);
+            
+            var clicked_data = {
+            	command    	: "songRatingSet",
+            	lyric_id	: lid,
+                clicked_on 	: $(star).attr('class'),
+                clicked_id 	: $(star).attr('id')
+            };
+
+            $('.rate-star').removeClass('rate-star-full');
+
+            $.ajax({
+				type: "POST", 
+				url: url, 
+				data: clicked_data,
+				dataType: "json",
+				success: function(result){
+					//$('.rating-widget').data('fsr', result);
+					total_votes			= result['total_votes'];
+					if(typeof(result['user_value']) != "undefined" && result['user_value'] !== null) {
+						average 			= result['user_value'];
+					} else {
+						average 			= result['average'];
+					}
+						
+					setRating('.rating-widget');
+				},
+				complete: function(result, success) {
+					console.log(result, success);
+				}
+			});
+
+	        return false;
+        }); 
+
+        function setRating(widget) {
+        	$(widget).find('.star-' + average).prevAll().andSelf().addClass('rate-star-full');  
+    		$(widget).find('.star-' + average).nextAll().removeClass('rate-star-full');  
+
+    		if(total_votes === "1") {
+    			total_votes = "1 Vote";
+    		} else {
+    			total_votes = total_votes + " Votes";
+    		}
+
+    		$('.total_votes').data('totalvotes', total_votes);
+        	$('.total_votes').html(total_votes);
+        	return false;
+        }
+        
+    
+	});
+</script>
+<div class="block-heading-blue">
+	<h3>Add to Mixtape</h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0 18px 0 18px;">
+	<br/>
+	<a href="/create/">Log in now</a> to add this track to your mixtape!
+	<br/><br/>
+	</div>
+
+<!-- block-heading -->
+<a name="tagsbox"></a>
+<div class="block-heading">
+	<h3>Most popular lyric tags</h3>
+</div>
+<!-- block -->
+<div class="block">
+	<ul class="tags-list" id="tags-list"><li><a href="/tags/view/Country%2FBlues-Rock/" title="Country/Blues-Rock lyric tag"><strong>Country/Blues-Rock</strong><span>1</span></a></li></ul>		<a href="/create/" class="more">Log in to add a tag</a>
+			
+	
+	
+</div><div class="block-heading">
+	<h3>More <a href="//songmeanings.com/artist/view/songs/101/" title="Bob Dylan Lyrics" >Bob Dylan Lyrics</a></h3>
+</div>
+<!-- block -->
+<div class="block" style="padding: 0px 18px;">
+	<ul class="songs-list songs-list2">
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5730/" title="Like a Rolling Stone Lyrics" >Like a Rolling Stone Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5731/" title="Mr. Tambourine Man Lyrics" >Mr. Tambourine Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/5727/" title="All Along the Watchtower Lyrics" >All Along the Watchtower Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/47748/" title="Ballad of a Thin Man Lyrics" >Ballad of a Thin Man Lyrics</a></strong>
+		</li>
+				<li>
+			<strong class="title"><a style="" class="" href="//songmeanings.com/songs/view/57315/" title="Tangled Up in Blue Lyrics" >Tangled Up in Blue Lyrics</a></strong>
+		</li>
+			</ul>
+</div><div style="text-align: center;">
+			<a href="http://sng.mn/cftpc/"><img src="//songmeanings.com/images/ios_badge.png" style="outline: none; text-decoration: none; width: auto; clear: both; border: none;"></a>
+		<br/><br/>
+		
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div><br/><!-- adbrite sucks -->
+<div style="text-align: center;">
+	<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3747639166192015";
+/* sm_skyscraper_160x600 */
+google_ad_slot = "7283450858";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+		</div>
+	</div>
+
+</div>
+					<!-- end mode-holder -->
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		
+
+<div id="footer">
+
+	<div class="footer-holder">
+
+		<div class="footer-frame">	
+			
+			<!-- panel -->
+			<div class="panel">
+				<div class="holder">
+					<h4>SongMeanings is a place for discussion and discovery.</h4>
+					<!-- topics -->
+					<ul class="topics">
+						<li>
+							<a href="#">
+								<strong>1,097,225</strong>
+								<span>Lyrics</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>110,886</strong>
+								<span>Artists</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<strong>1,737,493</strong>
+								<span>Comments</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- column -->
+				<div class="column col1 white-inset">
+					<strong class="title">SongMeanings</strong>
+					<div class="column-holder">
+						<ul>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/forum/" rel="nofollow">Forum</a></li>
+							<li><a href="/about/team/">Who We Are</a></li>
+							<li><a href="/blog/">Read Our Blog</a></li>
+						</ul>
+						<ul>
+							<li><a href="/about/" rel="nofollow">Contact</a></li>
+							<li><a href="/about/advertising/" rel="nofollow">Advertising</a></li>
+							<li><a accesskey="8" href="/terms/" rel="nofollow">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- column col2 -->
+				<div class="column col2 white-inset">
+					<strong class="title">What’s popular</strong>
+					<ul>
+						<li><a href="/popular/lyrics/">Top Lyrics</a></li>
+						<li><a href="/mixtape/popular/">Mixtapes</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- bar -->
+			<div class="bar">
+				<div class="bar-holder">
+					<div class="white-inset" style="float: right;">
+						<div style="text-align: center;">
+	
+	<a class="social-fb" title="SongMeaings on Facebook" href="https://www.facebook.com/pages/SongMeanings/189156317852745">facebook</a>
+
+	<a class="social-tw" title="SongMeaings on Twitter" href="https://twitter.com/SongMeanings">twitter</a>
+
+	<a class="social-gp" title="SongMeanings on G+" href="https://plus.google.com/106756364892503518003/">google plus</a>
+
+	<a class="social-yt" title="SongMeanings on YouTube" href="https://www.youtube.com/user/SongMeaningsMedia">youtube</a>
+</div>					</div>
+
+					<p>Non-lyrical content copyright 1999-2017 SongMeanings</p>
+					
+					<div style="text-align: center; color: #fff;">
+										</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup-holder">
+	<div id="popup-loginform" class="lightbox">
+		<div class="login-box-new">
+				<div class="holder-new">
+					<a href="#" class="facebook" id="modalbtn-facebook">Login with Facebook</a>
+					<div class="tooltip" id="facebook-tooltip">
+						<p>Error: Can’t log in using Facebook</p>
+					</div>
+				</div>
+				<div class="holder-new">
+					<a href="#" class="google" id="modalbtn-google">Login with Google</a>
+					<div class="tooltip" id="google-tooltip">
+						<p>Error: Can’t log in using Google</p>
+					</div>
+				</div>
+				<div class="heading-new"><span>Or</span></div>
+				<form action="#" class="login-form-new" id="login-form-new">
+					<fieldset>
+						<div class="input-holder" id="input-username">
+							<input type="text" placeholder="Username" name="name" id="name" autocomplete="off"  />
+					
+
+							<div class="tooltip" id="username-tooltip">
+								<p>User does not exist</p>
+							</div>
+						</div>
+						<div class="input-holder password" id="input-password">
+							<input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off"/>
+							<div class="tooltip" id="password-tooltip">
+								<p>Incorrect Password</p>
+							</div>
+						</div>
+						<div class="box-new" id="box-login">
+							<input type="checkbox" id="remember" />
+							<label for="remember">Remember Me</label>
+							<input type="submit" value="Log In" />
+						</div>
+						<div class="processing" id="box-processing" style="display:none;">
+							Logging you in...
+						</div>
+					</fieldset>
+				</form>
+				<div class="block-new">
+					<a href="/forgot/">Forgot username/password?</a>
+					<a href="/create/" class="join">Join Now!</a>
+				</div>
+		</div>
+	</div>
+</div>		<div id="back"><a href="#wrapper">Back to top</a></div>
+
+
+	</div>
+	
+	<div id="lightbox-panel">
+	<span id="lightbox-body">alert</span>
+	
+	
+	<div id="lightbox-close">
+		<a href="#" id="lightbox-exit">close</a>
+	</div>
+	
+</div>
+
+<div id="lightbox"></div>
+
+	
+	<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-e1GZ3PNfdDCkE"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-e1GZ3PNfdDCkE.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+
+
+
+	<div id="moverdiv">explain</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.songmeanings_com,DomainId.7844"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.songmeanings_com,DomainId.7844"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag-->
+<script type='text/javascript' src='//cdn.songmeanings.com/detroitchicago/edmonton.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+<script type='text/javascript' src='//cdn.songmeanings.com/porpoiseant/jellyfish.webp?a=a&cb=9&shcb=10' style='display:none;' async></script>
+</body>
+
+</html>
+
